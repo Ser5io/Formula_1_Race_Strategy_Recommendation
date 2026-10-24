@@ -54,13 +54,13 @@ A virtual safety car message is not also counted as a safety car. `CHEQUERED FLA
 
 | Team member | File | Rows |
 | --- | --- | ---: |
-| Mohamed | exports/silver/mohamed/fact_race_laps.csv | 77373 |
-| Yousef | exports/silver/yousef/fact_pit_stops.csv | 2229 |
-| Yousef | exports/silver/yousef/fact_race_control.csv | 6278 |
-| Mahmud | exports/silver/mahmud/dim_races.csv | 70 |
-| Mahmud | exports/silver/mahmud/fact_weather.csv | 11069 |
-| Moaz | exports/silver/moaz/dim_drivers.csv | 68 |
-| Moaz | exports/silver/moaz/dim_constructors.csv | 30 |
-| Moaz | exports/silver/moaz/fact_race_results.csv | 1397 |
-| Moaz | exports/silver/moaz/fact_stint_summary.csv | 3934 |
+| Mohamed | exports/silver/fact_race_laps.csv | 77373 |
+| Yousef | exports/silver/fact_pit_stops.csv | 2229 |
+| Yousef | exports/silver/fact_race_control.csv | 6278 |
+| Mahmud | exports/silver/dim_races.csv | 70 |
+| Mahmud | exports/silver/fact_weather.csv | 11069 |
+| Moaz | exports/silver/dim_drivers.csv | 68 |
+| Moaz | exports/silver/dim_constructors.csv | 30 |
+| Moaz | exports/silver/fact_race_results.csv | 1397 |
+| Moaz | exports/silver/fact_stint_summary.csv | 3934 |
 | Moaz | exports/silver/silver_audit_log.csv | 46 |
