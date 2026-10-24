@@ -1,0 +1,31 @@
+year,team_name,team_colour,drivers,races,final_points,final_position,_ingested_at,_source_file
+2023,Alfa Romeo,C92D4B,"BOT, ZHO",22,16.0,9,2026-10-24 18:26:48.696318,Constructors.csv
+2023,AlphaTauri,5E8FAA,"DEV, LAW, RIC, TSU",22,25.0,8,2026-10-24 18:26:48.696318,Constructors.csv
+2023,Alpine,2293D1,"GAS, OCO",22,120.0,6,2026-10-24 18:26:48.696318,Constructors.csv
+2023,Aston Martin,358C75,"ALO, STR",22,280.0,5,2026-10-24 18:26:48.696318,Constructors.csv
+2023,Ferrari,F91536,"LEC, SAI",22,406.0,3,2026-10-24 18:26:48.696318,Constructors.csv
+2023,Haas F1 Team,B6BABD,"HUL, MAG",22,12.0,10,2026-10-24 18:26:48.696318,Constructors.csv
+2023,McLaren,F58020,"NOR, PIA",22,302.0,4,2026-10-24 18:26:48.696318,Constructors.csv
+2023,Mercedes,6CD3BF,"HAM, RUS",22,409.0,2,2026-10-24 18:26:48.696318,Constructors.csv
+2023,Red Bull Racing,3671C6,"PER, VER",22,860.0,1,2026-10-24 18:26:48.696318,Constructors.csv
+2023,Williams,37BEDD,"ALB, SAR",22,28.0,7,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Alpine,ff87bc,"DOO, GAS, OCO",24,65.0,6,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Aston Martin,229971,"ALO, STR",24,94.0,5,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Ferrari,e8002d,"BEA, LEC, SAI",24,652.0,2,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Haas F1 Team,b6babd,"BEA, HUL, MAG",24,58.0,7,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Kick Sauber,52e252,"BOT, ZHO",24,4.0,10,2026-10-24 18:26:48.696318,Constructors.csv
+2024,McLaren,ff8000,"NOR, PIA",24,666.0,1,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Mercedes,27f4d2,"HAM, RUS",24,468.0,4,2026-10-24 18:26:48.696318,Constructors.csv
+2024,RB,6692ff,"LAW, RIC, TSU",24,46.0,8,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Red Bull Racing,3671c6,"PER, VER",24,589.0,3,2026-10-24 18:26:48.696318,Constructors.csv
+2024,Williams,64c4ff,"ALB, COL, SAR",24,17.0,9,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Alpine,0093CC,"COL, DOO, GAS",24,22.0,10,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Aston Martin,229971,"ALO, STR",24,89.0,7,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Ferrari,E80020,"HAM, LEC",24,398.0,4,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Haas F1 Team,B6BABD,"BEA, OCO",24,79.0,8,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Kick Sauber,52E252,"BOR, HUL",24,70.0,9,2026-10-24 18:26:48.696318,Constructors.csv
+2025,McLaren,FF8000,"NOR, PIA",24,833.0,1,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Mercedes,27F4D2,"ANT, RUS",24,469.0,2,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Racing Bulls,6692FF,"HAD, LAW, TSU",24,92.0,6,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Red Bull Racing,3671C6,"LAW, TSU, VER",24,451.0,3,2026-10-24 18:26:48.696318,Constructors.csv
+2025,Williams,64C4FF,"ALB, SAI",24,137.0,5,2026-10-24 18:26:48.696318,Constructors.csv

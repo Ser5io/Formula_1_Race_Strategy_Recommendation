@@ -1,0 +1,1398 @@
+year,round,meeting_key,meeting_name,session_key,session_name,circuit_short_name,country_name,position,driver_number,name_acronym,full_name,team_name,number_of_laps,points,dnf,dns,dsq,duration_s,gap_to_leader_raw,gap_seconds,laps_down
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,1,1,VER,Max VERSTAPPEN,Red Bull Racing,57,25.0,f,f,f,5636.736,0,0,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,2,11,PER,Sergio PEREZ,Red Bull Racing,57,18.0,f,f,f,5648.723,11.987,11.987,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,3,14,ALO,Fernando ALONSO,Aston Martin,57,15.0,f,f,f,5675.373,38.637,38.637,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,4,55,SAI,Carlos SAINZ,Ferrari,57,12.0,f,f,f,5684.788,48.052,48.052,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,5,44,HAM,Lewis HAMILTON,Mercedes,57,10.0,f,f,f,5687.713,50.977,50.977,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,6,18,STR,Lance STROLL,Aston Martin,57,8.0,f,f,f,5691.238,54.502,54.502,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,7,63,RUS,George RUSSELL,Mercedes,57,6.0,f,f,f,5692.609,55.873,55.873,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,8,77,BOT,Valtteri BOTTAS,Alfa Romeo,57,4.0,f,f,f,5709.383,72.647,72.647,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,9,10,GAS,Pierre GASLY,Alpine,57,2.0,f,f,f,5710.489,73.753,73.753,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,10,23,ALB,Alexander ALBON,Williams,57,1.0,f,f,f,5726.51,89.774,89.774,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,11,22,TSU,Yuki TSUNODA,AlphaTauri,57,0.0,f,f,f,5727.606,90.87,90.87,0
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,12,2,SAR,Logan SARGEANT,Williams,56,0.0,f,f,f,,+1 LAP,,1
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,13,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,56,0.0,f,f,f,,+1 LAP,,1
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,14,21,DEV,Nyck DE VRIES,AlphaTauri,56,0.0,f,f,f,,+1 LAP,,1
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,15,27,HUL,Nico HULKENBERG,Haas F1 Team,56,0.0,f,f,f,,+1 LAP,,1
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,16,24,ZHO,ZHOU Guanyu,Alfa Romeo,56,0.0,f,f,f,,+1 LAP,,1
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,17,4,NOR,Lando NORRIS,McLaren,55,0.0,f,f,f,,+2 LAPS,,2
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,,16,LEC,Charles LECLERC,Ferrari,39,0.0,t,f,f,,,,
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,,31,OCO,Esteban OCON,Alpine,41,0.0,t,f,f,,,,
+2023,1,1141,Bahrain Grand Prix,7953,Race,Sakhir,Bahrain,,81,PIA,Oscar PIASTRI,McLaren,13,0.0,t,f,f,,,,
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,1,11,PER,Sergio PEREZ,Red Bull Racing,50,25.0,f,f,f,4874.894,0,0,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,2,1,VER,Max VERSTAPPEN,Red Bull Racing,50,0.0,f,f,f,4880.249,5.355,5.355,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,3,14,ALO,Fernando ALONSO,Aston Martin,50,15.0,f,f,f,4895.622,20.728,20.728,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,4,63,RUS,George RUSSELL,Mercedes,50,12.0,f,f,f,4900.76,25.866,25.866,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,5,44,HAM,Lewis HAMILTON,Mercedes,50,10.0,f,f,f,4905.959,31.065,31.065,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,6,55,SAI,Carlos SAINZ,Ferrari,50,8.0,f,f,f,4910.77,35.876,35.876,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,7,16,LEC,Charles LECLERC,Ferrari,50,6.0,f,f,f,4918.056,43.162,43.162,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,8,31,OCO,Esteban OCON,Alpine,50,4.0,f,f,f,4927.726,52.832,52.832,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,9,10,GAS,Pierre GASLY,Alpine,50,2.0,f,f,f,4929.641,54.747,54.747,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,10,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,50,1.0,f,f,f,4939.72,64.826,64.826,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,11,22,TSU,Yuki TSUNODA,AlphaTauri,50,0.0,f,f,f,4942.388,67.494,67.494,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,12,27,HUL,Nico HULKENBERG,Haas F1 Team,50,0.0,f,f,f,4945.482,70.588,70.588,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,13,24,ZHO,ZHOU Guanyu,Alfa Romeo,50,0.0,f,f,f,4950.954,76.06,76.06,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,14,21,DEV,Nyck DE VRIES,AlphaTauri,50,0.0,f,f,f,4952.372,77.478,77.478,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,15,81,PIA,Oscar PIASTRI,McLaren,50,0.0,f,f,f,4959.915,85.021,85.021,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,16,2,SAR,Logan SARGEANT,Williams,50,0.0,f,f,f,4961.187,86.293,86.293,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,17,4,NOR,Lando NORRIS,McLaren,50,0.0,f,f,f,4961.339,86.445,86.445,0
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,18,77,BOT,Valtteri BOTTAS,Alfa Romeo,49,0.0,f,f,f,,+1 LAP,,1
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,,18,STR,Lance STROLL,Aston Martin,16,0.0,t,f,f,,,,
+2023,2,1142,Saudi Arabian Grand Prix,7779,Race,Jeddah,Saudi Arabia,,23,ALB,Alexander ALBON,Williams,27,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,1,1,VER,Max VERSTAPPEN,Red Bull Racing,58,25.0,f,f,f,9158.371,0.0,0.0,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,2,44,HAM,Lewis HAMILTON,Mercedes,58,18.0,f,f,f,9158.55,0.179,0.179,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,3,14,ALO,Fernando ALONSO,Aston Martin,58,15.0,f,f,f,9159.14,0.769,0.769,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,4,18,STR,Lance STROLL,Aston Martin,58,12.0,f,f,f,9161.453,3.082,3.082,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,5,11,PER,Sergio PEREZ,Red Bull Racing,58,11.0,f,f,f,9161.691,3.32,3.32,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,6,4,NOR,Lando NORRIS,McLaren,58,8.0,f,f,f,9162.072,3.701,3.701,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,7,27,HUL,Nico HULKENBERG,Haas F1 Team,58,6.0,f,f,f,9163.31,4.939,4.939,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,8,81,PIA,Oscar PIASTRI,McLaren,58,4.0,f,f,f,9163.753,5.382,5.382,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,9,24,ZHO,ZHOU Guanyu,Alfa Romeo,58,2.0,f,f,f,9164.084,5.713,5.713,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,10,22,TSU,Yuki TSUNODA,AlphaTauri,58,1.0,f,f,f,9164.423,6.052,6.052,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,11,77,BOT,Valtteri BOTTAS,Alfa Romeo,58,0.0,f,f,f,9164.884,6.513,6.513,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,12,55,SAI,Carlos SAINZ,Ferrari,58,0.0,f,f,f,9164.965,6.594,6.594,0
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,13,10,GAS,Pierre GASLY,Alpine,56,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,14,31,OCO,Esteban OCON,Alpine,56,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,15,21,DEV,Nyck DE VRIES,AlphaTauri,56,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,16,2,SAR,Logan SARGEANT,Williams,56,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,17,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,52,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,,16,LEC,Charles LECLERC,Ferrari,0,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,,23,ALB,Alexander ALBON,Williams,6,0.0,t,f,f,,,,
+2023,3,1143,Australian Grand Prix,7787,Race,Melbourne,Australia,,63,RUS,George RUSSELL,Mercedes,17,0.0,t,f,f,,,,
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,1,11,PER,Sergio PEREZ,Red Bull Racing,51,25.0,f,f,f,5562.436,0,0,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,2,1,VER,Max VERSTAPPEN,Red Bull Racing,51,18.0,f,f,f,5564.573,2.137,2.137,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,3,16,LEC,Charles LECLERC,Ferrari,51,15.0,f,f,f,5583.653,21.217,21.217,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,4,14,ALO,Fernando ALONSO,Aston Martin,51,12.0,f,f,f,5584.46,22.024,22.024,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,5,55,SAI,Carlos SAINZ,Ferrari,51,10.0,f,f,f,5607.927,45.491,45.491,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,6,44,HAM,Lewis HAMILTON,Mercedes,51,8.0,f,f,f,5608.581,46.145,46.145,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,7,18,STR,Lance STROLL,Aston Martin,51,6.0,f,f,f,5614.053,51.617,51.617,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,8,63,RUS,George RUSSELL,Mercedes,51,5.0,f,f,f,5636.676,74.24,74.24,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,9,4,NOR,Lando NORRIS,McLaren,51,2.0,f,f,f,5642.812,80.376,80.376,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,10,22,TSU,Yuki TSUNODA,AlphaTauri,51,1.0,f,f,f,5646.298,83.862,83.862,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,11,81,PIA,Oscar PIASTRI,McLaren,51,0.0,f,f,f,5648.937,86.501,86.501,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,12,23,ALB,Alexander ALBON,Williams,51,0.0,f,f,f,5651.059,88.623,88.623,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,13,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,51,0.0,f,f,f,5652.165,89.729,89.729,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,14,10,GAS,Pierre GASLY,Alpine,51,0.0,f,f,f,5653.768,91.332,91.332,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,15,31,OCO,Esteban OCON,Alpine,51,0.0,f,f,f,5660.23,97.794,97.794,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,16,2,SAR,Logan SARGEANT,Williams,51,0.0,f,f,f,5663.379,100.943,100.943,0
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,17,27,HUL,Nico HULKENBERG,Haas F1 Team,50,0.0,f,f,f,,+1 LAP,,1
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,18,77,BOT,Valtteri BOTTAS,Alfa Romeo,50,0.0,f,f,f,,+1 LAP,,1
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,,21,DEV,Nyck DE VRIES,AlphaTauri,9,0.0,t,f,f,,,,
+2023,4,1207,Azerbaijan Grand Prix,9070,Race,Baku,Azerbaijan,,24,ZHO,ZHOU Guanyu,Alfa Romeo,36,0.0,t,f,f,,,,
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,1,1,VER,Max VERSTAPPEN,Red Bull Racing,57,26.0,f,f,f,5258.241,0,0,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,2,11,PER,Sergio PEREZ,Red Bull Racing,57,18.0,f,f,f,5263.625,5.384,5.384,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,3,14,ALO,Fernando ALONSO,Aston Martin,57,15.0,f,f,f,5284.546,26.305,26.305,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,4,63,RUS,George RUSSELL,Mercedes,57,12.0,f,f,f,5291.47,33.229,33.229,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,5,55,SAI,Carlos SAINZ,Ferrari,57,10.0,f,f,f,5300.752,42.511,42.511,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,6,44,HAM,Lewis HAMILTON,Mercedes,57,8.0,f,f,f,5309.49,51.249,51.249,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,7,16,LEC,Charles LECLERC,Ferrari,57,6.0,f,f,f,5311.229,52.988,52.988,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,8,10,GAS,Pierre GASLY,Alpine,57,4.0,f,f,f,5313.911,55.67,55.67,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,9,31,OCO,Esteban OCON,Alpine,57,2.0,f,f,f,5316.364,58.123,58.123,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,10,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,57,1.0,f,f,f,5321.186,62.945,62.945,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,11,22,TSU,Yuki TSUNODA,AlphaTauri,57,0.0,f,f,f,5322.55,64.309,64.309,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,12,18,STR,Lance STROLL,Aston Martin,57,0.0,f,f,f,5322.995,64.754,64.754,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,13,77,BOT,Valtteri BOTTAS,Alfa Romeo,57,0.0,f,f,f,5329.878,71.637,71.637,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,14,23,ALB,Alexander ALBON,Williams,57,0.0,f,f,f,5331.102,72.861,72.861,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,15,27,HUL,Nico HULKENBERG,Haas F1 Team,57,0.0,f,f,f,5333.191,74.95,74.95,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,16,24,ZHO,ZHOU Guanyu,Alfa Romeo,57,0.0,f,f,f,5336.681,78.44,78.44,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,17,4,NOR,Lando NORRIS,McLaren,57,0.0,f,f,f,5345.958,87.717,87.717,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,18,21,DEV,Nyck DE VRIES,AlphaTauri,57,0.0,f,f,f,5347.19,88.949,88.949,0
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,19,81,PIA,Oscar PIASTRI,McLaren,56,0.0,f,f,f,,+1 LAP,,1
+2023,5,1208,Miami Grand Prix,9078,Race,Miami,United States,20,2,SAR,Logan SARGEANT,Williams,56,0.0,f,f,f,,+1 LAP,,1
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,1,1,VER,Max VERSTAPPEN,Red Bull Racing,78,25.0,f,f,f,6531.98,0,0,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,2,14,ALO,Fernando ALONSO,Aston Martin,78,18.0,f,f,f,6559.901,27.921,27.921,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,3,31,OCO,Esteban OCON,Alpine,78,15.0,f,f,f,6568.97,36.99,36.99,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,4,44,HAM,Lewis HAMILTON,Mercedes,78,13.0,f,f,f,6571.042,39.062,39.062,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,5,63,RUS,George RUSSELL,Mercedes,78,10.0,f,f,f,6588.264,56.284,56.284,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,6,16,LEC,Charles LECLERC,Ferrari,78,8.0,f,f,f,6593.87,61.89,61.89,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,7,10,GAS,Pierre GASLY,Alpine,78,6.0,f,f,f,6594.342,62.362,62.362,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,8,55,SAI,Carlos SAINZ,Ferrari,78,4.0,f,f,f,6595.371,63.391,63.391,0
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,9,4,NOR,Lando NORRIS,McLaren,77,2.0,f,f,f,,+1 LAP,,1
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,10,81,PIA,Oscar PIASTRI,McLaren,77,1.0,f,f,f,,+1 LAP,,1
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,11,77,BOT,Valtteri BOTTAS,Alfa Romeo,77,0.0,f,f,f,,+1 LAP,,1
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,12,21,DEV,Nyck DE VRIES,AlphaTauri,77,0.0,f,f,f,,+1 LAP,,1
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,13,24,ZHO,ZHOU Guanyu,Alfa Romeo,77,0.0,f,f,f,,+1 LAP,,1
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,14,23,ALB,Alexander ALBON,Williams,77,0.0,f,f,f,,+1 LAP,,1
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,15,22,TSU,Yuki TSUNODA,AlphaTauri,76,0.0,f,f,f,,+2 LAPS,,2
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,16,11,PER,Sergio PEREZ,Red Bull Racing,76,0.0,f,f,f,,+2 LAPS,,2
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,17,27,HUL,Nico HULKENBERG,Haas F1 Team,76,0.0,f,f,f,,+2 LAPS,,2
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,18,2,SAR,Logan SARGEANT,Williams,76,0.0,f,f,f,,+2 LAPS,,2
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,19,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,70,0.0,t,f,f,,,,
+2023,6,1210,Monaco Grand Prix,9094,Race,Monte Carlo,Monaco,,18,STR,Lance STROLL,Aston Martin,53,0.0,t,f,f,,,,
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,1,1,VER,Max VERSTAPPEN,Red Bull Racing,66,26.0,f,f,f,5277.94,0,0,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,2,44,HAM,Lewis HAMILTON,Mercedes,66,18.0,f,f,f,5302.03,24.09,24.09,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,3,63,RUS,George RUSSELL,Mercedes,66,15.0,f,f,f,5310.329,32.389,32.389,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,4,11,PER,Sergio PEREZ,Red Bull Racing,66,12.0,f,f,f,5313.752,35.812,35.812,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,5,55,SAI,Carlos SAINZ,Ferrari,66,10.0,f,f,f,5323.638,45.698,45.698,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,6,18,STR,Lance STROLL,Aston Martin,66,8.0,f,f,f,5341.26,63.32,63.32,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,7,14,ALO,Fernando ALONSO,Aston Martin,66,6.0,f,f,f,5342.067,64.127,64.127,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,8,31,OCO,Esteban OCON,Alpine,66,4.0,f,f,f,5347.182,69.242,69.242,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,9,24,ZHO,ZHOU Guanyu,Alfa Romeo,66,2.0,f,f,f,5349.818,71.878,71.878,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,10,10,GAS,Pierre GASLY,Alpine,66,1.0,f,f,f,5351.47,73.53,73.53,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,11,16,LEC,Charles LECLERC,Ferrari,66,0.0,f,f,f,5352.359,74.419,74.419,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,12,22,TSU,Yuki TSUNODA,AlphaTauri,66,0.0,f,f,f,5353.356,75.416,75.416,0
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,13,81,PIA,Oscar PIASTRI,McLaren,65,0.0,f,f,f,,+1 LAP,,1
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,14,21,DEV,Nyck DE VRIES,AlphaTauri,65,0.0,f,f,f,,+1 LAP,,1
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,15,27,HUL,Nico HULKENBERG,Haas F1 Team,65,0.0,f,f,f,,+1 LAP,,1
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,16,23,ALB,Alexander ALBON,Williams,65,0.0,f,f,f,,+1 LAP,,1
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,17,4,NOR,Lando NORRIS,McLaren,65,0.0,f,f,f,,+1 LAP,,1
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,18,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,65,0.0,f,f,f,,+1 LAP,,1
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,19,77,BOT,Valtteri BOTTAS,Alfa Romeo,65,0.0,f,f,f,,+1 LAP,,1
+2023,7,1211,Spanish Grand Prix,9102,Race,Catalunya,Spain,20,2,SAR,Logan SARGEANT,Williams,65,0.0,f,f,f,,+1 LAP,,1
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,1,1,VER,Max VERSTAPPEN,Red Bull Racing,70,25.0,f,f,f,5638.348,0,0,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,2,14,ALO,Fernando ALONSO,Aston Martin,70,18.0,f,f,f,5647.918,9.57,9.57,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,3,44,HAM,Lewis HAMILTON,Mercedes,70,15.0,f,f,f,5652.516,14.168,14.168,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,4,16,LEC,Charles LECLERC,Ferrari,70,12.0,f,f,f,5656.996,18.648,18.648,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,5,55,SAI,Carlos SAINZ,Ferrari,70,10.0,f,f,f,5659.888,21.54,21.54,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,6,11,PER,Sergio PEREZ,Red Bull Racing,70,9.0,f,f,f,5689.376,51.028,51.028,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,7,23,ALB,Alexander ALBON,Williams,70,6.0,f,f,f,5699.161,60.813,60.813,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,8,31,OCO,Esteban OCON,Alpine,70,4.0,f,f,f,5700.04,61.692,61.692,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,9,18,STR,Lance STROLL,Aston Martin,70,2.0,f,f,f,5702.75,64.402,64.402,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,10,77,BOT,Valtteri BOTTAS,Alfa Romeo,70,1.0,f,f,f,5702.78,64.432,64.432,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,11,81,PIA,Oscar PIASTRI,McLaren,70,0.0,f,f,f,5703.449,65.101,65.101,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,12,10,GAS,Pierre GASLY,Alpine,70,0.0,f,f,f,5703.597,65.249,65.249,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,13,4,NOR,Lando NORRIS,McLaren,70,0.0,f,f,f,5706.711,68.363,68.363,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,14,22,TSU,Yuki TSUNODA,AlphaTauri,70,0.0,f,f,f,5711.771,73.423,73.423,0
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,15,27,HUL,Nico HULKENBERG,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,16,24,ZHO,ZHOU Guanyu,Alfa Romeo,69,0.0,f,f,f,,+1 LAP,,1
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,17,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,18,21,DEV,Nyck DE VRIES,AlphaTauri,69,0.0,f,f,f,,+1 LAP,,1
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,,2,SAR,Logan SARGEANT,Williams,6,0.0,t,f,f,,,,
+2023,8,1212,Canadian Grand Prix,9110,Race,Montreal,Canada,,63,RUS,George RUSSELL,Mercedes,53,0.0,t,f,f,,,,
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,1,1,VER,Max VERSTAPPEN,Red Bull Racing,71,26.0,f,f,f,5133.607,0,0,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,2,16,LEC,Charles LECLERC,Ferrari,71,18.0,f,f,f,5138.762,5.155,5.155,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,3,11,PER,Sergio PEREZ,Red Bull Racing,71,15.0,f,f,f,5150.795,17.188,17.188,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,4,4,NOR,Lando NORRIS,McLaren,71,12.0,f,f,f,5159.934,26.327,26.327,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,5,14,ALO,Fernando ALONSO,Aston Martin,71,10.0,f,f,f,5163.924,30.317,30.317,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,6,55,SAI,Carlos SAINZ,Ferrari,71,8.0,f,f,f,5164.984,31.377,31.377,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,7,63,RUS,George RUSSELL,Mercedes,71,6.0,f,f,f,5182.01,48.403,48.403,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,8,44,HAM,Lewis HAMILTON,Mercedes,71,4.0,f,f,f,5182.803,49.196,49.196,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,9,18,STR,Lance STROLL,Aston Martin,71,2.0,f,f,f,5192.65,59.043,59.043,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,10,10,GAS,Pierre GASLY,Alpine,71,1.0,f,f,f,5201.274,67.667,67.667,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,11,23,ALB,Alexander ALBON,Williams,71,0.0,f,f,f,5213.374,79.767,79.767,0
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,12,24,ZHO,ZHOU Guanyu,Alfa Romeo,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,13,2,SAR,Logan SARGEANT,Williams,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,14,31,OCO,Esteban OCON,Alpine,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,15,77,BOT,Valtteri BOTTAS,Alfa Romeo,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,16,81,PIA,Oscar PIASTRI,McLaren,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,17,21,DEV,Nyck DE VRIES,AlphaTauri,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,18,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,19,22,TSU,Yuki TSUNODA,AlphaTauri,70,0.0,f,f,f,,+1 LAP,,1
+2023,9,1213,Austrian Grand Prix,9118,Race,Spielberg,Austria,,27,HUL,Nico HULKENBERG,Haas F1 Team,12,0.0,t,f,f,,,,
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,1,1,VER,Max VERSTAPPEN,Red Bull Racing,52,26.0,f,f,f,5116.938,0.0,0.0,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,2,4,NOR,Lando NORRIS,McLaren,52,18.0,f,f,f,5120.736,3.798,3.798,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,3,44,HAM,Lewis HAMILTON,Mercedes,52,15.0,f,f,f,5123.721,6.783,6.783,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,4,81,PIA,Oscar PIASTRI,McLaren,52,12.0,f,f,f,5124.714,7.776,7.776,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,5,63,RUS,George RUSSELL,Mercedes,52,10.0,f,f,f,5128.144,11.206,11.206,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,6,11,PER,Sergio PEREZ,Red Bull Racing,52,8.0,f,f,f,5129.82,12.882,12.882,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,7,14,ALO,Fernando ALONSO,Aston Martin,52,6.0,f,f,f,5134.131,17.193,17.193,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,8,23,ALB,Alexander ALBON,Williams,52,4.0,f,f,f,5134.816,17.878,17.878,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,9,16,LEC,Charles LECLERC,Ferrari,52,2.0,f,f,f,5135.627,18.689,18.689,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,10,55,SAI,Carlos SAINZ,Ferrari,52,1.0,f,f,f,5136.386,19.448,19.448,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,11,2,SAR,Logan SARGEANT,Williams,52,0.0,f,f,f,5140.57,23.632,23.632,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,12,77,BOT,Valtteri BOTTAS,Alfa Romeo,52,0.0,f,f,f,5142.768,25.83,25.83,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,13,27,HUL,Nico HULKENBERG,Haas F1 Team,52,0.0,f,f,f,5143.601,26.663,26.663,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,14,18,STR,Lance STROLL,Aston Martin,52,0.0,f,f,f,5144.421,27.483,27.483,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,15,24,ZHO,ZHOU Guanyu,Alfa Romeo,52,0.0,f,f,f,5146.758,29.82,29.82,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,16,22,TSU,Yuki TSUNODA,AlphaTauri,52,0.0,f,f,f,5148.163,31.225,31.225,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,17,21,DEV,Nyck DE VRIES,AlphaTauri,52,0.0,f,f,f,5150.066,33.128,33.128,0
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,18,10,GAS,Pierre GASLY,Alpine,46,0.0,t,f,f,,,,
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,31,0.0,t,f,f,,,,
+2023,10,1214,British Grand Prix,9126,Race,Silverstone,United Kingdom,,31,OCO,Esteban OCON,Alpine,9,0.0,t,f,f,,,,
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,1,1,VER,Max VERSTAPPEN,Red Bull Racing,70,26.0,f,f,f,5888.634,0,0,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,2,4,NOR,Lando NORRIS,McLaren,70,18.0,f,f,f,5922.365,33.731,33.731,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,3,11,PER,Sergio PEREZ,Red Bull Racing,70,15.0,f,f,f,5926.237,37.603,37.603,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,4,44,HAM,Lewis HAMILTON,Mercedes,70,12.0,f,f,f,5927.768,39.134,39.134,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,5,81,PIA,Oscar PIASTRI,McLaren,70,10.0,f,f,f,5951.206,62.572,62.572,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,6,63,RUS,George RUSSELL,Mercedes,70,8.0,f,f,f,5954.459,65.825,65.825,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,7,16,LEC,Charles LECLERC,Ferrari,70,6.0,f,f,f,5958.951,70.317,70.317,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,8,55,SAI,Carlos SAINZ,Ferrari,70,4.0,f,f,f,5959.707,71.073,71.073,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,9,14,ALO,Fernando ALONSO,Aston Martin,70,2.0,f,f,f,5964.343,75.709,75.709,0
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,10,18,STR,Lance STROLL,Aston Martin,69,1.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,11,23,ALB,Alexander ALBON,Williams,69,0.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,12,77,BOT,Valtteri BOTTAS,Alfa Romeo,69,0.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,13,3,RIC,Daniel RICCIARDO,AlphaTauri,69,0.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,14,27,HUL,Nico HULKENBERG,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,15,22,TSU,Yuki TSUNODA,AlphaTauri,69,0.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,16,24,ZHO,ZHOU Guanyu,Alfa Romeo,69,0.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,17,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,18,2,SAR,Logan SARGEANT,Williams,67,0.0,t,f,f,,,,
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,,10,GAS,Pierre GASLY,Alpine,1,0.0,t,f,f,,,,
+2023,11,1215,Hungarian Grand Prix,9133,Race,Hungaroring,Hungary,,31,OCO,Esteban OCON,Alpine,2,0.0,t,f,f,,,,
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,1,1,VER,Max VERSTAPPEN,Red Bull Racing,44,25.0,f,f,f,4950.45,0.0,0.0,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,2,11,PER,Sergio PEREZ,Red Bull Racing,44,18.0,f,f,f,4972.755,22.305,22.305,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,3,16,LEC,Charles LECLERC,Ferrari,44,15.0,f,f,f,4982.709,32.259,32.259,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,4,44,HAM,Lewis HAMILTON,Mercedes,44,13.0,f,f,f,5000.121,49.671,49.671,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,5,14,ALO,Fernando ALONSO,Aston Martin,44,10.0,f,f,f,5006.634,56.184,56.184,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,6,63,RUS,George RUSSELL,Mercedes,44,8.0,f,f,f,5013.551,63.101,63.101,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,7,4,NOR,Lando NORRIS,McLaren,44,6.0,f,f,f,5024.169,73.719,73.719,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,8,31,OCO,Esteban OCON,Alpine,44,4.0,f,f,f,5025.169,74.719,74.719,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,9,18,STR,Lance STROLL,Aston Martin,44,2.0,f,f,f,5029.79,79.34,79.34,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,10,22,TSU,Yuki TSUNODA,AlphaTauri,44,1.0,f,f,f,5030.671,80.221,80.221,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,11,10,GAS,Pierre GASLY,Alpine,44,0.0,f,f,f,5033.534,83.084,83.084,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,12,77,BOT,Valtteri BOTTAS,Alfa Romeo,44,0.0,f,f,f,5035.641,85.191,85.191,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,13,24,ZHO,ZHOU Guanyu,Alfa Romeo,44,0.0,f,f,f,5045.891,95.441,95.441,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,14,23,ALB,Alexander ALBON,Williams,44,0.0,f,f,f,5046.634,96.184,96.184,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,15,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,44,0.0,f,f,f,5052.204,101.754,101.754,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,16,3,RIC,Daniel RICCIARDO,AlphaTauri,44,0.0,f,f,f,5053.521,103.071,103.071,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,17,2,SAR,Logan SARGEANT,Williams,44,0.0,f,f,f,5054.926,104.476,104.476,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,18,27,HUL,Nico HULKENBERG,Haas F1 Team,44,0.0,f,f,f,5060.9,110.45,110.45,0
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,,55,SAI,Carlos SAINZ,Ferrari,23,0.0,t,f,f,,,,
+2023,12,1216,Belgian Grand Prix,9141,Race,Spa-Francorchamps,Belgium,,81,PIA,Oscar PIASTRI,McLaren,0,0.0,t,f,f,,,,
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,1,1,VER,Max VERSTAPPEN,Red Bull Racing,72,25.0,f,f,f,8644.411,0.0,0.0,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,2,14,ALO,Fernando ALONSO,Aston Martin,72,19.0,f,f,f,8648.155,3.744,3.744,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,3,10,GAS,Pierre GASLY,Alpine,72,15.0,f,f,f,8651.469,7.058,7.058,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,4,11,PER,Sergio PEREZ,Red Bull Racing,72,12.0,f,f,f,8654.479,10.068,10.068,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,5,55,SAI,Carlos SAINZ,Ferrari,72,10.0,f,f,f,8656.952,12.541,12.541,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,6,44,HAM,Lewis HAMILTON,Mercedes,72,8.0,f,f,f,8657.62,13.209,13.209,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,7,4,NOR,Lando NORRIS,McLaren,72,6.0,f,f,f,8657.643,13.232,13.232,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,8,23,ALB,Alexander ALBON,Williams,72,4.0,f,f,f,8659.566,15.155,15.155,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,9,81,PIA,Oscar PIASTRI,McLaren,72,2.0,f,f,f,8660.991,16.58,16.58,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,10,31,OCO,Esteban OCON,Alpine,72,1.0,f,f,f,8662.757,18.346,18.346,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,11,18,STR,Lance STROLL,Aston Martin,72,0.0,f,f,f,8664.498,20.087,20.087,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,12,27,HUL,Nico HULKENBERG,Haas F1 Team,72,0.0,f,f,f,8665.251,20.84,20.84,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,13,40,LAW,Liam LAWSON,AlphaTauri,72,0.0,f,f,f,8670.558,26.147,26.147,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,14,77,BOT,Valtteri BOTTAS,Alfa Romeo,72,0.0,f,f,f,8671.799,27.388,27.388,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,15,22,TSU,Yuki TSUNODA,AlphaTauri,72,0.0,f,f,f,8674.304,29.893,29.893,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,16,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,72,0.0,f,f,f,8675.821,31.41,31.41,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,17,63,RUS,George RUSSELL,Mercedes,72,0.0,f,f,f,8700.165,55.754,55.754,0
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,,2,SAR,Logan SARGEANT,Williams,14,0.0,t,f,f,,,,
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,,16,LEC,Charles LECLERC,Ferrari,41,0.0,t,f,f,,,,
+2023,13,1217,Dutch Grand Prix,9149,Race,Zandvoort,Netherlands,,24,ZHO,ZHOU Guanyu,Alfa Romeo,62,0.0,t,f,f,,,,
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,1,1,VER,Max VERSTAPPEN,Red Bull Racing,51,25.0,f,f,f,4421.143,0,0,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,2,11,PER,Sergio PEREZ,Red Bull Racing,51,18.0,f,f,f,4427.207,6.064,6.064,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,3,55,SAI,Carlos SAINZ,Ferrari,51,15.0,f,f,f,4432.336,11.193,11.193,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,4,16,LEC,Charles LECLERC,Ferrari,51,12.0,f,f,f,4432.52,11.377,11.377,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,5,63,RUS,George RUSSELL,Mercedes,51,10.0,f,f,f,4444.171,23.028,23.028,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,6,44,HAM,Lewis HAMILTON,Mercedes,51,8.0,f,f,f,4463.822,42.679,42.679,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,7,23,ALB,Alexander ALBON,Williams,51,6.0,f,f,f,4466.249,45.106,45.106,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,8,4,NOR,Lando NORRIS,McLaren,51,4.0,f,f,f,4466.592,45.449,45.449,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,9,14,ALO,Fernando ALONSO,Aston Martin,51,2.0,f,f,f,4467.437,46.294,46.294,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,10,77,BOT,Valtteri BOTTAS,Alfa Romeo,51,1.0,f,f,f,4485.199,64.056,64.056,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,11,40,LAW,Liam LAWSON,AlphaTauri,51,0.0,f,f,f,4491.781,70.638,70.638,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,12,81,PIA,Oscar PIASTRI,McLaren,51,0.0,f,f,f,4494.217,73.074,73.074,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,13,2,SAR,Logan SARGEANT,Williams,51,0.0,f,f,f,4499.7,78.557,78.557,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,14,24,ZHO,ZHOU Guanyu,Alfa Romeo,51,0.0,f,f,f,4501.307,80.164,80.164,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,15,10,GAS,Pierre GASLY,Alpine,51,0.0,f,f,f,4503.653,82.51,82.51,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,16,18,STR,Lance STROLL,Aston Martin,51,0.0,f,f,f,4508.409,87.266,87.266,0
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,17,27,HUL,Nico HULKENBERG,Haas F1 Team,50,0.0,f,f,f,,+1 LAP,,1
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,18,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,50,0.0,f,f,f,,+1 LAP,,1
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,,22,TSU,Yuki TSUNODA,AlphaTauri,0,0.0,f,t,f,,,,
+2023,14,1218,Italian Grand Prix,9157,Race,Monza,Italy,,31,OCO,Esteban OCON,Alpine,39,0.0,t,f,f,,,,
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,1,55,SAI,Carlos SAINZ,Ferrari,62,25.0,f,f,f,6397.418,0.0,0.0,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,2,4,NOR,Lando NORRIS,McLaren,62,18.0,f,f,f,6398.23,0.812,0.812,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,3,44,HAM,Lewis HAMILTON,Mercedes,62,16.0,f,f,f,6398.687,1.269,1.269,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,4,16,LEC,Charles LECLERC,Ferrari,62,12.0,f,f,f,6418.595,21.177,21.177,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,5,1,VER,Max VERSTAPPEN,Red Bull Racing,62,10.0,f,f,f,6418.859,21.441,21.441,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,6,10,GAS,Pierre GASLY,Alpine,62,8.0,f,f,f,6435.859,38.441,38.441,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,7,81,PIA,Oscar PIASTRI,McLaren,62,6.0,f,f,f,6438.897,41.479,41.479,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,8,11,PER,Sergio PEREZ,Red Bull Racing,62,4.0,f,f,f,6456.952,59.534,59.534,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,9,40,LAW,Liam LAWSON,AlphaTauri,62,2.0,f,f,f,6463.336,65.918,65.918,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,10,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,62,1.0,f,f,f,6469.534,72.116,72.116,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,11,23,ALB,Alexander ALBON,Williams,62,0.0,f,f,f,6470.835,73.417,73.417,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,12,24,ZHO,ZHOU Guanyu,Alfa Romeo,62,0.0,f,f,f,6481.067,83.649,83.649,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,13,27,HUL,Nico HULKENBERG,Haas F1 Team,62,0.0,f,f,f,6483.619,86.201,86.201,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,14,2,SAR,Logan SARGEANT,Williams,62,0.0,f,f,f,6484.307,86.889,86.889,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,15,14,ALO,Fernando ALONSO,Aston Martin,62,0.0,f,f,f,6485.021,87.603,87.603,0
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,16,63,RUS,George RUSSELL,Mercedes,61,0.0,t,f,f,,,,
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,,22,TSU,Yuki TSUNODA,AlphaTauri,0,0.0,t,f,f,,,,
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,,31,OCO,Esteban OCON,Alpine,42,0.0,t,f,f,,,,
+2023,15,1219,Singapore Grand Prix,9165,Race,Singapore,Singapore,,77,BOT,Valtteri BOTTAS,Alfa Romeo,51,0.0,t,f,f,,,,
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,1,1,VER,Max VERSTAPPEN,Red Bull Racing,53,26.0,f,f,f,5458.421,0,0,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,2,4,NOR,Lando NORRIS,McLaren,53,18.0,f,f,f,5477.808,19.387,19.387,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,3,81,PIA,Oscar PIASTRI,McLaren,53,15.0,f,f,f,5494.915,36.494,36.494,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,4,16,LEC,Charles LECLERC,Ferrari,53,12.0,f,f,f,5502.419,43.998,43.998,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,5,44,HAM,Lewis HAMILTON,Mercedes,53,10.0,f,f,f,5507.797,49.376,49.376,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,6,55,SAI,Carlos SAINZ,Ferrari,53,8.0,f,f,f,5508.642,50.221,50.221,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,7,63,RUS,George RUSSELL,Mercedes,53,6.0,f,f,f,5516.08,57.659,57.659,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,8,14,ALO,Fernando ALONSO,Aston Martin,53,4.0,f,f,f,5533.146,74.725,74.725,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,9,31,OCO,Esteban OCON,Alpine,53,2.0,f,f,f,5538.099,79.678,79.678,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,10,10,GAS,Pierre GASLY,Alpine,53,1.0,f,f,f,5541.576,83.155,83.155,0
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,11,40,LAW,Liam LAWSON,AlphaTauri,52,0.0,f,f,f,,+1 LAP,,1
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,12,22,TSU,Yuki TSUNODA,AlphaTauri,52,0.0,f,f,f,,+1 LAP,,1
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,13,24,ZHO,ZHOU Guanyu,Alfa Romeo,52,0.0,f,f,f,,+1 LAP,,1
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,14,27,HUL,Nico HULKENBERG,Haas F1 Team,52,0.0,f,f,f,,+1 LAP,,1
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,15,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,52,0.0,f,f,f,,+1 LAP,,1
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,,2,SAR,Logan SARGEANT,Williams,22,0.0,t,f,f,,,,
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,,11,PER,Sergio PEREZ,Red Bull Racing,15,0.0,t,f,f,,,,
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,,18,STR,Lance STROLL,Aston Martin,20,0.0,t,f,f,,,,
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,,23,ALB,Alexander ALBON,Williams,26,0.0,t,f,f,,,,
+2023,16,1220,Japanese Grand Prix,9173,Race,Suzuka,Japan,,77,BOT,Valtteri BOTTAS,Alfa Romeo,7,0.0,t,f,f,,,,
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,1,1,VER,Max VERSTAPPEN,Red Bull Racing,57,26.0,f,f,f,5259.168,0,0,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,2,81,PIA,Oscar PIASTRI,McLaren,57,18.0,f,f,f,5264.001,4.833,4.833,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,3,4,NOR,Lando NORRIS,McLaren,57,15.0,f,f,f,5265.137,5.969,5.969,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,4,63,RUS,George RUSSELL,Mercedes,57,12.0,f,f,f,5293.287,34.119,34.119,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,5,16,LEC,Charles LECLERC,Ferrari,57,10.0,f,f,f,5298.144,38.976,38.976,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,6,14,ALO,Fernando ALONSO,Aston Martin,57,8.0,f,f,f,5308.2,49.032,49.032,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,7,31,OCO,Esteban OCON,Alpine,57,6.0,f,f,f,5321.558,62.39,62.39,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,8,77,BOT,Valtteri BOTTAS,Alfa Romeo,57,4.0,f,f,f,5325.731,66.563,66.563,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,9,24,ZHO,ZHOU Guanyu,Alfa Romeo,57,2.0,f,f,f,5335.295,76.127,76.127,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,10,11,PER,Sergio PEREZ,Red Bull Racing,57,1.0,f,f,f,5339.349,80.181,80.181,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,11,18,STR,Lance STROLL,Aston Martin,57,0.0,f,f,f,5340.82,81.652,81.652,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,12,10,GAS,Pierre GASLY,Alpine,57,0.0,f,f,f,5341.468,82.3,82.3,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,13,23,ALB,Alexander ALBON,Williams,57,0.0,f,f,f,5350.182,91.014,91.014,0
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,14,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,56,0.0,f,f,f,,+1 LAP,,1
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,15,22,TSU,Yuki TSUNODA,AlphaTauri,56,0.0,f,f,f,,+1 LAP,,1
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,16,27,HUL,Nico HULKENBERG,Haas F1 Team,56,0.0,f,f,f,,+1 LAP,,1
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,17,40,LAW,Liam LAWSON,AlphaTauri,56,0.0,f,f,f,,+1 LAP,,1
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,,2,SAR,Logan SARGEANT,Williams,40,0.0,t,f,f,,,,
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,,44,HAM,Lewis HAMILTON,Mercedes,0,0.0,t,f,f,,,,
+2023,17,1221,Qatar Grand Prix,9221,Race,Lusail,Qatar,,55,SAI,Carlos SAINZ,Ferrari,0,0.0,f,t,f,,,,
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,1,1,VER,Max VERSTAPPEN,Red Bull Racing,56,25.0,f,f,f,5721.362,0,0,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,2,4,NOR,Lando NORRIS,McLaren,56,0.0,f,f,f,5732.092,10.73,10.73,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,3,55,SAI,Carlos SAINZ,Ferrari,56,0.0,f,f,f,5736.496,15.134,15.134,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,4,11,PER,Sergio PEREZ,Red Bull Racing,56,0.0,f,f,f,5739.822,18.46,18.46,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,5,63,RUS,George RUSSELL,Mercedes,56,0.0,f,f,f,5746.361,24.999,24.999,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,6,10,GAS,Pierre GASLY,Alpine,56,0.0,f,f,f,5769.358,47.996,47.996,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,7,18,STR,Lance STROLL,Aston Martin,56,0.0,f,f,f,5770.058,48.696,48.696,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,8,22,TSU,Yuki TSUNODA,AlphaTauri,56,0.0,f,f,f,5795.747,74.385,74.385,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,9,23,ALB,Alexander ALBON,Williams,56,0.0,f,f,f,5808.076,86.714,86.714,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,10,2,SAR,Logan SARGEANT,Williams,56,0.0,f,f,f,5809.36,87.998,87.998,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,11,27,HUL,Nico HULKENBERG,Haas F1 Team,56,0.0,f,f,f,5811.266,89.904,89.904,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,12,77,BOT,Valtteri BOTTAS,Alfa Romeo,56,0.0,f,f,f,5819.963,98.601,98.601,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,13,24,ZHO,ZHOU Guanyu,Alfa Romeo,55,0.0,f,f,f,,+1 LAP,,1
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,14,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,55,0.0,f,f,f,,+1 LAP,,1
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,15,3,RIC,Daniel RICCIARDO,AlphaTauri,55,0.0,f,f,f,,+1 LAP,,1
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,,14,ALO,Fernando ALONSO,Aston Martin,49,0.0,t,f,f,,,,
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,,16,LEC,Charles LECLERC,Ferrari,56,0.0,f,f,f,5746.024,24.662,24.662,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,,31,OCO,Esteban OCON,Alpine,6,0.0,t,f,f,,,,
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,,44,HAM,Lewis HAMILTON,Mercedes,56,0.0,f,f,f,5723.587,2.225,2.225,0
+2023,18,1222,United States Grand Prix,9213,Race,Austin,United States,,81,PIA,Oscar PIASTRI,McLaren,10,0.0,t,f,f,,,,
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,1,1,VER,Max VERSTAPPEN,Red Bull Racing,71,25.0,f,f,f,7350.814,0.0,0.0,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,2,44,HAM,Lewis HAMILTON,Mercedes,71,19.0,f,f,f,7364.689,13.875,13.875,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,3,16,LEC,Charles LECLERC,Ferrari,71,15.0,f,f,f,7373.938,23.124,23.124,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,4,55,SAI,Carlos SAINZ,Ferrari,71,12.0,f,f,f,7377.968,27.154,27.154,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,5,4,NOR,Lando NORRIS,McLaren,71,10.0,f,f,f,7384.08,33.266,33.266,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,6,63,RUS,George RUSSELL,Mercedes,71,8.0,f,f,f,7391.834,41.02,41.02,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,7,3,RIC,Daniel RICCIARDO,AlphaTauri,71,6.0,f,f,f,7392.384,41.57,41.57,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,8,81,PIA,Oscar PIASTRI,McLaren,71,4.0,f,f,f,7393.918,43.104,43.104,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,9,23,ALB,Alexander ALBON,Williams,71,2.0,f,f,f,7399.387,48.573,48.573,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,10,31,OCO,Esteban OCON,Alpine,71,1.0,f,f,f,7413.693,62.879,62.879,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,11,10,GAS,Pierre GASLY,Alpine,71,0.0,f,f,f,7417.022,66.208,66.208,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,12,22,TSU,Yuki TSUNODA,AlphaTauri,71,0.0,f,f,f,7429.796,78.982,78.982,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,13,27,HUL,Nico HULKENBERG,Haas F1 Team,71,0.0,f,f,f,7431.123,80.309,80.309,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,14,24,ZHO,ZHOU Guanyu,Alfa Romeo,71,0.0,f,f,f,7432.49,81.676,81.676,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,15,77,BOT,Valtteri BOTTAS,Alfa Romeo,71,0.0,f,f,f,7436.411,85.597,85.597,0
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,16,2,SAR,Logan SARGEANT,Williams,70,0.0,t,f,f,,,,
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,17,18,STR,Lance STROLL,Aston Martin,66,0.0,t,f,f,,,,
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,,11,PER,Sergio PEREZ,Red Bull Racing,1,0.0,t,f,f,,,,
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,,14,ALO,Fernando ALONSO,Aston Martin,47,0.0,t,f,f,,,,
+2023,19,1223,Mexico City Grand Prix,9181,Race,Mexico City,Mexico,,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,31,0.0,t,f,f,,,,
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,1,1,VER,Max VERSTAPPEN,Red Bull Racing,71,25.0,f,f,f,7008.894,0,0,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,2,4,NOR,Lando NORRIS,McLaren,71,19.0,f,f,f,7017.171,8.277,8.277,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,3,14,ALO,Fernando ALONSO,Aston Martin,71,15.0,f,f,f,7043.049,34.155,34.155,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,4,11,PER,Sergio PEREZ,Red Bull Racing,71,12.0,f,f,f,7043.102,34.208,34.208,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,5,18,STR,Lance STROLL,Aston Martin,71,10.0,f,f,f,7049.739,40.845,40.845,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,6,55,SAI,Carlos SAINZ,Ferrari,71,8.0,f,f,f,7059.082,50.188,50.188,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,7,10,GAS,Pierre GASLY,Alpine,71,6.0,f,f,f,7064.987,56.093,56.093,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,8,44,HAM,Lewis HAMILTON,Mercedes,71,4.0,f,f,f,7071.753,62.859,62.859,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,9,22,TSU,Yuki TSUNODA,AlphaTauri,71,2.0,f,f,f,7078.774,69.88,69.88,0
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,10,31,OCO,Esteban OCON,Alpine,70,1.0,f,f,f,,+1 LAP,,1
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,11,2,SAR,Logan SARGEANT,Williams,70,0.0,f,f,f,,+1 LAP,,1
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,12,27,HUL,Nico HULKENBERG,Haas F1 Team,70,0.0,f,f,f,,+1 LAP,,1
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,13,3,RIC,Daniel RICCIARDO,AlphaTauri,70,0.0,f,f,f,,+1 LAP,,1
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,14,81,PIA,Oscar PIASTRI,McLaren,69,0.0,f,f,f,,+2 LAPS,,2
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,,16,LEC,Charles LECLERC,Ferrari,0,0.0,f,t,f,,,,
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,0,0.0,t,f,f,,,,
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,,23,ALB,Alexander ALBON,Williams,0,0.0,t,f,f,,,,
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,,24,ZHO,ZHOU Guanyu,Alfa Romeo,22,0.0,t,f,f,,,,
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,,63,RUS,George RUSSELL,Mercedes,57,0.0,t,f,f,,,,
+2023,20,1224,São Paulo Grand Prix,9205,Race,Interlagos,Brazil,,77,BOT,Valtteri BOTTAS,Alfa Romeo,39,0.0,t,f,f,,,,
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,1,1,VER,Max VERSTAPPEN,Red Bull Racing,50,25.0,f,f,f,5348.289,0.0,0.0,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,2,16,LEC,Charles LECLERC,Ferrari,50,18.0,f,f,f,5350.359,2.07,2.07,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,3,11,PER,Sergio PEREZ,Red Bull Racing,50,15.0,f,f,f,5350.53,2.241,2.241,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,4,31,OCO,Esteban OCON,Alpine,50,12.0,f,f,f,5366.954,18.665,18.665,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,5,18,STR,Lance STROLL,Aston Martin,50,10.0,f,f,f,5368.356,20.067,20.067,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,6,55,SAI,Carlos SAINZ,Ferrari,50,8.0,f,f,f,5369.123,20.834,20.834,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,7,44,HAM,Lewis HAMILTON,Mercedes,50,6.0,f,f,f,5370.044,21.755,21.755,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,8,63,RUS,George RUSSELL,Mercedes,50,4.0,f,f,f,5371.38,23.091,23.091,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,9,14,ALO,Fernando ALONSO,Aston Martin,50,2.0,f,f,f,5374.253,25.964,25.964,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,10,81,PIA,Oscar PIASTRI,McLaren,50,2.0,f,f,f,5377.785,29.496,29.496,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,11,10,GAS,Pierre GASLY,Alpine,50,0.0,f,f,f,5382.559,34.27,34.27,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,12,23,ALB,Alexander ALBON,Williams,50,0.0,f,f,f,5391.687,43.398,43.398,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,13,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,50,0.0,f,f,f,5393.114,44.825,44.825,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,14,3,RIC,Daniel RICCIARDO,AlphaTauri,50,0.0,f,f,f,5396.814,48.525,48.525,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,15,24,ZHO,ZHOU Guanyu,Alfa Romeo,50,0.0,f,f,f,5398.451,50.162,50.162,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,16,2,SAR,Logan SARGEANT,Williams,50,0.0,f,f,f,5399.171,50.882,50.882,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,17,77,BOT,Valtteri BOTTAS,Alfa Romeo,50,0.0,f,f,f,5433.639,85.35,85.35,0
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,18,22,TSU,Yuki TSUNODA,AlphaTauri,46,0.0,t,f,f,,,,
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,19,27,HUL,Nico HULKENBERG,Haas F1 Team,45,0.0,t,f,f,,,,
+2023,21,1225,Las Vegas Grand Prix,9189,Race,Las Vegas,United States,,4,NOR,Lando NORRIS,McLaren,2,0.0,t,f,f,,,,
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,1,1,VER,Max VERSTAPPEN,Red Bull Racing,58,26.0,f,f,f,5222.624,0,0,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,2,16,LEC,Charles LECLERC,Ferrari,58,18.0,f,f,f,5240.617,17.993,17.993,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,3,63,RUS,George RUSSELL,Mercedes,58,15.0,f,f,f,5242.952,20.328,20.328,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,4,11,PER,Sergio PEREZ,Red Bull Racing,58,12.0,f,f,f,5244.077,21.453,21.453,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,5,4,NOR,Lando NORRIS,McLaren,58,10.0,f,f,f,5246.908,24.284,24.284,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,6,81,PIA,Oscar PIASTRI,McLaren,58,8.0,f,f,f,5254.111,31.487,31.487,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,7,14,ALO,Fernando ALONSO,Aston Martin,58,6.0,f,f,f,5262.136,39.512,39.512,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,8,22,TSU,Yuki TSUNODA,AlphaTauri,58,4.0,f,f,f,5265.712,43.088,43.088,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,9,44,HAM,Lewis HAMILTON,Mercedes,58,2.0,f,f,f,5267.048,44.424,44.424,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,10,18,STR,Lance STROLL,Aston Martin,58,1.0,f,f,f,5278.256,55.632,55.632,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,11,3,RIC,Daniel RICCIARDO,AlphaTauri,58,0.0,f,f,f,5278.853,56.229,56.229,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,12,31,OCO,Esteban OCON,Alpine,58,0.0,f,f,f,5288.997,66.373,66.373,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,13,10,GAS,Pierre GASLY,Alpine,58,0.0,f,f,f,5292.984,70.36,70.36,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,14,23,ALB,Alexander ALBON,Williams,58,0.0,f,f,f,5295.808,73.184,73.184,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,15,27,HUL,Nico HULKENBERG,Haas F1 Team,58,0.0,f,f,f,5306.32,83.696,83.696,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,16,2,SAR,Logan SARGEANT,Williams,58,0.0,f,f,f,5310.415,87.791,87.791,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,17,24,ZHO,ZHOU Guanyu,Alfa Romeo,58,0.0,f,f,f,5312.046,89.422,89.422,0
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,18,55,SAI,Carlos SAINZ,Ferrari,57,0.0,t,f,f,,,,
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,19,77,BOT,Valtteri BOTTAS,Alfa Romeo,57,0.0,f,f,f,,+1 LAP,,1
+2023,22,1226,Abu Dhabi Grand Prix,9197,Race,Yas Marina Circuit,United Arab Emirates,20,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,57,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,1,1,VER,Max VERSTAPPEN,Red Bull Racing,57,26.0,f,f,f,5504.742,0,0,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,2,11,PER,Sergio PEREZ,Red Bull Racing,57,18.0,f,f,f,5527.199,22.457,22.457,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,3,55,SAI,Carlos SAINZ,Ferrari,57,15.0,f,f,f,5529.852,25.11,25.11,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,4,16,LEC,Charles LECLERC,Ferrari,57,12.0,f,f,f,5544.411,39.669,39.669,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,5,63,RUS,George RUSSELL,Mercedes,57,10.0,f,f,f,5551.53,46.788,46.788,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,6,4,NOR,Lando NORRIS,McLaren,57,8.0,f,f,f,5553.2,48.458,48.458,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,7,44,HAM,Lewis HAMILTON,Mercedes,57,6.0,f,f,f,5555.066,50.324,50.324,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,8,81,PIA,Oscar PIASTRI,McLaren,57,4.0,f,f,f,5560.824,56.082,56.082,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,9,14,ALO,Fernando ALONSO,Aston Martin,57,2.0,f,f,f,5579.629,74.887,74.887,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,10,18,STR,Lance STROLL,Aston Martin,57,1.0,f,f,f,5597.958,93.216,93.216,0
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,11,24,ZHO,ZHOU Guanyu,Kick Sauber,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,12,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,13,3,RIC,Daniel RICCIARDO,RB,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,14,22,TSU,Yuki TSUNODA,RB,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,15,23,ALB,Alexander ALBON,Williams,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,16,27,HUL,Nico HULKENBERG,Haas F1 Team,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,17,31,OCO,Esteban OCON,Alpine,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,18,10,GAS,Pierre GASLY,Alpine,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,19,77,BOT,Valtteri BOTTAS,Kick Sauber,56,0.0,f,f,f,,+1 LAP,,1
+2024,1,1229,Bahrain Grand Prix,9472,Race,Sakhir,Bahrain,20,2,SAR,Logan SARGEANT,Williams,55,0.0,f,f,f,,+2 LAPS,,2
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,1,1,VER,Max VERSTAPPEN,Red Bull Racing,50,25.0,f,f,f,4843.273,0,0,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,2,11,PER,Sergio PEREZ,Red Bull Racing,50,18.0,f,f,f,4856.916,13.643,13.643,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,3,16,LEC,Charles LECLERC,Ferrari,50,16.0,f,f,f,4861.912,18.639,18.639,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,4,81,PIA,Oscar PIASTRI,McLaren,50,12.0,f,f,f,4875.28,32.007,32.007,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,5,14,ALO,Fernando ALONSO,Aston Martin,50,10.0,f,f,f,4879.032,35.759,35.759,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,6,63,RUS,George RUSSELL,Mercedes,50,8.0,f,f,f,4883.209,39.936,39.936,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,7,38,BEA,Oliver BEARMAN,Ferrari,50,6.0,f,f,f,4885.952,42.679,42.679,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,8,4,NOR,Lando NORRIS,McLaren,50,4.0,f,f,f,4888.981,45.708,45.708,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,9,44,HAM,Lewis HAMILTON,Mercedes,50,2.0,f,f,f,4890.664,47.391,47.391,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,10,27,HUL,Nico HULKENBERG,Haas F1 Team,50,1.0,f,f,f,4920.269,76.996,76.996,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,11,23,ALB,Alexander ALBON,Williams,50,0.0,f,f,f,4931.627,88.354,88.354,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,12,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,50,0.0,f,f,f,4949.01,105.737,105.737,0
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,13,31,OCO,Esteban OCON,Alpine,49,0.0,f,f,f,,+1 LAP,,1
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,14,2,SAR,Logan SARGEANT,Williams,49,0.0,f,f,f,,+1 LAP,,1
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,15,22,TSU,Yuki TSUNODA,RB,49,0.0,f,f,f,,+1 LAP,,1
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,16,3,RIC,Daniel RICCIARDO,RB,49,0.0,f,f,f,,+1 LAP,,1
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,17,77,BOT,Valtteri BOTTAS,Kick Sauber,49,0.0,f,f,f,,+1 LAP,,1
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,18,24,ZHO,ZHOU Guanyu,Kick Sauber,49,0.0,f,f,f,,+1 LAP,,1
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,,10,GAS,Pierre GASLY,Alpine,1,0.0,t,f,f,,,,
+2024,2,1230,Saudi Arabian Grand Prix,9480,Race,Jeddah,Saudi Arabia,,18,STR,Lance STROLL,Aston Martin,5,0.0,t,f,f,,,,
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,1,55,SAI,Carlos SAINZ,Ferrari,58,25.0,f,f,f,4826.843,0,0,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,2,16,LEC,Charles LECLERC,Ferrari,58,19.0,f,f,f,4829.209,2.366,2.366,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,3,4,NOR,Lando NORRIS,McLaren,58,15.0,f,f,f,4832.747,5.904,5.904,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,4,81,PIA,Oscar PIASTRI,McLaren,58,12.0,f,f,f,4862.613,35.77,35.77,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,5,11,PER,Sergio PEREZ,Red Bull Racing,58,10.0,f,f,f,4883.152,56.309,56.309,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,6,18,STR,Lance STROLL,Aston Martin,58,8.0,f,f,f,4920.065,93.222,93.222,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,7,22,TSU,Yuki TSUNODA,RB,58,6.0,f,f,f,4922.444,95.601,95.601,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,8,14,ALO,Fernando ALONSO,Aston Martin,58,4.0,f,f,f,4927.835,100.992,100.992,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,9,27,HUL,Nico HULKENBERG,Haas F1 Team,58,2.0,f,f,f,4931.396,104.553,104.553,0
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,10,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,57,1.0,f,f,f,,+1 LAP,,1
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,11,23,ALB,Alexander ALBON,Williams,57,0.0,f,f,f,,+1 LAP,,1
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,12,3,RIC,Daniel RICCIARDO,RB,57,0.0,f,f,f,,+1 LAP,,1
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,13,10,GAS,Pierre GASLY,Alpine,57,0.0,f,f,f,,+1 LAP,,1
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,14,77,BOT,Valtteri BOTTAS,Kick Sauber,57,0.0,f,f,f,,+1 LAP,,1
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,15,24,ZHO,ZHOU Guanyu,Kick Sauber,57,0.0,f,f,f,,+1 LAP,,1
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,16,31,OCO,Esteban OCON,Alpine,57,0.0,f,f,f,,+1 LAP,,1
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,17,63,RUS,George RUSSELL,Mercedes,56,0.0,t,f,f,,,,
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,,1,VER,Max VERSTAPPEN,Red Bull Racing,3,0.0,t,f,f,,,,
+2024,3,1231,Australian Grand Prix,9488,Race,Melbourne,Australia,,44,HAM,Lewis HAMILTON,Mercedes,15,0.0,t,f,f,,,,
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,1,1,VER,Max VERSTAPPEN,Red Bull Racing,53,26.0,f,f,f,6863.566,0,0,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,2,11,PER,Sergio PEREZ,Red Bull Racing,53,18.0,f,f,f,6876.101,12.535,12.535,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,3,55,SAI,Carlos SAINZ,Ferrari,53,15.0,f,f,f,6884.432,20.866,20.866,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,4,16,LEC,Charles LECLERC,Ferrari,53,12.0,f,f,f,6890.088,26.522,26.522,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,5,4,NOR,Lando NORRIS,McLaren,53,10.0,f,f,f,6893.266,29.7,29.7,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,6,14,ALO,Fernando ALONSO,Aston Martin,53,8.0,f,f,f,6907.838,44.272,44.272,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,7,63,RUS,George RUSSELL,Mercedes,53,6.0,f,f,f,6909.517,45.951,45.951,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,8,81,PIA,Oscar PIASTRI,McLaren,53,4.0,f,f,f,6911.091,47.525,47.525,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,9,44,HAM,Lewis HAMILTON,Mercedes,53,2.0,f,f,f,6912.192,48.626,48.626,0
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,10,22,TSU,Yuki TSUNODA,RB,52,1.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,11,27,HUL,Nico HULKENBERG,Haas F1 Team,52,0.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,12,18,STR,Lance STROLL,Aston Martin,52,0.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,13,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,52,0.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,14,77,BOT,Valtteri BOTTAS,Kick Sauber,52,0.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,15,31,OCO,Esteban OCON,Alpine,52,0.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,16,10,GAS,Pierre GASLY,Alpine,52,0.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,17,2,SAR,Logan SARGEANT,Williams,52,0.0,f,f,f,,+1 LAP,,1
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,,3,RIC,Daniel RICCIARDO,RB,0,0.0,t,f,f,,,,
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,,23,ALB,Alexander ALBON,Williams,0,0.0,t,f,f,,,,
+2024,4,1232,Japanese Grand Prix,9496,Race,Suzuka,Japan,,24,ZHO,ZHOU Guanyu,Kick Sauber,12,0.0,t,f,f,,,,
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,1,1,VER,Max VERSTAPPEN,Red Bull Racing,56,25.0,f,f,f,6052.554,0.0,0.0,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,2,4,NOR,Lando NORRIS,McLaren,56,18.0,f,f,f,6066.327,13.773,13.773,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,3,11,PER,Sergio PEREZ,Red Bull Racing,56,15.0,f,f,f,6071.714,19.16,19.16,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,4,16,LEC,Charles LECLERC,Ferrari,56,12.0,f,f,f,6076.177,23.623,23.623,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,5,55,SAI,Carlos SAINZ,Ferrari,56,10.0,f,f,f,6086.537,33.983,33.983,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,6,63,RUS,George RUSSELL,Mercedes,56,8.0,f,f,f,6091.278,38.724,38.724,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,7,14,ALO,Fernando ALONSO,Aston Martin,56,7.0,f,f,f,6095.968,43.414,43.414,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,8,81,PIA,Oscar PIASTRI,McLaren,56,4.0,f,f,f,6108.752,56.198,56.198,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,9,44,HAM,Lewis HAMILTON,Mercedes,56,2.0,f,f,f,6110.54,57.986,57.986,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,10,27,HUL,Nico HULKENBERG,Haas F1 Team,56,1.0,f,f,f,6113.03,60.476,60.476,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,11,31,OCO,Esteban OCON,Alpine,56,0.0,f,f,f,6115.366,62.812,62.812,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,12,23,ALB,Alexander ALBON,Williams,56,0.0,f,f,f,6118.06,65.506,65.506,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,13,10,GAS,Pierre GASLY,Alpine,56,0.0,f,f,f,6121.777,69.223,69.223,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,14,24,ZHO,ZHOU Guanyu,Kick Sauber,56,0.0,f,f,f,6124.243,71.689,71.689,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,15,18,STR,Lance STROLL,Aston Martin,56,0.0,f,f,f,6135.34,82.786,82.786,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,16,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,56,0.0,f,f,f,6140.087,87.533,87.533,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,17,2,SAR,Logan SARGEANT,Williams,56,0.0,f,f,f,6147.664,95.11,95.11,0
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,,3,RIC,Daniel RICCIARDO,RB,33,0.0,t,f,f,,,,
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,,22,TSU,Yuki TSUNODA,RB,26,0.0,t,f,f,,,,
+2024,5,1233,Chinese Grand Prix,9673,Race,Shanghai,China,,77,BOT,Valtteri BOTTAS,Kick Sauber,19,0.0,t,f,f,,,,
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,1,4,NOR,Lando NORRIS,McLaren,57,25.0,f,f,f,5449.876,0.0,0.0,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,2,1,VER,Max VERSTAPPEN,Red Bull Racing,57,18.0,f,f,f,5457.488,7.612,7.612,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,3,16,LEC,Charles LECLERC,Ferrari,57,15.0,f,f,f,5459.796,9.92,9.92,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,4,11,PER,Sergio PEREZ,Red Bull Racing,57,12.0,f,f,f,5464.526,14.65,14.65,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,5,55,SAI,Carlos SAINZ,Ferrari,57,10.0,f,f,f,5466.283,16.407,16.407,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,6,44,HAM,Lewis HAMILTON,Mercedes,57,8.0,f,f,f,5466.461,16.585,16.585,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,7,22,TSU,Yuki TSUNODA,RB,57,6.0,f,f,f,5476.061,26.185,26.185,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,8,63,RUS,George RUSSELL,Mercedes,57,4.0,f,f,f,5484.665,34.789,34.789,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,9,14,ALO,Fernando ALONSO,Aston Martin,57,2.0,f,f,f,5486.983,37.107,37.107,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,10,31,OCO,Esteban OCON,Alpine,57,1.0,f,f,f,5489.622,39.746,39.746,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,11,27,HUL,Nico HULKENBERG,Haas F1 Team,57,0.0,f,f,f,5490.665,40.789,40.789,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,12,10,GAS,Pierre GASLY,Alpine,57,0.0,f,f,f,5494.834,44.958,44.958,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,13,81,PIA,Oscar PIASTRI,McLaren,57,0.0,f,f,f,5499.632,49.756,49.756,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,14,24,ZHO,ZHOU Guanyu,Kick Sauber,57,0.0,f,f,f,5499.855,49.979,49.979,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,15,3,RIC,Daniel RICCIARDO,RB,57,0.0,f,f,f,5500.832,50.956,50.956,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,16,77,BOT,Valtteri BOTTAS,Kick Sauber,57,0.0,f,f,f,5502.232,52.356,52.356,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,17,18,STR,Lance STROLL,Aston Martin,57,0.0,f,f,f,5505.049,55.173,55.173,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,18,23,ALB,Alexander ALBON,Williams,57,0.0,f,f,f,5525.967,76.091,76.091,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,19,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,57,0.0,f,f,f,5534.559,84.683,84.683,0
+2024,6,1234,Miami Grand Prix,9507,Race,Miami,United States,,2,SAR,Logan SARGEANT,Williams,27,0.0,t,f,f,,,,
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,1,1,VER,Max VERSTAPPEN,Red Bull Racing,63,25.0,f,f,f,5125.252,0,0,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,2,4,NOR,Lando NORRIS,McLaren,63,18.0,f,f,f,5125.977,0.725,0.725,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,3,16,LEC,Charles LECLERC,Ferrari,63,15.0,f,f,f,5133.168,7.916,7.916,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,4,81,PIA,Oscar PIASTRI,McLaren,63,12.0,f,f,f,5139.384,14.132,14.132,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,5,55,SAI,Carlos SAINZ,Ferrari,63,10.0,f,f,f,5147.577,22.325,22.325,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,6,44,HAM,Lewis HAMILTON,Mercedes,63,8.0,f,f,f,5160.356,35.104,35.104,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,7,63,RUS,George RUSSELL,Mercedes,63,7.0,f,f,f,5172.406,47.154,47.154,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,8,11,PER,Sergio PEREZ,Red Bull Racing,63,4.0,f,f,f,5180.028,54.776,54.776,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,9,18,STR,Lance STROLL,Aston Martin,63,2.0,f,f,f,5204.808,79.556,79.556,0
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,10,22,TSU,Yuki TSUNODA,RB,62,1.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,11,27,HUL,Nico HULKENBERG,Haas F1 Team,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,12,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,13,3,RIC,Daniel RICCIARDO,RB,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,14,31,OCO,Esteban OCON,Alpine,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,15,24,ZHO,ZHOU Guanyu,Kick Sauber,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,16,10,GAS,Pierre GASLY,Alpine,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,17,2,SAR,Logan SARGEANT,Williams,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,18,77,BOT,Valtteri BOTTAS,Kick Sauber,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,19,14,ALO,Fernando ALONSO,Aston Martin,62,0.0,f,f,f,,+1 LAP,,1
+2024,7,1235,Emilia Romagna Grand Prix,9515,Race,Imola,Italy,,23,ALB,Alexander ALBON,Williams,51,0.0,t,f,f,,,,
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,1,16,LEC,Charles LECLERC,Ferrari,78,25.0,f,f,f,8595.554,0,0,0
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,2,81,PIA,Oscar PIASTRI,McLaren,78,18.0,f,f,f,8602.706,7.152,7.152,0
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,3,55,SAI,Carlos SAINZ,Ferrari,78,15.0,f,f,f,8603.139,7.585,7.585,0
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,4,4,NOR,Lando NORRIS,McLaren,78,12.0,f,f,f,8604.204,8.65,8.65,0
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,5,63,RUS,George RUSSELL,Mercedes,78,10.0,f,f,f,8608.863,13.309,13.309,0
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,6,1,VER,Max VERSTAPPEN,Red Bull Racing,78,8.0,f,f,f,8609.407,13.853,13.853,0
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,7,44,HAM,Lewis HAMILTON,Mercedes,78,7.0,f,f,f,8610.462,14.908,14.908,0
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,8,22,TSU,Yuki TSUNODA,RB,77,4.0,f,f,f,,+1 LAP,,1
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,9,23,ALB,Alexander ALBON,Williams,77,2.0,f,f,f,,+1 LAP,,1
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,10,10,GAS,Pierre GASLY,Alpine,77,1.0,f,f,f,,+1 LAP,,1
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,11,14,ALO,Fernando ALONSO,Aston Martin,76,0.0,f,f,f,,+2 LAPS,,2
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,12,3,RIC,Daniel RICCIARDO,RB,76,0.0,f,f,f,,+2 LAPS,,2
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,13,77,BOT,Valtteri BOTTAS,Kick Sauber,76,0.0,f,f,f,,+2 LAPS,,2
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,14,18,STR,Lance STROLL,Aston Martin,76,0.0,f,f,f,,+2 LAPS,,2
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,15,2,SAR,Logan SARGEANT,Williams,76,0.0,f,f,f,,+2 LAPS,,2
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,16,24,ZHO,ZHOU Guanyu,Kick Sauber,76,0.0,f,f,f,,+2 LAPS,,2
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,,11,PER,Sergio PEREZ,Red Bull Racing,0,0.0,t,f,f,,,,
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,0,0.0,t,f,f,,,,
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,,27,HUL,Nico HULKENBERG,Haas F1 Team,0,0.0,t,f,f,,,,
+2024,8,1236,Monaco Grand Prix,9523,Race,Monte Carlo,Monaco,,31,OCO,Esteban OCON,Alpine,0,0.0,t,f,f,,,,
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,1,1,VER,Max VERSTAPPEN,Red Bull Racing,70,25.0,f,f,f,6347.927,0,0,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,2,4,NOR,Lando NORRIS,McLaren,70,18.0,f,f,f,6351.806,3.879,3.879,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,3,63,RUS,George RUSSELL,Mercedes,70,15.0,f,f,f,6352.244,4.317,4.317,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,4,44,HAM,Lewis HAMILTON,Mercedes,70,13.0,f,f,f,6352.842,4.915,4.915,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,5,81,PIA,Oscar PIASTRI,McLaren,70,10.0,f,f,f,6358.126,10.199,10.199,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,6,14,ALO,Fernando ALONSO,Aston Martin,70,8.0,f,f,f,6365.437,17.51,17.51,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,7,18,STR,Lance STROLL,Aston Martin,70,6.0,f,f,f,6371.552,23.625,23.625,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,8,3,RIC,Daniel RICCIARDO,RB,70,4.0,f,f,f,6376.599,28.672,28.672,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,9,10,GAS,Pierre GASLY,Alpine,70,2.0,f,f,f,6377.948,30.021,30.021,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,10,31,OCO,Esteban OCON,Alpine,70,1.0,f,f,f,6378.24,30.313,30.313,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,11,27,HUL,Nico HULKENBERG,Haas F1 Team,70,0.0,f,f,f,6378.751,30.824,30.824,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,12,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,70,0.0,f,f,f,6379.18,31.253,31.253,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,13,77,BOT,Valtteri BOTTAS,Kick Sauber,70,0.0,f,f,f,6388.414,40.487,40.487,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,14,22,TSU,Yuki TSUNODA,RB,70,0.0,f,f,f,6400.621,52.694,52.694,0
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,15,24,ZHO,ZHOU Guanyu,Kick Sauber,69,0.0,f,f,f,,+1 LAP,,1
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,,2,SAR,Logan SARGEANT,Williams,23,0.0,t,f,f,,,,
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,,11,PER,Sergio PEREZ,Red Bull Racing,51,0.0,t,f,f,,,,
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,,16,LEC,Charles LECLERC,Ferrari,40,0.0,t,f,f,,,,
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,,23,ALB,Alexander ALBON,Williams,52,0.0,t,f,f,,,,
+2024,9,1237,Canadian Grand Prix,9531,Race,Montreal,Canada,,55,SAI,Carlos SAINZ,Ferrari,52,0.0,t,f,f,,,,
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,1,1,VER,Max VERSTAPPEN,Red Bull Racing,66,25.0,f,f,f,5300.227,0,0,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,2,4,NOR,Lando NORRIS,McLaren,66,19.0,f,f,f,5302.446,2.219,2.219,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,3,44,HAM,Lewis HAMILTON,Mercedes,66,15.0,f,f,f,5318.017,17.79,17.79,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,4,63,RUS,George RUSSELL,Mercedes,66,12.0,f,f,f,5322.547,22.32,22.32,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,5,16,LEC,Charles LECLERC,Ferrari,66,10.0,f,f,f,5322.936,22.709,22.709,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,6,55,SAI,Carlos SAINZ,Ferrari,66,8.0,f,f,f,5331.255,31.028,31.028,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,7,81,PIA,Oscar PIASTRI,McLaren,66,6.0,f,f,f,5333.987,33.76,33.76,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,8,11,PER,Sergio PEREZ,Red Bull Racing,66,4.0,f,f,f,5359.751,59.524,59.524,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,9,10,GAS,Pierre GASLY,Alpine,66,2.0,f,f,f,5362.252,62.025,62.025,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,10,31,OCO,Esteban OCON,Alpine,66,1.0,f,f,f,5372.116,71.889,71.889,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,11,27,HUL,Nico HULKENBERG,Haas F1 Team,66,0.0,f,f,f,5379.442,79.215,79.215,0
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,12,14,ALO,Fernando ALONSO,Aston Martin,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,13,24,ZHO,ZHOU Guanyu,Kick Sauber,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,14,18,STR,Lance STROLL,Aston Martin,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,15,3,RIC,Daniel RICCIARDO,RB,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,16,77,BOT,Valtteri BOTTAS,Kick Sauber,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,17,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,18,23,ALB,Alexander ALBON,Williams,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,19,22,TSU,Yuki TSUNODA,RB,65,0.0,f,f,f,,+1 LAP,,1
+2024,10,1238,Spanish Grand Prix,9539,Race,Catalunya,Spain,20,2,SAR,Logan SARGEANT,Williams,64,0.0,f,f,f,,+2 LAPS,,2
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,1,63,RUS,George RUSSELL,Mercedes,71,25.0,f,f,f,5062.798,0,0,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,2,81,PIA,Oscar PIASTRI,McLaren,71,18.0,f,f,f,5064.704,1.906,1.906,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,3,55,SAI,Carlos SAINZ,Ferrari,71,15.0,f,f,f,5067.331,4.533,4.533,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,4,44,HAM,Lewis HAMILTON,Mercedes,71,12.0,f,f,f,5085.94,23.142,23.142,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,5,1,VER,Max VERSTAPPEN,Red Bull Racing,71,10.0,f,f,f,5100.051,37.253,37.253,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,6,27,HUL,Nico HULKENBERG,Haas F1 Team,71,8.0,f,f,f,5116.886,54.088,54.088,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,7,11,PER,Sergio PEREZ,Red Bull Racing,71,6.0,f,f,f,5117.47,54.672,54.672,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,8,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,71,4.0,f,f,f,5123.153,60.355,60.355,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,9,3,RIC,Daniel RICCIARDO,RB,71,2.0,f,f,f,5123.967,61.169,61.169,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,10,10,GAS,Pierre GASLY,Alpine,71,1.0,f,f,f,5124.564,61.766,61.766,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,11,16,LEC,Charles LECLERC,Ferrari,71,0.0,f,f,f,5129.854,67.056,67.056,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,12,31,OCO,Esteban OCON,Alpine,71,0.0,f,f,f,5131.123,68.325,68.325,0
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,13,18,STR,Lance STROLL,Aston Martin,70,0.0,f,f,f,,+1 LAP,,1
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,14,22,TSU,Yuki TSUNODA,RB,70,0.0,f,f,f,,+1 LAP,,1
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,15,23,ALB,Alexander ALBON,Williams,70,0.0,f,f,f,,+1 LAP,,1
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,16,77,BOT,Valtteri BOTTAS,Kick Sauber,70,0.0,f,f,f,,+1 LAP,,1
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,17,24,ZHO,ZHOU Guanyu,Kick Sauber,70,0.0,f,f,f,,+1 LAP,,1
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,18,14,ALO,Fernando ALONSO,Aston Martin,70,0.0,f,f,f,,+1 LAP,,1
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,19,2,SAR,Logan SARGEANT,Williams,69,0.0,f,f,f,,+2 LAPS,,2
+2024,11,1239,Austrian Grand Prix,9550,Race,Spielberg,Austria,20,4,NOR,Lando NORRIS,McLaren,64,0.0,f,f,f,,+7 LAPS,,7
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,1,44,HAM,Lewis HAMILTON,Mercedes,52,25.0,f,f,f,4947.059,0,0,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,2,1,VER,Max VERSTAPPEN,Red Bull Racing,52,18.0,f,f,f,4948.524,1.465,1.465,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,3,4,NOR,Lando NORRIS,McLaren,52,15.0,f,f,f,4954.606,7.547,7.547,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,4,81,PIA,Oscar PIASTRI,McLaren,52,12.0,f,f,f,4959.488,12.429,12.429,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,5,55,SAI,Carlos SAINZ,Ferrari,52,11.0,f,f,f,4994.377,47.318,47.318,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,6,27,HUL,Nico HULKENBERG,Haas F1 Team,52,8.0,f,f,f,5002.781,55.722,55.722,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,7,18,STR,Lance STROLL,Aston Martin,52,6.0,f,f,f,5003.628,56.569,56.569,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,8,14,ALO,Fernando ALONSO,Aston Martin,52,4.0,f,f,f,5010.636,63.577,63.577,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,9,23,ALB,Alexander ALBON,Williams,52,2.0,f,f,f,5015.446,68.387,68.387,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,10,22,TSU,Yuki TSUNODA,RB,52,1.0,f,f,f,5026.362,79.303,79.303,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,11,2,SAR,Logan SARGEANT,Williams,52,0.0,f,f,f,5036.019,88.96,88.96,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,12,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,52,0.0,f,f,f,5037.212,90.153,90.153,0
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,13,3,RIC,Daniel RICCIARDO,RB,51,0.0,f,f,f,,+1 LAP,,1
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,14,16,LEC,Charles LECLERC,Ferrari,51,0.0,f,f,f,,+1 LAP,,1
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,15,77,BOT,Valtteri BOTTAS,Kick Sauber,51,0.0,f,f,f,,+1 LAP,,1
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,16,31,OCO,Esteban OCON,Alpine,50,0.0,f,f,f,,+2 LAPS,,2
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,17,11,PER,Sergio PEREZ,Red Bull Racing,50,0.0,f,f,f,,+2 LAPS,,2
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,18,24,ZHO,ZHOU Guanyu,Kick Sauber,50,0.0,f,f,f,,+2 LAPS,,2
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,,10,GAS,Pierre GASLY,Alpine,0,0.0,f,t,f,,,,
+2024,12,1240,British Grand Prix,9558,Race,Silverstone,United Kingdom,,63,RUS,George RUSSELL,Mercedes,33,0.0,t,f,f,,,,
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,1,81,PIA,Oscar PIASTRI,McLaren,70,25.0,f,f,f,5881.989,0,0,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,2,4,NOR,Lando NORRIS,McLaren,70,18.0,f,f,f,5884.13,2.141,2.141,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,3,44,HAM,Lewis HAMILTON,Mercedes,70,15.0,f,f,f,5896.869,14.88,14.88,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,4,16,LEC,Charles LECLERC,Ferrari,70,12.0,f,f,f,5901.675,19.686,19.686,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,5,1,VER,Max VERSTAPPEN,Red Bull Racing,70,10.0,f,f,f,5903.338,21.349,21.349,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,6,55,SAI,Carlos SAINZ,Ferrari,70,8.0,f,f,f,5905.062,23.073,23.073,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,7,11,PER,Sergio PEREZ,Red Bull Racing,70,6.0,f,f,f,5921.781,39.792,39.792,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,8,63,RUS,George RUSSELL,Mercedes,70,5.0,f,f,f,5924.357,42.368,42.368,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,9,22,TSU,Yuki TSUNODA,RB,70,2.0,f,f,f,5959.248,77.259,77.259,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,10,18,STR,Lance STROLL,Aston Martin,70,1.0,f,f,f,5959.965,77.976,77.976,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,11,14,ALO,Fernando ALONSO,Aston Martin,70,0.0,f,f,f,5964.449,82.46,82.46,0
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,12,3,RIC,Daniel RICCIARDO,RB,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,13,27,HUL,Nico HULKENBERG,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,14,23,ALB,Alexander ALBON,Williams,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,15,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,16,77,BOT,Valtteri BOTTAS,Kick Sauber,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,17,2,SAR,Logan SARGEANT,Williams,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,18,31,OCO,Esteban OCON,Alpine,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,19,24,ZHO,ZHOU Guanyu,Kick Sauber,69,0.0,f,f,f,,+1 LAP,,1
+2024,13,1241,Hungarian Grand Prix,9566,Race,Hungaroring,Hungary,,10,GAS,Pierre GASLY,Alpine,33,0.0,t,f,f,,,,
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,1,44,HAM,Lewis HAMILTON,Mercedes,44,25.0,f,f,f,4797.566,0.0,0.0,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,2,81,PIA,Oscar PIASTRI,McLaren,44,18.0,f,f,f,4798.213,0.647,0.647,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,3,16,LEC,Charles LECLERC,Ferrari,44,15.0,f,f,f,4805.589,8.023,8.023,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,4,1,VER,Max VERSTAPPEN,Red Bull Racing,44,12.0,f,f,f,4806.266,8.7,8.7,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,5,4,NOR,Lando NORRIS,McLaren,44,10.0,f,f,f,4806.89,9.324,9.324,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,6,55,SAI,Carlos SAINZ,Ferrari,44,8.0,f,f,f,4816.835,19.269,19.269,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,7,11,PER,Sergio PEREZ,Red Bull Racing,44,7.0,f,f,f,4840.235,42.669,42.669,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,8,14,ALO,Fernando ALONSO,Aston Martin,44,4.0,f,f,f,4847.003,49.437,49.437,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,9,31,OCO,Esteban OCON,Alpine,44,2.0,f,f,f,4849.592,52.026,52.026,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,10,3,RIC,Daniel RICCIARDO,RB,44,1.0,f,f,f,4851.966,54.4,54.4,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,11,18,STR,Lance STROLL,Aston Martin,44,0.0,f,f,f,4860.051,62.485,62.485,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,12,23,ALB,Alexander ALBON,Williams,44,0.0,f,f,f,4860.691,63.125,63.125,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,13,10,GAS,Pierre GASLY,Alpine,44,0.0,f,f,f,4861.405,63.839,63.839,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,14,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,44,0.0,f,f,f,4863.671,66.105,66.105,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,15,77,BOT,Valtteri BOTTAS,Kick Sauber,44,0.0,f,f,f,4867.678,70.112,70.112,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,16,22,TSU,Yuki TSUNODA,RB,44,0.0,f,f,f,4873.777,76.211,76.211,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,17,2,SAR,Logan SARGEANT,Williams,44,0.0,f,f,f,4883.097,85.531,85.531,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,18,27,HUL,Nico HULKENBERG,Haas F1 Team,44,0.0,f,f,f,4885.873,88.307,88.307,0
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,,24,ZHO,ZHOU Guanyu,Kick Sauber,5,0.0,t,f,f,,,,
+2024,14,1242,Belgian Grand Prix,9574,Race,Spa-Francorchamps,Belgium,,63,RUS,George RUSSELL,Mercedes,44,0.0,f,f,t,4797.04,,,
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,1,4,NOR,Lando NORRIS,McLaren,72,26.0,f,f,f,5445.519,0,0,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,2,1,VER,Max VERSTAPPEN,Red Bull Racing,72,18.0,f,f,f,5468.415,22.896,22.896,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,3,16,LEC,Charles LECLERC,Ferrari,72,15.0,f,f,f,5470.958,25.439,25.439,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,4,81,PIA,Oscar PIASTRI,McLaren,72,12.0,f,f,f,5472.856,27.337,27.337,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,5,55,SAI,Carlos SAINZ,Ferrari,72,10.0,f,f,f,5477.656,32.137,32.137,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,6,11,PER,Sergio PEREZ,Red Bull Racing,72,8.0,f,f,f,5485.061,39.542,39.542,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,7,63,RUS,George RUSSELL,Mercedes,72,6.0,f,f,f,5490.136,44.617,44.617,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,8,44,HAM,Lewis HAMILTON,Mercedes,72,4.0,f,f,f,5495.118,49.599,49.599,0
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,9,10,GAS,Pierre GASLY,Alpine,71,2.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,10,14,ALO,Fernando ALONSO,Aston Martin,71,1.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,11,27,HUL,Nico HULKENBERG,Haas F1 Team,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,12,3,RIC,Daniel RICCIARDO,RB,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,13,18,STR,Lance STROLL,Aston Martin,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,14,23,ALB,Alexander ALBON,Williams,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,15,31,OCO,Esteban OCON,Alpine,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,16,2,SAR,Logan SARGEANT,Williams,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,17,22,TSU,Yuki TSUNODA,RB,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,18,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,71,0.0,f,f,f,,+1 LAP,,1
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,19,77,BOT,Valtteri BOTTAS,Kick Sauber,70,0.0,f,f,f,,+2 LAPS,,2
+2024,15,1243,Dutch Grand Prix,9582,Race,Zandvoort,Netherlands,20,24,ZHO,ZHOU Guanyu,Kick Sauber,70,0.0,f,f,f,,+2 LAPS,,2
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,1,16,LEC,Charles LECLERC,Ferrari,53,25.0,f,f,f,4480.727,0,0,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,2,81,PIA,Oscar PIASTRI,McLaren,53,18.0,f,f,f,4483.391,2.664,2.664,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,3,4,NOR,Lando NORRIS,McLaren,53,16.0,f,f,f,4486.88,6.153,6.153,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,4,55,SAI,Carlos SAINZ,Ferrari,53,12.0,f,f,f,4496.348,15.621,15.621,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,5,44,HAM,Lewis HAMILTON,Mercedes,53,10.0,f,f,f,4503.547,22.82,22.82,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,6,1,VER,Max VERSTAPPEN,Red Bull Racing,53,8.0,f,f,f,4518.659,37.932,37.932,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,7,63,RUS,George RUSSELL,Mercedes,53,6.0,f,f,f,4520.442,39.715,39.715,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,8,11,PER,Sergio PEREZ,Red Bull Racing,53,4.0,f,f,f,4534.875,54.148,54.148,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,9,23,ALB,Alexander ALBON,Williams,53,2.0,f,f,f,4548.183,67.456,67.456,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,10,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,53,1.0,f,f,f,4549.029,68.302,68.302,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,11,14,ALO,Fernando ALONSO,Aston Martin,53,0.0,f,f,f,4549.222,68.495,68.495,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,12,43,COL,Franco COLAPINTO,Williams,53,0.0,f,f,f,4562.035,81.308,81.308,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,13,3,RIC,Daniel RICCIARDO,RB,53,0.0,f,f,f,4574.179,93.452,93.452,0
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,14,31,OCO,Esteban OCON,Alpine,52,0.0,f,f,f,,+1 LAP,,1
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,15,10,GAS,Pierre GASLY,Alpine,52,0.0,f,f,f,,+1 LAP,,1
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,16,77,BOT,Valtteri BOTTAS,Kick Sauber,52,0.0,f,f,f,,+1 LAP,,1
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,17,27,HUL,Nico HULKENBERG,Haas F1 Team,52,0.0,f,f,f,,+1 LAP,,1
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,18,24,ZHO,ZHOU Guanyu,Kick Sauber,52,0.0,f,f,f,,+1 LAP,,1
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,19,18,STR,Lance STROLL,Aston Martin,52,0.0,f,f,f,,+1 LAP,,1
+2024,16,1244,Italian Grand Prix,9590,Race,Monza,Italy,,22,TSU,Yuki TSUNODA,RB,7,0.0,t,f,f,,,,
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,1,81,PIA,Oscar PIASTRI,McLaren,51,25.0,f,f,f,5578.007,0,0,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,2,16,LEC,Charles LECLERC,Ferrari,51,18.0,f,f,f,5588.917,10.91,10.91,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,3,63,RUS,George RUSSELL,Mercedes,51,15.0,f,f,f,5609.335,31.328,31.328,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,4,4,NOR,Lando NORRIS,McLaren,51,13.0,f,f,f,5614.15,36.143,36.143,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,5,1,VER,Max VERSTAPPEN,Red Bull Racing,51,10.0,f,f,f,5655.105,77.098,77.098,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,6,14,ALO,Fernando ALONSO,Aston Martin,51,8.0,f,f,f,5663.475,85.468,85.468,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,7,23,ALB,Alexander ALBON,Williams,51,6.0,f,f,f,5665.403,87.396,87.396,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,8,43,COL,Franco COLAPINTO,Williams,51,4.0,f,f,f,5667.548,89.541,89.541,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,9,44,HAM,Lewis HAMILTON,Mercedes,51,2.0,f,f,f,5670.408,92.401,92.401,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,10,50,BEA,Oliver BEARMAN,Haas F1 Team,51,1.0,f,f,f,5671.134,93.127,93.127,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,11,27,HUL,Nico HULKENBERG,Haas F1 Team,51,0.0,f,f,f,5671.472,93.465,93.465,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,12,10,GAS,Pierre GASLY,Alpine,51,0.0,f,f,f,5695.196,117.189,117.189,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,13,3,RIC,Daniel RICCIARDO,RB,51,0.0,f,f,f,5724.914,146.907,146.907,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,14,24,ZHO,ZHOU Guanyu,Kick Sauber,51,0.0,f,f,f,5726.848,148.841,148.841,0
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,15,31,OCO,Esteban OCON,Alpine,50,0.0,f,f,f,,+1 LAP,,1
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,16,77,BOT,Valtteri BOTTAS,Kick Sauber,50,0.0,f,f,f,,+1 LAP,,1
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,17,11,PER,Sergio PEREZ,Red Bull Racing,49,0.0,t,f,f,,,,
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,18,55,SAI,Carlos SAINZ,Ferrari,49,0.0,t,f,f,,,,
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,19,18,STR,Lance STROLL,Aston Martin,45,0.0,t,f,f,,,,
+2024,17,1245,Azerbaijan Grand Prix,9598,Race,Baku,Azerbaijan,,22,TSU,Yuki TSUNODA,RB,14,0.0,t,f,f,,,,
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,1,4,NOR,Lando NORRIS,McLaren,62,25.0,f,f,f,6052.571,0,0,0
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,2,1,VER,Max VERSTAPPEN,Red Bull Racing,62,18.0,f,f,f,6073.516,20.945,20.945,0
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,3,81,PIA,Oscar PIASTRI,McLaren,62,15.0,f,f,f,6094.394,41.823,41.823,0
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,4,63,RUS,George RUSSELL,Mercedes,62,12.0,f,f,f,6113.611,61.04,61.04,0
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,5,16,LEC,Charles LECLERC,Ferrari,62,10.0,f,f,f,6115.001,62.43,62.43,0
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,6,44,HAM,Lewis HAMILTON,Mercedes,62,8.0,f,f,f,6137.819,85.248,85.248,0
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,7,55,SAI,Carlos SAINZ,Ferrari,62,6.0,f,f,f,6148.61,96.039,96.039,0
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,8,14,ALO,Fernando ALONSO,Aston Martin,61,4.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,9,27,HUL,Nico HULKENBERG,Haas F1 Team,61,2.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,10,11,PER,Sergio PEREZ,Red Bull Racing,61,1.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,11,43,COL,Franco COLAPINTO,Williams,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,12,22,TSU,Yuki TSUNODA,RB,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,13,31,OCO,Esteban OCON,Alpine,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,14,18,STR,Lance STROLL,Aston Martin,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,15,24,ZHO,ZHOU Guanyu,Kick Sauber,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,16,77,BOT,Valtteri BOTTAS,Kick Sauber,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,17,10,GAS,Pierre GASLY,Alpine,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,18,3,RIC,Daniel RICCIARDO,RB,61,0.0,f,f,f,,+1 LAP,,1
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,19,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,57,0.0,t,f,f,,,,
+2024,18,1246,Singapore Grand Prix,9606,Race,Singapore,Singapore,,23,ALB,Alexander ALBON,Williams,15,0.0,t,f,f,,,,
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,1,16,LEC,Charles LECLERC,Ferrari,56,25.0,f,f,f,5709.639,0,0,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,2,55,SAI,Carlos SAINZ,Ferrari,56,18.0,f,f,f,5718.201,8.562,8.562,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,3,1,VER,Max VERSTAPPEN,Red Bull Racing,56,15.0,f,f,f,5729.051,19.412,19.412,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,4,4,NOR,Lando NORRIS,McLaren,56,12.0,f,f,f,5729.993,20.354,20.354,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,5,81,PIA,Oscar PIASTRI,McLaren,56,10.0,f,f,f,5731.56,21.921,21.921,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,6,63,RUS,George RUSSELL,Mercedes,56,8.0,f,f,f,5765.934,56.295,56.295,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,7,11,PER,Sergio PEREZ,Red Bull Racing,56,6.0,f,f,f,5768.711,59.072,59.072,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,8,27,HUL,Nico HULKENBERG,Haas F1 Team,56,4.0,f,f,f,5772.596,62.957,62.957,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,9,30,LAW,Liam LAWSON,RB,56,2.0,f,f,f,5780.202,70.563,70.563,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,10,43,COL,Franco COLAPINTO,Williams,56,1.0,f,f,f,5781.618,71.979,71.979,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,11,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,56,0.0,f,f,f,5789.421,79.782,79.782,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,12,10,GAS,Pierre GASLY,Alpine,56,0.0,f,f,f,5800.197,90.558,90.558,0
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,13,14,ALO,Fernando ALONSO,Aston Martin,55,0.0,f,f,f,,+1 LAP,,1
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,14,22,TSU,Yuki TSUNODA,RB,55,0.0,f,f,f,,+1 LAP,,1
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,15,18,STR,Lance STROLL,Aston Martin,55,0.0,f,f,f,,+1 LAP,,1
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,16,23,ALB,Alexander ALBON,Williams,55,0.0,f,f,f,,+1 LAP,,1
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,17,77,BOT,Valtteri BOTTAS,Kick Sauber,55,0.0,f,f,f,,+1 LAP,,1
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,18,31,OCO,Esteban OCON,Alpine,55,0.0,f,f,f,,+1 LAP,,1
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,19,24,ZHO,ZHOU Guanyu,Kick Sauber,55,0.0,f,f,f,,+1 LAP,,1
+2024,19,1247,United States Grand Prix,9617,Race,Austin,United States,,44,HAM,Lewis HAMILTON,Mercedes,1,0.0,t,f,f,,,,
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,1,55,SAI,Carlos SAINZ,Ferrari,71,25.0,f,f,f,6055.8,0,0,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,2,4,NOR,Lando NORRIS,McLaren,71,18.0,f,f,f,6060.505,4.705,4.705,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,3,16,LEC,Charles LECLERC,Ferrari,71,16.0,f,f,f,6090.187,34.387,34.387,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,4,44,HAM,Lewis HAMILTON,Mercedes,71,12.0,f,f,f,6100.58,44.78,44.78,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,5,63,RUS,George RUSSELL,Mercedes,71,10.0,f,f,f,6104.336,48.536,48.536,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,6,1,VER,Max VERSTAPPEN,Red Bull Racing,71,8.0,f,f,f,6115.358,59.558,59.558,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,7,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,71,6.0,f,f,f,6119.442,63.642,63.642,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,8,81,PIA,Oscar PIASTRI,McLaren,71,4.0,f,f,f,6120.728,64.928,64.928,0
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,9,27,HUL,Nico HULKENBERG,Haas F1 Team,70,2.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,10,10,GAS,Pierre GASLY,Alpine,70,1.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,11,18,STR,Lance STROLL,Aston Martin,70,0.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,12,43,COL,Franco COLAPINTO,Williams,70,0.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,13,31,OCO,Esteban OCON,Alpine,70,0.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,14,77,BOT,Valtteri BOTTAS,Kick Sauber,70,0.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,15,24,ZHO,ZHOU Guanyu,Kick Sauber,70,0.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,16,30,LAW,Liam LAWSON,RB,70,0.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,17,11,PER,Sergio PEREZ,Red Bull Racing,70,0.0,f,f,f,,+1 LAP,,1
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,,14,ALO,Fernando ALONSO,Aston Martin,15,0.0,t,f,f,,,,
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,,22,TSU,Yuki TSUNODA,RB,0,0.0,t,f,f,,,,
+2024,20,1248,Mexico City Grand Prix,9625,Race,Mexico City,Mexico,,23,ALB,Alexander ALBON,Williams,0,0.0,t,f,f,,,,
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,1,1,VER,Max VERSTAPPEN,Red Bull Racing,69,26.0,f,f,f,7614.43,0.0,0.0,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,2,31,OCO,Esteban OCON,Alpine,69,18.0,f,f,f,7633.907,19.477,19.477,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,3,10,GAS,Pierre GASLY,Alpine,69,15.0,f,f,f,7636.962,22.532,22.532,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,4,63,RUS,George RUSSELL,Mercedes,69,12.0,f,f,f,7637.695,23.265,23.265,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,5,16,LEC,Charles LECLERC,Ferrari,69,10.0,f,f,f,7644.607,30.177,30.177,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,6,4,NOR,Lando NORRIS,McLaren,69,8.0,f,f,f,7645.802,31.372,31.372,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,7,22,TSU,Yuki TSUNODA,RB,69,6.0,f,f,f,7656.486,42.056,42.056,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,8,81,PIA,Oscar PIASTRI,McLaren,69,4.0,f,f,f,7659.373,44.943,44.943,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,9,30,LAW,Liam LAWSON,RB,69,2.0,f,f,f,7664.882,50.452,50.452,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,10,44,HAM,Lewis HAMILTON,Mercedes,69,1.0,f,f,f,7665.183,50.753,50.753,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,11,11,PER,Sergio PEREZ,Red Bull Racing,69,0.0,f,f,f,7665.961,51.531,51.531,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,12,50,BEA,Oliver BEARMAN,Haas F1 Team,69,0.0,f,f,f,7671.515,57.085,57.085,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,13,77,BOT,Valtteri BOTTAS,Kick Sauber,69,0.0,f,f,f,7678.018,63.588,63.588,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,14,14,ALO,Fernando ALONSO,Aston Martin,69,0.0,f,f,f,7692.479,78.049,78.049,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,15,24,ZHO,ZHOU Guanyu,Kick Sauber,69,0.0,f,f,f,7694.079,79.649,79.649,0
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,,18,STR,Lance STROLL,Aston Martin,0,0.0,f,t,f,,,,
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,,23,ALB,Alexander ALBON,Williams,0,0.0,f,t,f,,,,
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,,27,HUL,Nico HULKENBERG,Haas F1 Team,,0.0,f,f,t,,,,
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,,43,COL,Franco COLAPINTO,Williams,30,0.0,t,f,f,,,,
+2024,21,1249,São Paulo Grand Prix,9636,Race,Interlagos,Brazil,,55,SAI,Carlos SAINZ,Ferrari,38,0.0,t,f,f,,,,
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,1,63,RUS,George RUSSELL,Mercedes,50,25.0,f,f,f,4925.969,0,0,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,2,44,HAM,Lewis HAMILTON,Mercedes,50,18.0,f,f,f,4933.282,7.313,7.313,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,3,55,SAI,Carlos SAINZ,Ferrari,50,15.0,f,f,f,4937.875,11.906,11.906,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,4,16,LEC,Charles LECLERC,Ferrari,50,12.0,f,f,f,4940.252,14.283,14.283,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,5,1,VER,Max VERSTAPPEN,Red Bull Racing,50,10.0,f,f,f,4942.551,16.582,16.582,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,6,4,NOR,Lando NORRIS,McLaren,50,9.0,f,f,f,4969.354,43.385,43.385,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,7,81,PIA,Oscar PIASTRI,McLaren,50,6.0,f,f,f,4977.334,51.365,51.365,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,8,27,HUL,Nico HULKENBERG,Haas F1 Team,50,4.0,f,f,f,4985.777,59.808,59.808,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,9,22,TSU,Yuki TSUNODA,RB,50,2.0,f,f,f,4988.777,62.808,62.808,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,10,11,PER,Sergio PEREZ,Red Bull Racing,50,1.0,f,f,f,4989.083,63.114,63.114,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,11,14,ALO,Fernando ALONSO,Aston Martin,50,0.0,f,f,f,4995.164,69.195,69.195,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,12,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,50,0.0,f,f,f,4995.772,69.803,69.803,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,13,24,ZHO,ZHOU Guanyu,Kick Sauber,50,0.0,f,f,f,5000.054,74.085,74.085,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,14,43,COL,Franco COLAPINTO,Williams,50,0.0,f,f,f,5001.141,75.172,75.172,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,15,18,STR,Lance STROLL,Aston Martin,50,0.0,f,f,f,5010.071,84.102,84.102,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,16,30,LAW,Liam LAWSON,RB,50,0.0,f,f,f,5016.974,91.005,91.005,0
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,17,31,OCO,Esteban OCON,Alpine,49,0.0,f,f,f,,+1 LAP,,1
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,18,77,BOT,Valtteri BOTTAS,Kick Sauber,49,0.0,f,f,f,,+1 LAP,,1
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,,10,GAS,Pierre GASLY,Alpine,15,0.0,t,f,f,,,,
+2024,22,1250,Las Vegas Grand Prix,9644,Race,Las Vegas,United States,,23,ALB,Alexander ALBON,Williams,25,0.0,t,f,f,,,,
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,1,1,VER,Max VERSTAPPEN,Red Bull Racing,57,25.0,f,f,f,5465.323,0,0,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,2,16,LEC,Charles LECLERC,Ferrari,57,18.0,f,f,f,5471.354,6.031,6.031,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,3,81,PIA,Oscar PIASTRI,McLaren,57,15.0,f,f,f,5472.142,6.819,6.819,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,4,63,RUS,George RUSSELL,Mercedes,57,12.0,f,f,f,5479.427,14.104,14.104,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,5,10,GAS,Pierre GASLY,Alpine,57,10.0,f,f,f,5482.105,16.782,16.782,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,6,55,SAI,Carlos SAINZ,Ferrari,57,8.0,f,f,f,5482.799,17.476,17.476,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,7,14,ALO,Fernando ALONSO,Aston Martin,57,6.0,f,f,f,5485.19,19.867,19.867,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,8,24,ZHO,ZHOU Guanyu,Kick Sauber,57,4.0,f,f,f,5490.683,25.36,25.36,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,9,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,57,2.0,f,f,f,5497.5,32.177,32.177,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,10,4,NOR,Lando NORRIS,McLaren,57,2.0,f,f,f,5501.085,35.762,35.762,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,11,77,BOT,Valtteri BOTTAS,Kick Sauber,57,0.0,f,f,f,5515.566,50.243,50.243,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,12,44,HAM,Lewis HAMILTON,Mercedes,57,0.0,f,f,f,5521.445,56.122,56.122,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,13,22,TSU,Yuki TSUNODA,RB,57,0.0,f,f,f,5526.423,61.1,61.1,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,14,30,LAW,Liam LAWSON,RB,57,0.0,f,f,f,5527.979,62.656,62.656,0
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,15,23,ALB,Alexander ALBON,Williams,56,0.0,f,f,f,,+1 LAP,,1
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,,11,PER,Sergio PEREZ,Red Bull Racing,38,0.0,t,f,f,,,,
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,,18,STR,Lance STROLL,Aston Martin,8,0.0,t,f,f,,,,
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,,27,HUL,Nico HULKENBERG,Haas F1 Team,39,0.0,t,f,f,,,,
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,,31,OCO,Esteban OCON,Alpine,0,0.0,t,f,f,,,,
+2024,23,1251,Qatar Grand Prix,9655,Race,Lusail,Qatar,,43,COL,Franco COLAPINTO,Williams,0,0.0,t,f,f,,,,
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,1,4,NOR,Lando NORRIS,McLaren,58,25.0,f,f,f,5193.291,0,0,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,2,55,SAI,Carlos SAINZ,Ferrari,58,18.0,f,f,f,5199.123,5.832,5.832,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,3,16,LEC,Charles LECLERC,Ferrari,58,15.0,f,f,f,5225.219,31.928,31.928,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,4,44,HAM,Lewis HAMILTON,Mercedes,58,12.0,f,f,f,5229.774,36.483,36.483,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,5,63,RUS,George RUSSELL,Mercedes,58,10.0,f,f,f,5230.829,37.538,37.538,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,6,1,VER,Max VERSTAPPEN,Red Bull Racing,58,8.0,f,f,f,5243.138,49.847,49.847,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,7,10,GAS,Pierre GASLY,Alpine,58,6.0,f,f,f,5265.851,72.56,72.56,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,8,27,HUL,Nico HULKENBERG,Haas F1 Team,58,4.0,f,f,f,5268.845,75.554,75.554,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,9,14,ALO,Fernando ALONSO,Aston Martin,58,2.0,f,f,f,5275.664,82.373,82.373,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,10,81,PIA,Oscar PIASTRI,McLaren,58,1.0,f,f,f,5277.112,83.821,83.821,0
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,11,23,ALB,Alexander ALBON,Williams,57,0.0,f,f,f,,+1 LAP,,1
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,12,22,TSU,Yuki TSUNODA,RB,57,0.0,f,f,f,,+1 LAP,,1
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,13,24,ZHO,ZHOU Guanyu,Kick Sauber,57,0.0,f,f,f,,+1 LAP,,1
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,14,18,STR,Lance STROLL,Aston Martin,57,0.0,f,f,f,,+1 LAP,,1
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,15,61,DOO,Jack DOOHAN,Alpine,57,0.0,f,f,f,,+1 LAP,,1
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,16,20,MAG,Kevin MAGNUSSEN,Haas F1 Team,57,0.0,f,f,f,,+1 LAP,,1
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,17,30,LAW,Liam LAWSON,RB,55,0.0,t,f,f,,,,
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,,11,PER,Sergio PEREZ,Red Bull Racing,0,0.0,t,f,f,,,,
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,,43,COL,Franco COLAPINTO,Williams,26,0.0,t,f,f,,,,
+2024,24,1252,Abu Dhabi Grand Prix,9662,Race,Yas Marina Circuit,United Arab Emirates,,77,BOT,Valtteri BOTTAS,Kick Sauber,30,0.0,t,f,f,,,,
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,1,4,NOR,Lando NORRIS,McLaren,57,25.0,f,f,f,6126.304,0.0,0.0,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,2,1,VER,Max VERSTAPPEN,Red Bull Racing,57,18.0,f,f,f,6127.199,0.895,0.895,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,3,63,RUS,George RUSSELL,Mercedes,57,15.0,f,f,f,6134.785,8.481,8.481,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,4,12,ANT,Kimi ANTONELLI,Mercedes,57,12.0,f,f,f,6136.439,10.135,10.135,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,5,23,ALB,Alexander ALBON,Williams,57,10.0,f,f,f,6139.077,12.773,12.773,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,6,18,STR,Lance STROLL,Aston Martin,57,8.0,f,f,f,6143.717,17.413,17.413,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,7,27,HUL,Nico HULKENBERG,Kick Sauber,57,6.0,f,f,f,6144.727,18.423,18.423,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,8,16,LEC,Charles LECLERC,Ferrari,57,4.0,f,f,f,6146.13,19.826,19.826,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,9,81,PIA,Oscar PIASTRI,McLaren,57,2.0,f,f,f,6146.752,20.448,20.448,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,10,44,HAM,Lewis HAMILTON,Ferrari,57,1.0,f,f,f,6148.777,22.473,22.473,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,11,10,GAS,Pierre GASLY,Alpine,57,0.0,f,f,f,6152.806,26.502,26.502,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,12,22,TSU,Yuki TSUNODA,Racing Bulls,57,0.0,f,f,f,6156.188,29.884,29.884,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,13,31,OCO,Esteban OCON,Haas F1 Team,57,0.0,f,f,f,6159.465,33.161,33.161,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,14,87,BEA,Oliver BEARMAN,Haas F1 Team,57,0.0,f,f,f,6166.655,40.351,40.351,0
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,,5,BOR,Gabriel BORTOLETO,Kick Sauber,45,0.0,t,f,f,,,,
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,,6,HAD,Isack HADJAR,Racing Bulls,0,0.0,f,t,f,,,,
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,,7,DOO,Jack DOOHAN,Alpine,0,0.0,t,f,f,,,,
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,,14,ALO,Fernando ALONSO,Aston Martin,32,0.0,t,f,f,,,,
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,,30,LAW,Liam LAWSON,Red Bull Racing,46,0.0,t,f,f,,,,
+2025,1,1254,Australian Grand Prix,9693,Race,Melbourne,Australia,,55,SAI,Carlos SAINZ,Williams,0,0.0,t,f,f,,,,
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,1,81,PIA,Oscar PIASTRI,McLaren,56,25.0,f,f,f,5455.026,0,0,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,2,4,NOR,Lando NORRIS,McLaren,56,18.0,f,f,f,5464.774,9.748,9.748,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,3,63,RUS,George RUSSELL,Mercedes,56,15.0,f,f,f,5466.123,11.097,11.097,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,4,1,VER,Max VERSTAPPEN,Red Bull Racing,56,12.0,f,f,f,5471.682,16.656,16.656,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,5,31,OCO,Esteban OCON,Haas F1 Team,56,10.0,f,f,f,5504.995,49.969,49.969,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,6,12,ANT,Kimi ANTONELLI,Mercedes,56,8.0,f,f,f,5508.774,53.748,53.748,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,7,23,ALB,Alexander ALBON,Williams,56,6.0,f,f,f,5511.347,56.321,56.321,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,8,87,BEA,Oliver BEARMAN,Haas F1 Team,56,4.0,f,f,f,5516.329,61.303,61.303,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,9,18,STR,Lance STROLL,Aston Martin,56,2.0,f,f,f,5525.23,70.204,70.204,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,10,55,SAI,Carlos SAINZ,Williams,56,1.0,f,f,f,5531.413,76.387,76.387,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,11,6,HAD,Isack HADJAR,Racing Bulls,56,0.0,f,f,f,5533.901,78.875,78.875,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,12,30,LAW,Liam LAWSON,Red Bull Racing,56,0.0,f,f,f,5536.173,81.147,81.147,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,13,7,DOO,Jack DOOHAN,Alpine,56,0.0,f,f,f,5543.427,88.401,88.401,0
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,14,5,BOR,Gabriel BORTOLETO,Kick Sauber,55,0.0,f,f,f,,+1 LAP,,1
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,15,27,HUL,Nico HULKENBERG,Kick Sauber,55,0.0,f,f,f,,+1 LAP,,1
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,16,22,TSU,Yuki TSUNODA,Racing Bulls,55,0.0,f,f,f,,+1 LAP,,1
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,,10,GAS,Pierre GASLY,Alpine,,0.0,f,f,t,,,,
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,,14,ALO,Fernando ALONSO,Aston Martin,4,0.0,t,f,f,,,,
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,,16,LEC,Charles LECLERC,Ferrari,,0.0,f,f,t,,,,
+2025,2,1255,Chinese Grand Prix,9998,Race,Shanghai,China,,44,HAM,Lewis HAMILTON,Ferrari,,0.0,f,f,t,,,,
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,1,1,VER,Max VERSTAPPEN,Red Bull Racing,53,25.0,f,f,f,4926.983,0,0,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,2,4,NOR,Lando NORRIS,McLaren,53,18.0,f,f,f,4928.406,1.423,1.423,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,3,81,PIA,Oscar PIASTRI,McLaren,53,15.0,f,f,f,4929.112,2.129,2.129,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,4,16,LEC,Charles LECLERC,Ferrari,53,12.0,f,f,f,4943.08,16.097,16.097,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,5,63,RUS,George RUSSELL,Mercedes,53,10.0,f,f,f,4944.345,17.362,17.362,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,6,12,ANT,Kimi ANTONELLI,Mercedes,53,8.0,f,f,f,4945.654,18.671,18.671,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,7,44,HAM,Lewis HAMILTON,Ferrari,53,6.0,f,f,f,4956.165,29.182,29.182,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,8,6,HAD,Isack HADJAR,Racing Bulls,53,4.0,f,f,f,4964.117,37.134,37.134,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,9,23,ALB,Alexander ALBON,Williams,53,2.0,f,f,f,4967.35,40.367,40.367,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,10,87,BEA,Oliver BEARMAN,Haas F1 Team,53,1.0,f,f,f,4981.512,54.529,54.529,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,11,14,ALO,Fernando ALONSO,Aston Martin,53,0.0,f,f,f,4984.316,57.333,57.333,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,12,22,TSU,Yuki TSUNODA,Red Bull Racing,53,0.0,f,f,f,4985.384,58.401,58.401,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,13,10,GAS,Pierre GASLY,Alpine,53,0.0,f,f,f,4989.105,62.122,62.122,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,14,55,SAI,Carlos SAINZ,Williams,53,0.0,f,f,f,5001.112,74.129,74.129,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,15,7,DOO,Jack DOOHAN,Alpine,53,0.0,f,f,f,5008.297,81.314,81.314,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,16,27,HUL,Nico HULKENBERG,Kick Sauber,53,0.0,f,f,f,5008.94,81.957,81.957,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,17,30,LAW,Liam LAWSON,Racing Bulls,53,0.0,f,f,f,5009.717,82.734,82.734,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,18,31,OCO,Esteban OCON,Haas F1 Team,53,0.0,f,f,f,5010.421,83.438,83.438,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,19,5,BOR,Gabriel BORTOLETO,Kick Sauber,53,0.0,f,f,f,5010.88,83.897,83.897,0
+2025,3,1256,Japanese Grand Prix,10006,Race,Suzuka,Japan,20,18,STR,Lance STROLL,Aston Martin,52,0.0,f,f,f,,+1 LAP,,1
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,1,81,PIA,Oscar PIASTRI,McLaren,57,25.0,f,f,f,5739.435,0.0,0.0,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,2,63,RUS,George RUSSELL,Mercedes,57,18.0,f,f,f,5754.934,15.499,15.499,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,3,4,NOR,Lando NORRIS,McLaren,57,15.0,f,f,f,5755.708,16.273,16.273,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,4,16,LEC,Charles LECLERC,Ferrari,57,12.0,f,f,f,5759.114,19.679,19.679,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,5,44,HAM,Lewis HAMILTON,Ferrari,57,10.0,f,f,f,5767.428,27.993,27.993,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,6,1,VER,Max VERSTAPPEN,Red Bull Racing,57,8.0,f,f,f,5773.83,34.395,34.395,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,7,10,GAS,Pierre GASLY,Alpine,57,6.0,f,f,f,5775.437,36.002,36.002,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,8,31,OCO,Esteban OCON,Haas F1 Team,57,4.0,f,f,f,5783.679,44.244,44.244,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,9,22,TSU,Yuki TSUNODA,Red Bull Racing,57,2.0,f,f,f,5784.496,45.061,45.061,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,10,87,BEA,Oliver BEARMAN,Haas F1 Team,57,1.0,f,f,f,5787.029,47.594,47.594,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,11,12,ANT,Kimi ANTONELLI,Mercedes,57,0.0,f,f,f,5787.451,48.016,48.016,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,12,23,ALB,Alexander ALBON,Williams,57,0.0,f,f,f,5788.274,48.839,48.839,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,13,6,HAD,Isack HADJAR,Racing Bulls,57,0.0,f,f,f,5795.749,56.314,56.314,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,14,7,DOO,Jack DOOHAN,Alpine,57,0.0,f,f,f,5797.241,57.806,57.806,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,15,14,ALO,Fernando ALONSO,Aston Martin,57,0.0,f,f,f,5799.775,60.34,60.34,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,16,30,LAW,Liam LAWSON,Racing Bulls,57,0.0,f,f,f,5803.87,64.435,64.435,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,17,18,STR,Lance STROLL,Aston Martin,57,0.0,f,f,f,5804.924,65.489,65.489,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,18,5,BOR,Gabriel BORTOLETO,Kick Sauber,57,0.0,f,f,f,5806.307,66.872,66.872,0
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,,27,HUL,Nico HULKENBERG,Kick Sauber,,0.0,f,f,t,,,,
+2025,4,1257,Bahrain Grand Prix,10014,Race,Sakhir,Bahrain,,55,SAI,Carlos SAINZ,Williams,45,0.0,t,f,f,,,,
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,1,81,PIA,Oscar PIASTRI,McLaren,50,25.0,f,f,f,4866.758,0,0,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,2,1,VER,Max VERSTAPPEN,Red Bull Racing,50,18.0,f,f,f,4869.601,2.843,2.843,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,3,16,LEC,Charles LECLERC,Ferrari,50,15.0,f,f,f,4874.862,8.104,8.104,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,4,4,NOR,Lando NORRIS,McLaren,50,12.0,f,f,f,4875.954,9.196,9.196,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,5,63,RUS,George RUSSELL,Mercedes,50,10.0,f,f,f,4893.994,27.236,27.236,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,6,12,ANT,Kimi ANTONELLI,Mercedes,50,8.0,f,f,f,4901.446,34.688,34.688,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,7,44,HAM,Lewis HAMILTON,Ferrari,50,6.0,f,f,f,4905.831,39.073,39.073,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,8,55,SAI,Carlos SAINZ,Williams,50,4.0,f,f,f,4931.388,64.63,64.63,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,9,23,ALB,Alexander ALBON,Williams,50,2.0,f,f,f,4933.273,66.515,66.515,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,10,6,HAD,Isack HADJAR,Racing Bulls,50,1.0,f,f,f,4933.849,67.091,67.091,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,11,14,ALO,Fernando ALONSO,Aston Martin,50,0.0,f,f,f,4942.675,75.917,75.917,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,12,30,LAW,Liam LAWSON,Racing Bulls,50,0.0,f,f,f,4945.209,78.451,78.451,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,13,87,BEA,Oliver BEARMAN,Haas F1 Team,50,0.0,f,f,f,4945.952,79.194,79.194,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,14,31,OCO,Esteban OCON,Haas F1 Team,50,0.0,f,f,f,4966.481,99.723,99.723,0
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,15,27,HUL,Nico HULKENBERG,Kick Sauber,49,0.0,f,f,f,,+1 LAP,,1
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,16,18,STR,Lance STROLL,Aston Martin,49,0.0,f,f,f,,+1 LAP,,1
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,17,7,DOO,Jack DOOHAN,Alpine,49,0.0,f,f,f,,+1 LAP,,1
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,18,5,BOR,Gabriel BORTOLETO,Kick Sauber,49,0.0,f,f,f,,+1 LAP,,1
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,,10,GAS,Pierre GASLY,Alpine,0,0.0,t,f,f,,,,
+2025,5,1258,Saudi Arabian Grand Prix,10022,Race,Jeddah,Saudi Arabia,,22,TSU,Yuki TSUNODA,Red Bull Racing,1,0.0,t,f,f,,,,
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,1,81,PIA,Oscar PIASTRI,McLaren,57,25.0,f,f,f,5331.587,0,0,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,2,4,NOR,Lando NORRIS,McLaren,57,18.0,f,f,f,5336.217,4.63,4.63,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,3,63,RUS,George RUSSELL,Mercedes,57,15.0,f,f,f,5369.231,37.644,37.644,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,4,1,VER,Max VERSTAPPEN,Red Bull Racing,57,12.0,f,f,f,5371.543,39.956,39.956,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,5,23,ALB,Alexander ALBON,Williams,57,10.0,f,f,f,5379.654,48.067,48.067,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,6,12,ANT,Kimi ANTONELLI,Mercedes,57,8.0,f,f,f,5387.089,55.502,55.502,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,7,16,LEC,Charles LECLERC,Ferrari,57,6.0,f,f,f,5388.623,57.036,57.036,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,8,44,HAM,Lewis HAMILTON,Ferrari,57,4.0,f,f,f,5391.773,60.186,60.186,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,9,55,SAI,Carlos SAINZ,Williams,57,2.0,f,f,f,5392.164,60.577,60.577,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,10,22,TSU,Yuki TSUNODA,Red Bull Racing,57,1.0,f,f,f,5406.021,74.434,74.434,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,11,6,HAD,Isack HADJAR,Racing Bulls,57,0.0,f,f,f,5406.189,74.602,74.602,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,12,31,OCO,Esteban OCON,Haas F1 Team,57,0.0,f,f,f,5413.593,82.006,82.006,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,13,10,GAS,Pierre GASLY,Alpine,57,0.0,f,f,f,5422.032,90.445,90.445,0
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,14,27,HUL,Nico HULKENBERG,Kick Sauber,56,0.0,f,f,f,,+1 LAP,,1
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,15,14,ALO,Fernando ALONSO,Aston Martin,56,0.0,f,f,f,,+1 LAP,,1
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,16,18,STR,Lance STROLL,Aston Martin,56,0.0,f,f,f,,+1 LAP,,1
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,,5,BOR,Gabriel BORTOLETO,Kick Sauber,30,0.0,t,f,f,,,,
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,,7,DOO,Jack DOOHAN,Alpine,0,0.0,t,f,f,,,,
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,,30,LAW,Liam LAWSON,Racing Bulls,36,0.0,t,f,f,,,,
+2025,6,1259,Miami Grand Prix,10033,Race,Miami,United States,,87,BEA,Oliver BEARMAN,Haas F1 Team,27,0.0,t,f,f,,,,
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,1,1,VER,Max VERSTAPPEN,Red Bull Racing,63,25.0,f,f,f,5493.199,0.0,0.0,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,2,4,NOR,Lando NORRIS,McLaren,63,18.0,f,f,f,5499.308,6.109,6.109,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,3,81,PIA,Oscar PIASTRI,McLaren,63,15.0,f,f,f,5506.155,12.956,12.956,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,4,44,HAM,Lewis HAMILTON,Ferrari,63,12.0,f,f,f,5507.555,14.356,14.356,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,5,23,ALB,Alexander ALBON,Williams,63,10.0,f,f,f,5511.144,17.945,17.945,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,6,16,LEC,Charles LECLERC,Ferrari,63,8.0,f,f,f,5513.973,20.774,20.774,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,7,63,RUS,George RUSSELL,Mercedes,63,6.0,f,f,f,5515.233,22.034,22.034,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,8,55,SAI,Carlos SAINZ,Williams,63,4.0,f,f,f,5516.097,22.898,22.898,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,9,6,HAD,Isack HADJAR,Racing Bulls,63,2.0,f,f,f,5516.785,23.586,23.586,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,10,22,TSU,Yuki TSUNODA,Red Bull Racing,63,1.0,f,f,f,5519.645,26.446,26.446,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,11,14,ALO,Fernando ALONSO,Aston Martin,63,0.0,f,f,f,5520.449,27.25,27.25,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,12,27,HUL,Nico HULKENBERG,Kick Sauber,63,0.0,f,f,f,5523.495,30.296,30.296,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,13,10,GAS,Pierre GASLY,Alpine,63,0.0,f,f,f,5524.623,31.424,31.424,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,14,30,LAW,Liam LAWSON,Racing Bulls,63,0.0,f,f,f,5525.71,32.511,32.511,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,15,18,STR,Lance STROLL,Aston Martin,63,0.0,f,f,f,5526.192,32.993,32.993,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,16,43,COL,Franco COLAPINTO,Alpine,63,0.0,f,f,f,5526.61,33.411,33.411,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,17,87,BEA,Oliver BEARMAN,Haas F1 Team,63,0.0,f,f,f,5527.007,33.808,33.808,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,18,5,BOR,Gabriel BORTOLETO,Kick Sauber,63,0.0,f,f,f,5531.771,38.572,38.572,0
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,,12,ANT,Kimi ANTONELLI,Mercedes,44,0.0,t,f,f,,,,
+2025,7,1260,Emilia Romagna Grand Prix,9987,Race,Imola,Italy,,31,OCO,Esteban OCON,Haas F1 Team,27,0.0,t,f,f,,,,
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,1,4,NOR,Lando NORRIS,McLaren,78,25.0,f,f,f,6033.843,0,0,0
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,2,16,LEC,Charles LECLERC,Ferrari,78,18.0,f,f,f,6036.974,3.131,3.131,0
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,3,81,PIA,Oscar PIASTRI,McLaren,78,15.0,f,f,f,6037.501,3.658,3.658,0
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,4,1,VER,Max VERSTAPPEN,Red Bull Racing,78,12.0,f,f,f,6054.415,20.572,20.572,0
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,5,44,HAM,Lewis HAMILTON,Ferrari,78,10.0,f,f,f,6085.23,51.387,51.387,0
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,6,6,HAD,Isack HADJAR,Racing Bulls,77,8.0,f,f,f,,+1 LAP,,1
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,7,31,OCO,Esteban OCON,Haas F1 Team,77,6.0,f,f,f,,+1 LAP,,1
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,8,30,LAW,Liam LAWSON,Racing Bulls,77,4.0,f,f,f,,+1 LAP,,1
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,9,23,ALB,Alexander ALBON,Williams,76,2.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,10,55,SAI,Carlos SAINZ,Williams,76,1.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,11,63,RUS,George RUSSELL,Mercedes,76,0.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,12,87,BEA,Oliver BEARMAN,Haas F1 Team,76,0.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,13,43,COL,Franco COLAPINTO,Alpine,76,0.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,14,5,BOR,Gabriel BORTOLETO,Kick Sauber,76,0.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,15,18,STR,Lance STROLL,Aston Martin,76,0.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,16,27,HUL,Nico HULKENBERG,Kick Sauber,76,0.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,17,22,TSU,Yuki TSUNODA,Red Bull Racing,76,0.0,f,f,f,,+2 LAPS,,2
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,18,12,ANT,Kimi ANTONELLI,Mercedes,75,0.0,f,f,f,,+3 LAPS,,3
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,,10,GAS,Pierre GASLY,Alpine,7,0.0,t,f,f,,,,
+2025,8,1261,Monaco Grand Prix,9979,Race,Monte Carlo,Monaco,,14,ALO,Fernando ALONSO,Aston Martin,36,0.0,t,f,f,,,,
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,1,81,PIA,Oscar PIASTRI,McLaren,66,25.0,f,f,f,5577.375,0.0,0.0,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,2,4,NOR,Lando NORRIS,McLaren,66,18.0,f,f,f,5579.846,2.471,2.471,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,3,16,LEC,Charles LECLERC,Ferrari,66,15.0,f,f,f,5587.83,10.455,10.455,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,4,63,RUS,George RUSSELL,Mercedes,66,12.0,f,f,f,5588.734,11.359,11.359,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,5,27,HUL,Nico HULKENBERG,Kick Sauber,66,10.0,f,f,f,5591.023,13.648,13.648,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,6,44,HAM,Lewis HAMILTON,Ferrari,66,8.0,f,f,f,5592.883,15.508,15.508,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,7,6,HAD,Isack HADJAR,Racing Bulls,66,6.0,f,f,f,5593.397,16.022,16.022,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,8,10,GAS,Pierre GASLY,Alpine,66,4.0,f,f,f,5595.257,17.882,17.882,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,9,14,ALO,Fernando ALONSO,Aston Martin,66,2.0,f,f,f,5598.939,21.564,21.564,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,10,1,VER,Max VERSTAPPEN,Red Bull Racing,66,1.0,f,f,f,5599.201,21.826,21.826,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,11,30,LAW,Liam LAWSON,Racing Bulls,66,0.0,f,f,f,5602.907,25.532,25.532,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,12,5,BOR,Gabriel BORTOLETO,Kick Sauber,66,0.0,f,f,f,5603.371,25.996,25.996,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,13,22,TSU,Yuki TSUNODA,Red Bull Racing,66,0.0,f,f,f,5606.197,28.822,28.822,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,14,55,SAI,Carlos SAINZ,Williams,66,0.0,f,f,f,5606.684,29.309,29.309,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,15,43,COL,Franco COLAPINTO,Alpine,66,0.0,f,f,f,5608.756,31.381,31.381,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,16,31,OCO,Esteban OCON,Haas F1 Team,66,0.0,f,f,f,5609.572,32.197,32.197,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,17,87,BEA,Oliver BEARMAN,Haas F1 Team,66,0.0,f,f,f,5614.44,37.065,37.065,0
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,,12,ANT,Kimi ANTONELLI,Mercedes,53,0.0,t,f,f,,,,
+2025,9,1262,Spanish Grand Prix,9971,Race,Catalunya,Spain,,23,ALB,Alexander ALBON,Williams,27,0.0,t,f,f,,,,
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,1,63,RUS,George RUSSELL,Mercedes,70,25.0,f,f,f,5512.688,0,0,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,2,1,VER,Max VERSTAPPEN,Red Bull Racing,70,18.0,f,f,f,5512.916,0.228,0.228,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,3,12,ANT,Kimi ANTONELLI,Mercedes,70,15.0,f,f,f,5513.702,1.014,1.014,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,4,81,PIA,Oscar PIASTRI,McLaren,70,12.0,f,f,f,5514.797,2.109,2.109,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,5,16,LEC,Charles LECLERC,Ferrari,70,10.0,f,f,f,5516.13,3.442,3.442,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,6,44,HAM,Lewis HAMILTON,Ferrari,70,8.0,f,f,f,5523.401,10.713,10.713,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,7,14,ALO,Fernando ALONSO,Aston Martin,70,6.0,f,f,f,5523.66,10.972,10.972,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,8,27,HUL,Nico HULKENBERG,Kick Sauber,70,4.0,f,f,f,5528.052,15.364,15.364,0
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,9,31,OCO,Esteban OCON,Haas F1 Team,69,2.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,10,55,SAI,Carlos SAINZ,Williams,69,1.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,11,87,BEA,Oliver BEARMAN,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,12,22,TSU,Yuki TSUNODA,Red Bull Racing,69,0.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,13,43,COL,Franco COLAPINTO,Alpine,69,0.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,14,5,BOR,Gabriel BORTOLETO,Kick Sauber,69,0.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,15,10,GAS,Pierre GASLY,Alpine,69,0.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,16,6,HAD,Isack HADJAR,Racing Bulls,69,0.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,17,18,STR,Lance STROLL,Aston Martin,69,0.0,f,f,f,,+1 LAP,,1
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,18,4,NOR,Lando NORRIS,McLaren,66,0.0,t,f,f,,,,
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,,23,ALB,Alexander ALBON,Williams,46,0.0,t,f,f,,,,
+2025,10,1263,Canadian Grand Prix,9963,Race,Montreal,Canada,,30,LAW,Liam LAWSON,Racing Bulls,53,0.0,t,f,f,,,,
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,1,4,NOR,Lando NORRIS,McLaren,70,25.0,f,f,f,5027.693,0,0,0
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,2,81,PIA,Oscar PIASTRI,McLaren,70,18.0,f,f,f,5030.388,2.695,2.695,0
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,3,16,LEC,Charles LECLERC,Ferrari,70,15.0,f,f,f,5047.513,19.82,19.82,0
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,4,44,HAM,Lewis HAMILTON,Ferrari,70,12.0,f,f,f,5056.713,29.02,29.02,0
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,5,63,RUS,George RUSSELL,Mercedes,70,10.0,f,f,f,5090.089,62.396,62.396,0
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,6,30,LAW,Liam LAWSON,Racing Bulls,70,8.0,f,f,f,5095.447,67.754,67.754,0
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,7,14,ALO,Fernando ALONSO,Aston Martin,69,6.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,8,5,BOR,Gabriel BORTOLETO,Kick Sauber,69,4.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,9,27,HUL,Nico HULKENBERG,Kick Sauber,69,2.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,10,31,OCO,Esteban OCON,Haas F1 Team,69,1.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,11,87,BEA,Oliver BEARMAN,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,12,6,HAD,Isack HADJAR,Racing Bulls,69,0.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,13,10,GAS,Pierre GASLY,Alpine,69,0.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,14,18,STR,Lance STROLL,Aston Martin,69,0.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,15,43,COL,Franco COLAPINTO,Alpine,69,0.0,f,f,f,,+1 LAP,,1
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,16,22,TSU,Yuki TSUNODA,Red Bull Racing,68,0.0,f,f,f,,+2 LAPS,,2
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,,1,VER,Max VERSTAPPEN,Red Bull Racing,0,0.0,t,f,f,,,,
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,,12,ANT,Kimi ANTONELLI,Mercedes,0,0.0,t,f,f,,,,
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,,23,ALB,Alexander ALBON,Williams,15,0.0,t,f,f,,,,
+2025,11,1264,Austrian Grand Prix,9955,Race,Spielberg,Austria,,55,SAI,Carlos SAINZ,Williams,0,0.0,f,t,f,,,,
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,1,4,NOR,Lando NORRIS,McLaren,52,25.0,f,f,f,5835.735,0,0,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,2,81,PIA,Oscar PIASTRI,McLaren,52,18.0,f,f,f,5842.547,6.812,6.812,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,3,27,HUL,Nico HULKENBERG,Kick Sauber,52,15.0,f,f,f,5870.477,34.742,34.742,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,4,44,HAM,Lewis HAMILTON,Ferrari,52,12.0,f,f,f,5875.547,39.812,39.812,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,5,1,VER,Max VERSTAPPEN,Red Bull Racing,52,10.0,f,f,f,5892.516,56.781,56.781,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,6,10,GAS,Pierre GASLY,Alpine,52,8.0,f,f,f,5895.592,59.857,59.857,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,7,18,STR,Lance STROLL,Aston Martin,52,6.0,f,f,f,5896.338,60.603,60.603,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,8,23,ALB,Alexander ALBON,Williams,52,4.0,f,f,f,5899.87,64.135,64.135,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,9,14,ALO,Fernando ALONSO,Aston Martin,52,2.0,f,f,f,5901.593,65.858,65.858,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,10,63,RUS,George RUSSELL,Mercedes,52,1.0,f,f,f,5906.409,70.674,70.674,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,11,87,BEA,Oliver BEARMAN,Haas F1 Team,52,0.0,f,f,f,5907.83,72.095,72.095,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,12,55,SAI,Carlos SAINZ,Williams,52,0.0,f,f,f,5912.327,76.592,76.592,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,13,31,OCO,Esteban OCON,Haas F1 Team,52,0.0,f,f,f,5913.036,77.301,77.301,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,14,16,LEC,Charles LECLERC,Ferrari,52,0.0,f,f,f,5920.212,84.477,84.477,0
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,15,22,TSU,Yuki TSUNODA,Red Bull Racing,51,0.0,f,f,f,,+1 LAP,,1
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,,5,BOR,Gabriel BORTOLETO,Kick Sauber,3,0.0,t,f,f,,,,
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,,6,HAD,Isack HADJAR,Racing Bulls,17,0.0,t,f,f,,,,
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,,12,ANT,Kimi ANTONELLI,Mercedes,23,0.0,t,f,f,,,,
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,,30,LAW,Liam LAWSON,Racing Bulls,0,0.0,t,f,f,,,,
+2025,12,1277,British Grand Prix,9947,Race,Silverstone,United Kingdom,,43,COL,Franco COLAPINTO,Alpine,0,0.0,f,t,f,,,,
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,1,81,PIA,Oscar PIASTRI,McLaren,44,25.0,f,f,f,5122.601,0,0,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,2,4,NOR,Lando NORRIS,McLaren,44,18.0,f,f,f,5126.016,3.415,3.415,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,3,16,LEC,Charles LECLERC,Ferrari,44,15.0,f,f,f,5142.786,20.185,20.185,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,4,1,VER,Max VERSTAPPEN,Red Bull Racing,44,12.0,f,f,f,5144.332,21.731,21.731,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,5,63,RUS,George RUSSELL,Mercedes,44,10.0,f,f,f,5157.464,34.863,34.863,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,6,23,ALB,Alexander ALBON,Williams,44,8.0,f,f,f,5162.527,39.926,39.926,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,7,44,HAM,Lewis HAMILTON,Ferrari,44,6.0,f,f,f,5163.28,40.679,40.679,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,8,30,LAW,Liam LAWSON,Racing Bulls,44,4.0,f,f,f,5174.634,52.033,52.033,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,9,5,BOR,Gabriel BORTOLETO,Kick Sauber,44,2.0,f,f,f,5179.035,56.434,56.434,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,10,10,GAS,Pierre GASLY,Alpine,44,1.0,f,f,f,5195.315,72.714,72.714,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,11,87,BEA,Oliver BEARMAN,Haas F1 Team,44,0.0,f,f,f,5195.746,73.145,73.145,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,12,27,HUL,Nico HULKENBERG,Kick Sauber,44,0.0,f,f,f,5196.229,73.628,73.628,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,13,22,TSU,Yuki TSUNODA,Red Bull Racing,44,0.0,f,f,f,5197.996,75.395,75.395,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,14,18,STR,Lance STROLL,Aston Martin,44,0.0,f,f,f,5202.432,79.831,79.831,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,15,31,OCO,Esteban OCON,Haas F1 Team,44,0.0,f,f,f,5208.664,86.063,86.063,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,16,12,ANT,Kimi ANTONELLI,Mercedes,44,0.0,f,f,f,5209.322,86.721,86.721,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,17,14,ALO,Fernando ALONSO,Aston Martin,44,0.0,f,f,f,5210.525,87.924,87.924,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,18,55,SAI,Carlos SAINZ,Williams,44,0.0,f,f,f,5214.625,92.024,92.024,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,19,43,COL,Franco COLAPINTO,Alpine,44,0.0,f,f,f,5217.851,95.25,95.25,0
+2025,13,1265,Belgian Grand Prix,9939,Race,Spa-Francorchamps,Belgium,20,6,HAD,Isack HADJAR,Racing Bulls,43,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,1,4,NOR,Lando NORRIS,McLaren,70,25.0,f,f,f,5721.231,0,0,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,2,81,PIA,Oscar PIASTRI,McLaren,70,18.0,f,f,f,5721.929,0.698,0.698,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,3,63,RUS,George RUSSELL,Mercedes,70,15.0,f,f,f,5743.147,21.916,21.916,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,4,16,LEC,Charles LECLERC,Ferrari,70,12.0,f,f,f,5763.791,42.56,42.56,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,5,14,ALO,Fernando ALONSO,Aston Martin,70,10.0,f,f,f,5780.271,59.04,59.04,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,6,5,BOR,Gabriel BORTOLETO,Kick Sauber,70,8.0,f,f,f,5787.4,66.169,66.169,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,7,18,STR,Lance STROLL,Aston Martin,70,6.0,f,f,f,5789.405,68.174,68.174,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,8,30,LAW,Liam LAWSON,Racing Bulls,70,4.0,f,f,f,5790.682,69.451,69.451,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,9,1,VER,Max VERSTAPPEN,Red Bull Racing,70,2.0,f,f,f,5793.876,72.645,72.645,0
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,10,12,ANT,Kimi ANTONELLI,Mercedes,69,1.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,11,6,HAD,Isack HADJAR,Racing Bulls,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,12,44,HAM,Lewis HAMILTON,Ferrari,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,13,27,HUL,Nico HULKENBERG,Kick Sauber,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,14,55,SAI,Carlos SAINZ,Williams,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,15,23,ALB,Alexander ALBON,Williams,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,16,31,OCO,Esteban OCON,Haas F1 Team,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,17,22,TSU,Yuki TSUNODA,Red Bull Racing,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,18,43,COL,Franco COLAPINTO,Alpine,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,19,10,GAS,Pierre GASLY,Alpine,69,0.0,f,f,f,,+1 LAP,,1
+2025,14,1266,Hungarian Grand Prix,9928,Race,Hungaroring,Hungary,,87,BEA,Oliver BEARMAN,Haas F1 Team,48,0.0,t,f,f,,,,
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,1,81,PIA,Oscar PIASTRI,McLaren,72,25.0,f,f,f,5909.849,0.0,0.0,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,2,1,VER,Max VERSTAPPEN,Red Bull Racing,72,18.0,f,f,f,5911.12,1.271,1.271,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,3,6,HAD,Isack HADJAR,Racing Bulls,72,15.0,f,f,f,5913.082,3.233,3.233,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,4,63,RUS,George RUSSELL,Mercedes,72,12.0,f,f,f,5915.503,5.654,5.654,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,5,23,ALB,Alexander ALBON,Williams,72,10.0,f,f,f,5916.176,6.327,6.327,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,6,87,BEA,Oliver BEARMAN,Haas F1 Team,72,8.0,f,f,f,5918.893,9.044,9.044,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,7,18,STR,Lance STROLL,Aston Martin,72,6.0,f,f,f,5919.346,9.497,9.497,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,8,14,ALO,Fernando ALONSO,Aston Martin,72,4.0,f,f,f,5921.558,11.709,11.709,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,9,22,TSU,Yuki TSUNODA,Red Bull Racing,72,2.0,f,f,f,5923.446,13.597,13.597,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,10,31,OCO,Esteban OCON,Haas F1 Team,72,1.0,f,f,f,5923.912,14.063,14.063,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,11,43,COL,Franco COLAPINTO,Alpine,72,0.0,f,f,f,5924.36,14.511,14.511,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,12,30,LAW,Liam LAWSON,Racing Bulls,72,0.0,f,f,f,5926.912,17.063,17.063,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,13,55,SAI,Carlos SAINZ,Williams,72,0.0,f,f,f,5927.225,17.376,17.376,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,14,27,HUL,Nico HULKENBERG,Kick Sauber,72,0.0,f,f,f,5929.574,19.725,19.725,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,15,5,BOR,Gabriel BORTOLETO,Kick Sauber,72,0.0,f,f,f,5931.414,21.565,21.565,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,16,12,ANT,Kimi ANTONELLI,Mercedes,72,0.0,f,f,f,5931.878,22.029,22.029,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,17,10,GAS,Pierre GASLY,Alpine,72,0.0,f,f,f,5933.478,23.629,23.629,0
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,18,4,NOR,Lando NORRIS,McLaren,64,0.0,t,f,f,,,,
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,,16,LEC,Charles LECLERC,Ferrari,52,0.0,t,f,f,,,,
+2025,15,1267,Dutch Grand Prix,9920,Race,Zandvoort,Netherlands,,44,HAM,Lewis HAMILTON,Ferrari,22,0.0,t,f,f,,,,
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,1,1,VER,Max VERSTAPPEN,Red Bull Racing,53,25.0,f,f,f,4404.325,0,0,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,2,4,NOR,Lando NORRIS,McLaren,53,18.0,f,f,f,4423.532,19.207,19.207,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,3,81,PIA,Oscar PIASTRI,McLaren,53,15.0,f,f,f,4425.676,21.351,21.351,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,4,16,LEC,Charles LECLERC,Ferrari,53,12.0,f,f,f,4429.949,25.624,25.624,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,5,63,RUS,George RUSSELL,Mercedes,53,10.0,f,f,f,4437.206,32.881,32.881,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,6,44,HAM,Lewis HAMILTON,Ferrari,53,8.0,f,f,f,4441.774,37.449,37.449,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,7,23,ALB,Alexander ALBON,Williams,53,6.0,f,f,f,4454.862,50.537,50.537,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,8,5,BOR,Gabriel BORTOLETO,Kick Sauber,53,4.0,f,f,f,4462.809,58.484,58.484,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,9,12,ANT,Kimi ANTONELLI,Mercedes,53,2.0,f,f,f,4464.087,59.762,59.762,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,10,6,HAD,Isack HADJAR,Racing Bulls,53,1.0,f,f,f,4468.216,63.891,63.891,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,11,55,SAI,Carlos SAINZ,Williams,53,0.0,f,f,f,4468.794,64.469,64.469,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,12,87,BEA,Oliver BEARMAN,Haas F1 Team,53,0.0,f,f,f,4483.613,79.288,79.288,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,13,22,TSU,Yuki TSUNODA,Red Bull Racing,53,0.0,f,f,f,4485.026,80.701,80.701,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,14,30,LAW,Liam LAWSON,Racing Bulls,53,0.0,f,f,f,4486.676,82.351,82.351,0
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,15,31,OCO,Esteban OCON,Haas F1 Team,52,0.0,f,f,f,,+1 LAP,,1
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,16,10,GAS,Pierre GASLY,Alpine,52,0.0,f,f,f,,+1 LAP,,1
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,17,43,COL,Franco COLAPINTO,Alpine,52,0.0,f,f,f,,+1 LAP,,1
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,18,18,STR,Lance STROLL,Aston Martin,52,0.0,f,f,f,,+1 LAP,,1
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,,14,ALO,Fernando ALONSO,Aston Martin,24,0.0,t,f,f,,,,
+2025,16,1268,Italian Grand Prix,9912,Race,Monza,Italy,,27,HUL,Nico HULKENBERG,Kick Sauber,0,0.0,f,t,f,,,,
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,1,1,VER,Max VERSTAPPEN,Red Bull Racing,51,25.0,f,f,f,5606.408,0,0,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,2,63,RUS,George RUSSELL,Mercedes,51,18.0,f,f,f,5621.017,14.609,14.609,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,3,55,SAI,Carlos SAINZ,Williams,51,15.0,f,f,f,5625.607,19.199,19.199,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,4,12,ANT,Kimi ANTONELLI,Mercedes,51,12.0,f,f,f,5628.168,21.76,21.76,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,5,30,LAW,Liam LAWSON,Racing Bulls,51,10.0,f,f,f,5639.698,33.29,33.29,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,6,22,TSU,Yuki TSUNODA,Red Bull Racing,51,8.0,f,f,f,5640.216,33.808,33.808,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,7,4,NOR,Lando NORRIS,McLaren,51,6.0,f,f,f,5640.635,34.227,34.227,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,8,44,HAM,Lewis HAMILTON,Ferrari,51,4.0,f,f,f,5642.718,36.31,36.31,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,9,16,LEC,Charles LECLERC,Ferrari,51,2.0,f,f,f,5643.182,36.774,36.774,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,10,6,HAD,Isack HADJAR,Racing Bulls,51,1.0,f,f,f,5645.39,38.982,38.982,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,11,5,BOR,Gabriel BORTOLETO,Kick Sauber,51,0.0,f,f,f,5674.014,67.606,67.606,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,12,87,BEA,Oliver BEARMAN,Haas F1 Team,51,0.0,f,f,f,5674.67,68.262,68.262,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,13,23,ALB,Alexander ALBON,Williams,51,0.0,f,f,f,5679.278,72.87,72.87,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,14,31,OCO,Esteban OCON,Haas F1 Team,51,0.0,f,f,f,5683.988,77.58,77.58,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,15,14,ALO,Fernando ALONSO,Aston Martin,51,0.0,f,f,f,5685.115,78.707,78.707,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,16,27,HUL,Nico HULKENBERG,Kick Sauber,51,0.0,f,f,f,5686.645,80.237,80.237,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,17,18,STR,Lance STROLL,Aston Martin,51,0.0,f,f,f,5702.8,96.392,96.392,0
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,18,10,GAS,Pierre GASLY,Alpine,50,0.0,f,f,f,,+1 LAP,,1
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,19,43,COL,Franco COLAPINTO,Alpine,50,0.0,f,f,f,,+1 LAP,,1
+2025,17,1269,Azerbaijan Grand Prix,9904,Race,Baku,Azerbaijan,,81,PIA,Oscar PIASTRI,McLaren,0,0.0,t,f,f,,,,
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,1,63,RUS,George RUSSELL,Mercedes,62,25.0,f,f,f,6022.367,0,0,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,2,1,VER,Max VERSTAPPEN,Red Bull Racing,62,18.0,f,f,f,6027.797,5.43,5.43,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,3,4,NOR,Lando NORRIS,McLaren,62,15.0,f,f,f,6028.433,6.066,6.066,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,4,81,PIA,Oscar PIASTRI,McLaren,62,12.0,f,f,f,6030.513,8.146,8.146,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,5,12,ANT,Kimi ANTONELLI,Mercedes,62,10.0,f,f,f,6056.048,33.681,33.681,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,6,16,LEC,Charles LECLERC,Ferrari,62,8.0,f,f,f,6068.363,45.996,45.996,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,7,14,ALO,Fernando ALONSO,Aston Martin,62,6.0,f,f,f,6103.034,80.667,80.667,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,8,44,HAM,Lewis HAMILTON,Ferrari,62,4.0,f,f,f,6107.618,85.251,85.251,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,9,87,BEA,Oliver BEARMAN,Haas F1 Team,62,2.0,f,f,f,6115.894,93.527,93.527,0
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,10,55,SAI,Carlos SAINZ,Williams,61,1.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,11,6,HAD,Isack HADJAR,Racing Bulls,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,12,22,TSU,Yuki TSUNODA,Red Bull Racing,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,13,18,STR,Lance STROLL,Aston Martin,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,14,23,ALB,Alexander ALBON,Williams,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,15,30,LAW,Liam LAWSON,Racing Bulls,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,16,43,COL,Franco COLAPINTO,Alpine,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,17,5,BOR,Gabriel BORTOLETO,Kick Sauber,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,18,31,OCO,Esteban OCON,Haas F1 Team,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,19,10,GAS,Pierre GASLY,Alpine,61,0.0,f,f,f,,+1 LAP,,1
+2025,18,1270,Singapore Grand Prix,9896,Race,Singapore,Singapore,20,27,HUL,Nico HULKENBERG,Kick Sauber,61,0.0,f,f,f,,+1 LAP,,1
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,1,1,VER,Max VERSTAPPEN,Red Bull Racing,56,25.0,f,f,f,5640.161,0,0,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,2,4,NOR,Lando NORRIS,McLaren,56,18.0,f,f,f,5648.12,7.959,7.959,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,3,16,LEC,Charles LECLERC,Ferrari,56,15.0,f,f,f,5655.534,15.373,15.373,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,4,44,HAM,Lewis HAMILTON,Ferrari,56,12.0,f,f,f,5668.697,28.536,28.536,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,5,81,PIA,Oscar PIASTRI,McLaren,56,10.0,f,f,f,5669.839,29.678,29.678,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,6,63,RUS,George RUSSELL,Mercedes,56,8.0,f,f,f,5673.617,33.456,33.456,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,7,22,TSU,Yuki TSUNODA,Red Bull Racing,56,6.0,f,f,f,5692.875,52.714,52.714,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,8,27,HUL,Nico HULKENBERG,Kick Sauber,56,4.0,f,f,f,5697.41,57.249,57.249,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,9,87,BEA,Oliver BEARMAN,Haas F1 Team,56,2.0,f,f,f,5704.883,64.722,64.722,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,10,14,ALO,Fernando ALONSO,Aston Martin,56,1.0,f,f,f,5710.162,70.001,70.001,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,11,30,LAW,Liam LAWSON,Racing Bulls,56,0.0,f,f,f,5713.37,73.209,73.209,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,12,18,STR,Lance STROLL,Aston Martin,56,0.0,f,f,f,5714.939,74.778,74.778,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,13,12,ANT,Kimi ANTONELLI,Mercedes,56,0.0,f,f,f,5715.907,75.746,75.746,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,14,23,ALB,Alexander ALBON,Williams,56,0.0,f,f,f,5720.161,80.0,80.0,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,15,31,OCO,Esteban OCON,Haas F1 Team,56,0.0,f,f,f,5723.204,83.043,83.043,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,16,6,HAD,Isack HADJAR,Racing Bulls,56,0.0,f,f,f,5732.968,92.807,92.807,0
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,17,43,COL,Franco COLAPINTO,Alpine,55,0.0,f,f,f,,+1 LAP,,1
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,18,5,BOR,Gabriel BORTOLETO,Kick Sauber,55,0.0,f,f,f,,+1 LAP,,1
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,19,10,GAS,Pierre GASLY,Alpine,55,0.0,f,f,f,,+1 LAP,,1
+2025,19,1271,United States Grand Prix,9888,Race,Austin,United States,,55,SAI,Carlos SAINZ,Williams,5,0.0,t,f,f,,,,
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,1,4,NOR,Lando NORRIS,McLaren,71,25.0,f,f,f,5878.574,0,0,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,2,16,LEC,Charles LECLERC,Ferrari,71,18.0,f,f,f,5908.898,30.324,30.324,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,3,1,VER,Max VERSTAPPEN,Red Bull Racing,71,15.0,f,f,f,5909.623,31.049,31.049,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,4,87,BEA,Oliver BEARMAN,Haas F1 Team,71,12.0,f,f,f,5919.529,40.955,40.955,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,5,81,PIA,Oscar PIASTRI,McLaren,71,10.0,f,f,f,5920.639,42.065,42.065,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,6,12,ANT,Kimi ANTONELLI,Mercedes,71,8.0,f,f,f,5926.411,47.837,47.837,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,7,63,RUS,George RUSSELL,Mercedes,71,6.0,f,f,f,5928.861,50.287,50.287,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,8,44,HAM,Lewis HAMILTON,Ferrari,71,4.0,f,f,f,5935.02,56.446,56.446,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,9,31,OCO,Esteban OCON,Haas F1 Team,71,2.0,f,f,f,5954.038,75.464,75.464,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,10,5,BOR,Gabriel BORTOLETO,Kick Sauber,71,1.0,f,f,f,5955.437,76.863,76.863,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,11,22,TSU,Yuki TSUNODA,Red Bull Racing,71,0.0,f,f,f,5957.622,79.048,79.048,0
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,12,23,ALB,Alexander ALBON,Williams,70,0.0,f,f,f,,+1 LAP,,1
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,13,6,HAD,Isack HADJAR,Racing Bulls,70,0.0,f,f,f,,+1 LAP,,1
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,14,18,STR,Lance STROLL,Aston Martin,70,0.0,f,f,f,,+1 LAP,,1
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,15,10,GAS,Pierre GASLY,Alpine,70,0.0,f,f,f,,+1 LAP,,1
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,16,43,COL,Franco COLAPINTO,Alpine,70,0.0,f,f,f,,+1 LAP,,1
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,17,55,SAI,Carlos SAINZ,Williams,67,0.0,t,f,f,,,,
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,,14,ALO,Fernando ALONSO,Aston Martin,34,0.0,t,f,f,,,,
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,,27,HUL,Nico HULKENBERG,Kick Sauber,25,0.0,t,f,f,,,,
+2025,20,1272,Mexico City Grand Prix,9877,Race,Mexico City,Mexico,,30,LAW,Liam LAWSON,Racing Bulls,5,0.0,t,f,f,,,,
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,1,4,NOR,Lando NORRIS,McLaren,71,25.0,f,f,f,5521.596,0.0,0.0,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,2,12,ANT,Kimi ANTONELLI,Mercedes,71,18.0,f,f,f,5531.984,10.388,10.388,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,3,1,VER,Max VERSTAPPEN,Red Bull Racing,71,15.0,f,f,f,5532.346,10.75,10.75,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,4,63,RUS,George RUSSELL,Mercedes,71,12.0,f,f,f,5536.863,15.267,15.267,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,5,81,PIA,Oscar PIASTRI,McLaren,71,10.0,f,f,f,5537.345,15.749,15.749,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,6,87,BEA,Oliver BEARMAN,Haas F1 Team,71,8.0,f,f,f,5551.226,29.63,29.63,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,7,30,LAW,Liam LAWSON,Racing Bulls,71,6.0,f,f,f,5574.238,52.642,52.642,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,8,6,HAD,Isack HADJAR,Racing Bulls,71,4.0,f,f,f,5574.469,52.873,52.873,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,9,27,HUL,Nico HULKENBERG,Kick Sauber,71,2.0,f,f,f,5574.92,53.324,53.324,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,10,10,GAS,Pierre GASLY,Alpine,71,1.0,f,f,f,5575.51,53.914,53.914,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,11,23,ALB,Alexander ALBON,Williams,71,0.0,f,f,f,5575.78,54.184,54.184,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,12,31,OCO,Esteban OCON,Haas F1 Team,71,0.0,f,f,f,5576.292,54.696,54.696,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,13,55,SAI,Carlos SAINZ,Williams,71,0.0,f,f,f,5577.016,55.42,55.42,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,14,14,ALO,Fernando ALONSO,Aston Martin,71,0.0,f,f,f,5577.362,55.766,55.766,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,15,43,COL,Franco COLAPINTO,Alpine,71,0.0,f,f,f,5579.373,57.777,57.777,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,16,18,STR,Lance STROLL,Aston Martin,71,0.0,f,f,f,5579.843,58.247,58.247,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,17,22,TSU,Yuki TSUNODA,Red Bull Racing,71,0.0,f,f,f,5590.772,69.176,69.176,0
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,,5,BOR,Gabriel BORTOLETO,Kick Sauber,0,0.0,t,f,f,,,,
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,,16,LEC,Charles LECLERC,Ferrari,5,0.0,t,f,f,,,,
+2025,21,1273,São Paulo Grand Prix,9869,Race,Interlagos,Brazil,,44,HAM,Lewis HAMILTON,Ferrari,37,0.0,t,f,f,,,,
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,1,1,VER,Max VERSTAPPEN,Red Bull Racing,50,25.0,f,f,f,4868.429,0,0,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,2,63,RUS,George RUSSELL,Mercedes,50,18.0,f,f,f,4891.975,23.546,23.546,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,3,12,ANT,Kimi ANTONELLI,Mercedes,50,15.0,f,f,f,4898.917,30.488,30.488,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,4,16,LEC,Charles LECLERC,Ferrari,50,12.0,f,f,f,4899.107,30.678,30.678,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,5,55,SAI,Carlos SAINZ,Williams,50,10.0,f,f,f,4903.353,34.924,34.924,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,6,6,HAD,Isack HADJAR,Racing Bulls,50,8.0,f,f,f,4913.686,45.257,45.257,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,7,27,HUL,Nico HULKENBERG,Kick Sauber,50,6.0,f,f,f,4919.563,51.134,51.134,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,8,44,HAM,Lewis HAMILTON,Ferrari,50,4.0,f,f,f,4927.798,59.369,59.369,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,9,31,OCO,Esteban OCON,Haas F1 Team,50,2.0,f,f,f,4929.064,60.635,60.635,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,10,87,BEA,Oliver BEARMAN,Haas F1 Team,50,1.0,f,f,f,4938.978,70.549,70.549,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,11,14,ALO,Fernando ALONSO,Aston Martin,50,0.0,f,f,f,4953.737,85.308,85.308,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,12,22,TSU,Yuki TSUNODA,Red Bull Racing,50,0.0,f,f,f,4955.403,86.974,86.974,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,13,10,GAS,Pierre GASLY,Alpine,50,0.0,f,f,f,4960.131,91.702,91.702,0
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,14,30,LAW,Liam LAWSON,Racing Bulls,49,0.0,f,f,f,,+1 LAP,,1
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,15,43,COL,Franco COLAPINTO,Alpine,49,0.0,f,f,f,,+1 LAP,,1
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,,4,NOR,Lando NORRIS,McLaren,,0.0,f,f,t,,,,
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,,5,BOR,Gabriel BORTOLETO,Kick Sauber,2,0.0,t,f,f,,,,
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,,18,STR,Lance STROLL,Aston Martin,0,0.0,t,f,f,,,,
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,,23,ALB,Alexander ALBON,Williams,35,0.0,t,f,f,,,,
+2025,22,1274,Las Vegas Grand Prix,9858,Race,Las Vegas,United States,,81,PIA,Oscar PIASTRI,McLaren,,0.0,f,f,t,,,,
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,1,1,VER,Max VERSTAPPEN,Red Bull Racing,57,25.0,f,f,f,5078.241,0,0,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,2,81,PIA,Oscar PIASTRI,McLaren,57,18.0,f,f,f,5086.236,7.995,7.995,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,3,55,SAI,Carlos SAINZ,Williams,57,15.0,f,f,f,5100.906,22.665,22.665,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,4,4,NOR,Lando NORRIS,McLaren,57,12.0,f,f,f,5101.556,23.315,23.315,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,5,12,ANT,Kimi ANTONELLI,Mercedes,57,10.0,f,f,f,5106.558,28.317,28.317,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,6,63,RUS,George RUSSELL,Mercedes,57,8.0,f,f,f,5126.84,48.599,48.599,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,7,14,ALO,Fernando ALONSO,Aston Martin,57,6.0,f,f,f,5132.286,54.045,54.045,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,8,16,LEC,Charles LECLERC,Ferrari,57,4.0,f,f,f,5135.026,56.785,56.785,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,9,30,LAW,Liam LAWSON,Racing Bulls,57,2.0,f,f,f,5138.314,60.073,60.073,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,10,22,TSU,Yuki TSUNODA,Red Bull Racing,57,1.0,f,f,f,5140.011,61.77,61.77,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,11,23,ALB,Alexander ALBON,Williams,57,0.0,f,f,f,5145.172,66.931,66.931,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,12,44,HAM,Lewis HAMILTON,Ferrari,57,0.0,f,f,f,5155.971,77.73,77.73,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,13,5,BOR,Gabriel BORTOLETO,Kick Sauber,57,0.0,f,f,f,5163.053,84.812,84.812,0
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,14,43,COL,Franco COLAPINTO,Alpine,56,0.0,f,f,f,,+1 LAP,,1
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,15,31,OCO,Esteban OCON,Haas F1 Team,56,0.0,f,f,f,,+1 LAP,,1
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,16,10,GAS,Pierre GASLY,Alpine,56,0.0,f,f,f,,+1 LAP,,1
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,17,18,STR,Lance STROLL,Aston Martin,55,0.0,t,f,f,,,,
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,18,6,HAD,Isack HADJAR,Racing Bulls,55,0.0,t,f,f,,,,
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,,27,HUL,Nico HULKENBERG,Kick Sauber,6,0.0,t,f,f,,,,
+2025,23,1275,Qatar Grand Prix,9850,Race,Lusail,Qatar,,87,BEA,Oliver BEARMAN,Haas F1 Team,41,0.0,t,f,f,,,,
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,1,1,VER,Max VERSTAPPEN,Red Bull Racing,58,25.0,f,f,f,5167.469,0,0,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,2,81,PIA,Oscar PIASTRI,McLaren,58,18.0,f,f,f,5180.063,12.594,12.594,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,3,4,NOR,Lando NORRIS,McLaren,58,15.0,f,f,f,5184.041,16.572,16.572,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,4,16,LEC,Charles LECLERC,Ferrari,58,12.0,f,f,f,5190.748,23.279,23.279,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,5,63,RUS,George RUSSELL,Mercedes,58,10.0,f,f,f,5216.032,48.563,48.563,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,6,14,ALO,Fernando ALONSO,Aston Martin,58,8.0,f,f,f,5235.031,67.562,67.562,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,7,31,OCO,Esteban OCON,Haas F1 Team,58,6.0,f,f,f,5237.345,69.876,69.876,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,8,44,HAM,Lewis HAMILTON,Ferrari,58,4.0,f,f,f,5240.139,72.67,72.67,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,9,27,HUL,Nico HULKENBERG,Kick Sauber,58,2.0,f,f,f,5246.483,79.014,79.014,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,10,18,STR,Lance STROLL,Aston Martin,58,1.0,f,f,f,5246.992,79.523,79.523,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,11,5,BOR,Gabriel BORTOLETO,Kick Sauber,58,0.0,f,f,f,5248.512,81.043,81.043,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,12,87,BEA,Oliver BEARMAN,Haas F1 Team,58,0.0,f,f,f,5248.635,81.166,81.166,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,13,55,SAI,Carlos SAINZ,Williams,58,0.0,f,f,f,5249.627,82.158,82.158,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,14,22,TSU,Yuki TSUNODA,Red Bull Racing,58,0.0,f,f,f,5251.263,83.794,83.794,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,15,12,ANT,Kimi ANTONELLI,Mercedes,58,0.0,f,f,f,5251.868,84.399,84.399,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,16,23,ALB,Alexander ALBON,Williams,58,0.0,f,f,f,5257.796,90.327,90.327,0
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,17,6,HAD,Isack HADJAR,Racing Bulls,57,0.0,f,f,f,,+1 LAP,,1
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,18,30,LAW,Liam LAWSON,Racing Bulls,57,0.0,f,f,f,,+1 LAP,,1
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,19,10,GAS,Pierre GASLY,Alpine,57,0.0,f,f,f,,+1 LAP,,1
+2025,24,1276,Abu Dhabi Grand Prix,9839,Race,Yas Marina Circuit,United Arab Emirates,20,43,COL,Franco COLAPINTO,Alpine,57,0.0,f,f,f,,+1 LAP,,1

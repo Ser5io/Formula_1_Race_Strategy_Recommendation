@@ -1,0 +1,10 @@
+team_member,table_name,row_count,source_column_count,null_cell_count,duplicate_key_groups,extra_duplicate_rows
+Mahmud,raw_races,70,22,210,0,0
+Mahmud,raw_weather,34420,16,0,28,28
+Moaz,raw_constructors,30,7,0,0,0
+Moaz,raw_drivers,106,12,2,34,38
+Moaz,raw_race_results,1397,20,811,0,0
+Mohamed,raw_race_laps,77373,54,269415,0,0
+Mohamed,raw_stint_summary,3934,24,6143,0,0
+Yousef,raw_pit_stops,2339,16,1488,0,0
+Yousef,raw_race_control,6286,17,22585,8,8
