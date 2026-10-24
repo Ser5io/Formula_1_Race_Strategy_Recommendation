@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مشروع استراتيجية فورمولا 1</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="brand">
+      <img src="assets/f1_logo.svg" alt="F1">
+      <div>مخزن بيانات الاستراتيجية<small>حتى طبقة Silver</small></div>
+    </div>
+    <nav>
+
+      <a href="#basics">ابدأ من هنا</a>
+      <a href="#done">إيه اللي اتعمل</a>
+      <a href="#journey">رحلة البيانات</a>
+      <a href="#examples">أمثلة عملية</a>
+      <a href="#dictionary">قاموس البيانات</a>
+      <a href="#code">شرح الكود</a>
+      <a href="#tasks">مهام كل عضو</a>
+      <a href="#faq">أسئلة متوقعة</a>
+      <a href="#project">المشروع</a>
+      <a href="#data">البيانات</a>
+      <a href="#architecture">المعمارية</a>
+      <a href="#bronze">Bronze</a>
+      <a href="#silver">Silver</a>
+      <a href="#results">النتائج</a>
+      <a href="#files">الملفات</a>
+      <a href="#review">المراجعة</a>
+      <a href="#glossary">المصطلحات</a>
+
+    </nav>
+  </aside>
+  <main>
+<section class="page-section" id="basics">
+  <h2>ابدأ من هنا</h2>
+  <p>الصفحة دي بتشرح المشروع من الصفر. لو أول مرة تسمع عن الفورمولا 1 أو عن قواعد البيانات، اقرا القسم ده قبل أي جدول.</p>
+  <h3>الفورمولا 1</h3>
+  <p>فورمولا 1 سباق عربيات سريعة على حلبات حوالين العالم. الموسم فيه جولات، وكل جولة فيها سباق واحد اسمه <span class="en">Race</span>. السواق بيتسابق والفريق بيختار إمتى يغيّر الإطارات.</p>
+  <p><strong>وقفة البيت</strong> هي دخول العربية حارة الصيانة عشان تغيّر الإطارات. الدخول بيضيع ثواني، بس الإطار الجديد بيخلّي اللفات اللي بعده أسرع.</p>
+  <p><strong>نوع الإطار</strong>، أو <span class="en">compound</span>، هو درجة المطاط. السوفت أسرع وبيخلص بسرعة، والهارد أبطأ وبيعيش أطول. بيريلي بتسمّي الدرجات الجافة من <span class="en">C1</span> (أقسى) لحد <span class="en">C6</span> (أنعم). المطر ليه نوعين: إنترميديت وويت.</p>
+  <p><strong>تآكل الإطار</strong> معناه إن اللفة بتبطأ كل ما الإطار يشتغل أكتر. ده مش هو نفسه إن العربية بقت أخف لأن البنزين بيخلص. عشان كده بنضيف 0.03 ثانية عن كل لفة عدّت، وبنسمّي الناتج زمن مصحّح بالوقود.</p>
+  <p><strong>سيارة الأمان</strong>، أو <span class="en">Safety Car</span>، بتنزل لما فيه حادث. العربيات بتمشي وراها ببطء والتجاوز بيتقفل. الـ <span class="en">Virtual Safety Car</span> نفس الفكرة من غير عربية على التراك: كل سواق بيبطّأ بنفسه. <strong>العلم الأحمر</strong> بيوقف السباق خالص، والوقفة الطويلة في الحارة ساعتها مش قرار استراتيجي.</p>
+  <p>الاستراتيجية بتكسب السباق أو بتخسره لأن التوقيت أهم من سرعة اللفة لوحدها. لو دخلت بدري أوي هتخلّص الإطار الجديد قبل النهاية. لو دخلت متأخر هتفضل بطيء واللي وراك يعدّيك.</p>
+  <h3>المشروع عايز يعمل إيه</h3>
+  <p>الفكرة مساعد جنب حائط الفريق، اسمه <span class="en">pit wall</span>، يقترح أحسن 3 استراتيجيات للباقي من السباق. عشان المساعد ده يشتغل، لازم الأول البيانات تبقى نظيفة ومفهومة. الشغل الحالي وقف عند التنظيف. الموديل والتطبيق لسه متتعملوش.</p>
+  <h3>الكلمات اللي هتتكرر</h3>
+  <p><strong>البيانات</strong> هي الأرقام والكلمات اللي بنجمعها عن السباق. <strong>ملف CSV</strong> جدول محفوظ كنص، كل صف سطر، والأعمدة مفصولة بفاصلة. <strong>قاعدة البيانات</strong> مكان بنحط فيه الجداول ونسألها أسئلة. <strong>SQL</strong> هي لغة السؤال دي. <strong>مستودع البيانات</strong>، أو <span class="en">data warehouse</span>، قاعدة متقسمة طبقات: الخام في حتة، والنظيف في حتة.</p>
+  <p>الطبقات هنا اسمها <span class="en">Bronze</span> و<span class="en">Silver</span> و<span class="en">Gold</span>. زي المطبخ: البرونز هو الخضروات وهي لسه في الأكياس، السيلفر هو بعد الغسيل والتقطيع، والجولد هو الطبق الجاهز. الجولد مش موجود في المشروع ده.</p>
+</section>
+
+<section class="page-section" id="done">
+  <h2>إيه اللي اتعمل</h2>
+  <ol class="timeline">
+    <li><strong>سحب البيانات.</strong> سكربت بايثون سحب مواسم 2023 و2024 و2025 من واجهة <span class="en">OpenF1</span> وحطهم في 9 ملفات CSV. ده حصل قبل المستودع، وده البايثون الوحيد في المشروع. موسم 2022 مش متاح من المصدر.</li>
+    <li><strong>قاعدة البيانات.</strong> اتعملت قاعدة PostgreSQL اسمها <span class="en">f1_warehouse</span>، وفيها مخططين: <span class="en">bronze</span> و<span class="en">silver</span>.</li>
+    <li><strong>برونز.</strong> 4 سكربتات SQL حمّلت الملفات التسعة في 9 جداول نصّية، وطلعت تقرير المراجعة.</li>
+    <li><strong>سيلفر.</strong> 4 سكربتات SQL نظّفت نفس الجداول التسعة: أنواع، حذف تكرار، وعلامات. وطلعت تقرير تاني.</li>
+    <li><strong>التقارير.</strong> اتكتب تقريران بصيغة Markdown، واحد للبرونز وواحد للسيلفر.</li>
+    <li><strong>التصدير.</strong> كل جدول اتصدّر CSV ومتقسّم على العضو المسؤول عنه.</li>
+    <li><strong>الموقع ده.</strong> صفحة واحدة بتعرض الأرقام الحقيقية من القاعدة.</li>
+  </ol>
+  <p class="note">اللي ما اتعملش: طبقة Gold، وموديلات التآكل والمطر وسيارة الأمان، وتطبيق الاستراتيجيات. السبب إن المطلوب وقف عند سيلفر. الأرقام اللي تحت كلها من الطبقة دي.</p>
+</section>
+
+<section class="page-section" id="journey">
+  <h2>رحلة البيانات</h2>
+  <div class="flow">
+    <article class="card flow-box"><h3>CSV</h3><p>المدخل: 9 ملفات من OpenF1.</p><p>المفروض: يحفظ المصدر زي ما هو.</p><p>اللي حصل: الملفات اتسابت من غير تعديل في <span class="en">raw_data</span>.</p><p>المخرج: 77,373 صف لفة، و70 سباق.</p></article>
+    <article class="card flow-box"><h3>Bronze</h3><p>المدخل: ملفات CSV.</p><p>المفروض: تحميل خام من غير تنظيف، عشان نقدر نرجّع الأصل.</p><p>اللي حصل: كل الأعمدة نص <span class="en">TEXT</span>، ومعاها وقت التحميل واسم الملف.</p><p>المخرج: نفس عدد الصفوف، 9 جداول.</p></article>
+    <article class="card flow-box"><h3>Silver</h3><p>المدخل: جداول البرونز.</p><p>المفروض: أنواع صحيحة، مفاتيح من غير تكرار، وصفوف جاهزة للتحليل.</p><p>اللي حصل: 63,115 لفة صالحة من 77,373، ووقفات البيت نزلت لـ 2,229، والسائقين بقوا 68 بدل 106.</p><p>المخرج: 9 جداول منظّفة.</p></article>
+    <article class="card flow-box later"><h3>Gold</h3><p>المفروض: ملخصات لكل ستنت وموديل بيختار الاستراتيجية.</p><p>اللي حصل: لسه ما اتبناش.</p></article>
+  </div>
+  <p>ليه طبقتين؟ البرونز بيخلّيك تعيد التنظيف في أي وقت من غير ما تنزّل البيانات تاني. لو قاعدة 107% اتغيّرت، السيلفر بيتعمله من الأول والملفات الأصلية ما بتتلمسش.</p>
+</section>
+
+<section class="page-section" id="examples">
+  <h2>أمثلة عملية</h2>
+  <p>الأرقام دي صفوف حقيقية من القاعدة، مش أمثلة متخيلة. كل مثال بيوريك الصف قبل التنظيف وبعده.</p>
+  <div id="example-host"></div>
+</section>
+
+<section class="page-section" id="dictionary">
+  <h2>قاموس البيانات</h2>
+  <p>كارت لكل جدول. النوع جاي من قاعدة البيانات، والمعنى مكتوب بالعربي. اختار برونز أو سيلفر عشان تقصر القائمة.</p>
+  <div class="filters">
+    <button type="button" class="filter active" data-schema="all">الكل</button>
+    <button type="button" class="filter" data-schema="bronze">Bronze</button>
+    <button type="button" class="filter" data-schema="silver">Silver</button>
+  </div>
+  <div id="dictionary-host"></div>
+</section>
+
+<section class="page-section" id="code">
+  <h2>شرح الكود</h2>
+  <p>8 سكربتات SQL. افتح أي واحد وهتلاقي مقتطف حقيقي، والمفروض يعمله، وإزاي اتعمل، واستعلام تقدر تجربه.</p>
+
+  <details>
+    <summary>01 — محمد — تحميل اللفات والستنتات <span class="en">01_mohamed_bronze_laps_stints.sql</span></summary>
+    <p>المهام: تحميل <span class="en">Race_Laps</span> و<span class="en">Stint_Summary</span>.</p>
+    <p><strong>المفروض يعمل:</strong> يحط كل صف في جدول نصّي من غير ما يحوّل الأنواع.</p>
+    <p><strong>اتعمل إزاي:</strong> الأعمدة كلها <span class="en">TEXT</span>، والتحميل بأمر <span class="en">\copy</span> من الملف.</p>
+    <pre><code>lap_duration TEXT,
+fuel_corrected_lap_time TEXT,
+_ingested_at TIMESTAMPTZ DEFAULT NOW(),
+_source_file TEXT</code></pre>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_race_laps;</span> المتوقع 77,373.</p>
+  </details>
+
+  <details>
+    <summary>02 — يوسف — البيت ورسائل السباق <span class="en">02_yousef_bronze_pits_control.sql</span></summary>
+    <p>المهام: تحميل <span class="en">Pit_Stops</span> و<span class="en">Race_Control</span> كنص.</p>
+    <p><strong>المفروض يعمل:</strong> يحفظ الوقفات والرسائل زي الملف، حتى لو الرسالة مكررة.</p>
+    <p><strong>اتعمل إزاي:</strong> نفس أسلوب البرونز. التكرار بيتشال بعدين في السيلفر.</p>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_pit_stops;</span> المتوقع 2,339.</p>
+  </details>
+
+  <details>
+    <summary>03 — محمود — الطقس والسباقات <span class="en">03_mahmud_bronze_weather_races.sql</span></summary>
+    <p>المهام: تحميل <span class="en">Weather</span> و<span class="en">Races</span>.</p>
+    <p><strong>المفروض يعمل:</strong> يحفظ كل دقايق الويك إند، وأكواد الإطارات فاضية زي المصدر.</p>
+    <p><strong>اتعمل إزاي:</strong> أعمدة <span class="en">c_hard</span> و<span class="en">c_medium</span> و<span class="en">c_soft</span> نص، وعدد الفاضي 70 سباق.</p>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_weather;</span> المتوقع 34,420.</p>
+  </details>
+
+  <details>
+    <summary>04 — معاذ — السائقين والفرق والنتائج والمراجعة <span class="en">04_moaz_bronze_entities_and_audit.sql</span></summary>
+    <p>المهام: تحميل 3 جداول، وبناء <span class="en">bronze.vw_ingestion_audit_summary</span>.</p>
+    <p><strong>المفروض يعمل:</strong> يعد الصفوف والفراغات ومجموعات التكرار لكل جدول.</p>
+    <p><strong>اتعمل إزاي:</strong> العرض بيجمع 9 جداول بأمر <span class="en">UNION ALL</span>، وبيعد الخلايا الفاضية بتحويل الصف لـ JSON.</p>
+    <p>استعلام المراجعة: <span class="en">SELECT * FROM bronze.vw_ingestion_audit_summary;</span> المتوقع 9 صفوف.</p>
+  </details>
+
+  <details>
+    <summary>05 — محمد — لفات السيلفر <span class="en">01_mohamed_silver_fact_laps.sql</span></summary>
+    <p>المهام: تحويل الأنواع، تصحيح الوقود، وسيط السائق، وقاعدة 107%.</p>
+    <p><strong>المفروض يعمل:</strong> يعلّم اللفة الصالحة من غير ما يمسح الصف.</p>
+    <p><strong>اتعمل إزاي:</strong> الوسيط حساب مجمّع، لأن Postgres هنا ما بيدعمش <span class="en">PERCENTILE_CONT</span> كنافذة. التصحيح: الزمن زائد 0.03 في (رقم اللفة ناقص 1).</p>
+    <pre><code>medians AS (
+    SELECT session_key, driver_number,
+        PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY lap_duration)
+            AS driver_median_lap_s
+    FROM imputed
+    WHERE lap_duration IS NOT NULL
+      AND NOT COALESCE(is_first_lap, FALSE)
+      AND NOT COALESCE(safety_car_in_lap, FALSE)
+      AND NOT COALESCE(vsc_in_lap, FALSE)
+      AND NOT COALESCE(red_flag_in_lap, FALSE)
+    GROUP BY session_key, driver_number
+)
+-- fuel: lap_duration + (0.03 * (lap_number - 1))</code></pre>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FILTER (WHERE is_valid_strategy_lap) FROM silver.fact_race_laps;</span> المتوقع 63,115.</p>
+  </details>
+
+  <details>
+    <summary>06 — يوسف — الوقفات والأعلام <span class="en">02_yousef_silver_pits_and_flags.sql</span></summary>
+    <p>المهام: شيل وقفات أطول من 60 ثانية، وصنّف الرسائل.</p>
+    <p><strong>المفروض يعمل:</strong> يميّز VSC عن SC، لأن كلمة SAFETY CAR موجودة جوه رسالة الـ VSC.</p>
+    <p><strong>اتعمل إزاي:</strong> شرط الـ VSC بيتفحص الأول، وشرط العلم الأحمر هو العلم الأحمر نفسه أو الرسالة تساوي RED FLAG بالظبط، عشان جملة CHEQUERED FLAG ما تتعدّش علم أحمر.</p>
+    <pre><code>WHEN UPPER(message) LIKE '%VIRTUAL SAFETY CAR DEPLOYED%' THEN 'VSC_DEPLOYED'
+WHEN UPPER(message) LIKE '%SAFETY CAR DEPLOYED%' THEN 'SC_DEPLOYED'
+WHEN is_red_flag_event THEN 'RED_FLAG'</code></pre>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.fact_pit_stops;</span> المتوقع 2,229.</p>
+  </details>
+
+  <details>
+    <summary>07 — محمود — السباقات والطقس <span class="en">03_mahmud_silver_weather_and_circuits.sql</span></summary>
+    <p>المهام: خريطة Pirelli، وتوحيد التوقيت، وطقس السباق بس.</p>
+    <p><strong>المفروض يعمل:</strong> يملّى أكواد C1 إلى C6، ويرمي خطأ لو سباق فضل فاضي.</p>
+    <p><strong>اتعمل إزاي:</strong> قائمة <span class="en">VALUES</span> مفتاحها السنة واسم الحلبة. لو المصدر فيه كود، الكود ده بياخد الأولوية. الطقس بيتفلتر على <span class="en">session_name = Race</span>.</p>
+    <pre><code>WITH nomination (year, circuit_short_name, c_hard, c_medium, c_soft) AS (
+    VALUES
+        (2023, 'Sakhir', 'C1', 'C2', 'C3'),
+        (2023, 'Jeddah', 'C2', 'C3', 'C4')
+)</code></pre>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.dim_races WHERE c_hard IS NOT NULL;</span> المتوقع 70.</p>
+  </details>
+
+  <details>
+    <summary>08 — معاذ — الأبعاد والنتائج والمراجعة <span class="en">04_moaz_silver_dimensions_and_audit.sql</span></summary>
+    <p>المهام: سائق واحد في الموسم، تحويل <span class="en">+N LAP</span>، وكود الإطار على الستنت، وتقرير السيلفر.</p>
+    <p><strong>المفروض يعمل:</strong> يسيب الصف اللي فيه سباقات أكتر، ويوحّد لون الفريق لحروف كبيرة.</p>
+    <p><strong>اتعمل إزاي:</strong> <span class="en">ROW_NUMBER</span> بيترتّب بعدد السباقات ثم آخر جولة، والصف رقم 1 هو اللي يفضل.</p>
+    <pre><code>ROW_NUMBER() OVER (
+    PARTITION BY year, driver_number
+    ORDER BY races_entered DESC NULLS LAST, last_round DESC NULLS LAST
+) AS keep_rank</code></pre>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.dim_drivers;</span> المتوقع 68.</p>
+  </details>
+</section>
+
+<section class="page-section" id="tasks">
+  <h2>مهام كل عضو</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>محمد</h3>
+      <p>اللفات والستنت الخام، ثم <span class="en">fact_race_laps</span>.</p>
+      <ul>
+        <li>اللفات: <span data-stat="bronze_laps">0</span> صف، منهم <span data-stat="valid_laps">0</span> صالح.</li>
+        <li>المرفوض: <span data-stat="rejected_laps">0</span>. فرق تصحيح الوقود: <span data-stat="fuel_mismatches">0</span>.</li>
+        <li>سرعات اتملت من الستنت: <span data-stat="imputed_speed_laps">0</span>.</li>
+      </ul>
+      <p>في العرض: اللفة ما بتتمسحش، هي بتاخد علامة. التصحيح بيفصل خفة البنزين عن تآكل الإطار.</p>
+    </article>
+    <article class="card">
+      <h3>يوسف</h3>
+      <p>البيت ورسائل مدير السباق.</p>
+      <ul>
+        <li>الوقفات من <span data-stat="pit_bronze">0</span> إلى <span data-stat="pit_silver">0</span>. الاحتجاز المتشال: <span data-stat="pit_holds_removed">0</span>.</li>
+        <li>وقفات عقوبة: <span data-stat="penalty_stops">0</span>.</li>
+        <li>SC <span data-stat="sc_events">0</span>، VSC <span data-stat="vsc_events">0</span>، علم أحمر <span data-stat="red_flag_events">0</span>.</li>
+      </ul>
+      <p>في العرض: VSC بيتفحص قبل SC، والوقفة الأطول من 60 ثانية مش قرار استراتيجي.</p>
+    </article>
+    <article class="card">
+      <h3>محمود</h3>
+      <p>السباقات والطقس.</p>
+      <ul>
+        <li>سباقات: <span data-stat="races">0</span>، والأكواد اتملت في <span data-stat="compounds_mapped">0</span>.</li>
+        <li>الطقس من <span data-stat="weather_bronze">0</span> إلى <span data-stat="weather_silver">0</span>.</li>
+        <li>قراءات مش سباق اتستبعدت: <span data-stat="weather_excluded">0</span>. بداية مطر: <span data-stat="rain_onsets">0</span>.</li>
+      </ul>
+      <p>في العرض: القائمة من بيانات بيريلي المعلنة، والسكربت بيقف لو سباق فضل من غير كود.</p>
+    </article>
+    <article class="card">
+      <h3>معاذ</h3>
+      <p>السائقين والفرق والنتائج والستنت المنظّف، وتقارير المراجعة.</p>
+      <ul>
+        <li>السائقين من <span data-stat="drivers_bronze">0</span> إلى <span data-stat="drivers_silver">0</span>. المتشال: <span data-stat="drivers_removed">0</span>.</li>
+        <li>ألوان اتوحّد شكلها: <span data-stat="hex_normalised">0</span>.</li>
+        <li>فجوات رقمية <span data-stat="numeric_gaps">0</span>، ومتأخرين بلفات <span data-stat="lapped">0</span>. الستنتات: <span data-stat="stints">0</span>.</li>
+      </ul>
+      <p>في العرض: الصف المتبقي هو اللي فيه سباقات أكتر، و<span class="en">+1 LAP</span> بقت عدد لفات مش زمن.</p>
+    </article>
+  </div>
+</section>
+
+<section class="page-section" id="faq">
+  <h2>أسئلة متوقعة</h2>
+  <details open>
+    <summary>ليه البرونز كله نص؟</summary>
+    <p>عشان التحميل ما يفشلش لو خلية فيها كلمة مش رقم. التحويل للأنواع بيحصل في السيلفر، وهناك نقدر نقرر الخلية الفاضية تبقى NULL.</p>
+  </details>
+  <details>
+    <summary>ليه الوسيط مش المتوسط؟</summary>
+    <p>لفة واحدة بطيئة أوي بتجر المتوسط. الوسيط هو الزمن اللي نص اللفات أسرع منه، فبيفضل ثابت.</p>
+  </details>
+  <details>
+    <summary>ليه 107%؟</summary>
+    <p>نفس فكرة التصفيات: اللفة الأبطأ من 107% من وسيط السائق غالباً حركة مرور أو خطأ، مش وتيرة الإطار. الصف بيفضل موجود، بس العلامة بتبقى غير صالح.</p>
+  </details>
+  <details>
+    <summary>ليه VSC قبل SC؟</summary>
+    <p>رسالة الـ Virtual Safety Car فيها كلمة SAFETY CAR. لو دوّرنا على SC الأول، هنعد الـ VSC سيارة أمان عادية.</p>
+  </details>
+  <details>
+    <summary>ليه بنقف عند سيلفر؟</summary>
+    <p>المطلوب في المرحلة دي تنظيف البيانات وتوثيقها. الجولد والموديل والتطبيق خطوة بعدها، ومحتاجين مفاتيح أجنبية وتاريخ فرق السائقين قبل ما نبنيهم.</p>
+  </details>
+  <details>
+    <summary>ليه اللفات المرفوضة ما اتمسحتش؟</summary>
+    <p>عشان نقدر نغيّر القاعدة ونعيد الحساب. الحذف بيضيع الأصل. العلامة <span class="en">is_valid_strategy_lap</span> بتكفي للتدريب.</p>
+  </details>
+  <details>
+    <summary>ليه بنصحّح الوقود بـ 0.03؟</summary>
+    <p>العربية بتبقى أخف كل لفة، فزمنها بينزل حتى لو الإطار زي ما هو. 0.03 ثانية لكل لفة عدّت بترجّع أثر الوزن، والباقي يبقى أثر الإطار.</p>
+  </details>
+  <details>
+    <summary>ليه أكواد الإطارات مش من الملف؟</summary>
+    <p>عمود C في ملف السباقات فاضي في الـ 70 سباق. القيم اتملت من إعلانات بيريلي لكل حلبة وسنة، والسكربت بيرفض يكمّل لو سباق فضل فاضي.</p>
+  </details>
+  <details>
+    <summary>ليه السائق بيتكرر في البرونز؟</summary>
+    <p>المصدر بيبعت أكتر من صف لنفس الرقم في الموسم، وفرقهم أحياناً حالة حروف اللون. السيلفر بيبقي صف واحد: اللي سباقاته أكتر.</p>
+  </details>
+  <details>
+    <summary>إيه اللي لسه ناقص قبل أي موديل؟</summary>
+    <p>مفتاح أجنبي من جداول الحقائق للأبعاد، وتاريخ الفريق جوه الموسم لأن فيه سواقين غيّروا فرق، وربط الطقس بزمن اللفة مش بجدول لوحده.</p>
+  </details>
+</section>
+
+<section class="page-section" id="project">
+    <h1>توصية استراتيجية السباق من تآكل الإطارات والطقس</h1>
+    <p class="lead">مخزن بيانات لفورمولا 1 من 2023 إلى 2025، متبني طبقتين: Bronze خام وSilver منظّفة. الموقع يشرح المشروع كله لحد هنا، والأرقام جاية من قاعدة البيانات نفسها.</p>
+
+    <div class="grid">
+      <div class="card"><div class="num" data-stat="races"></div><div class="lbl">سباق</div></div>
+      <div class="card"><div class="num" data-stat="silver_laps"></div><div class="lbl">لفة في Silver</div></div>
+      <div class="card"><div class="num" data-stat="valid_laps"></div><div class="lbl">لفة صالحة للتدريب</div></div>
+      <div class="card"><div class="num" data-stat="stints"></div><div class="lbl">ستنت</div></div>
+    </div>
+
+    <h2>المشكلة</h2>
+    <p>السباق في فورمولا 1 بيتحدد غالباً بالاستراتيجية: امتى تدخل البيت، وإيه الإطار اللي تركّبه، وإزاي تتصرف مع المطر أو الـ Safety Car. القرار ده عادة من الخبرة والمحاكاة اليدوية، مع إن أداء الإطار بيتغير مع عمره وحرارة التراك والمطر وأحداث السباق.</p>
+
+    <h2>سؤال العمل</h2>
+    <p>في أي لفة، ومعاك نوع الإطار وعمره واتجاه زمن اللفات والطقس وحالة العلم، السائق يدخل البيت دلوقتي ولا يكمّل؟ ولو دخل، يركب أنهي إطار عشان أقل زمن إجمالي للسباق؟</p>
+
+    <h2>هدف المرحلتين</h2>
+    <p>Bronze بيحفظ الملفات التسعة من غير أي تغيير عشان ما نضيعش ولا قيمة. Silver بيحوّلها لجداول بأنواع صحيحة، من غير تكرار، وبعلامة بتقول اللفة دي تنفع لتدريب موديل الاستراتيجية ولا لأ. الموديلات نفسها وطبقة Gold لسه مش جزء من النطاق الحالي.</p>
+
+    <h2>الفريق</h2>
+    <div class="members">
+      <div class="member"><strong>محمد</strong><p>لفات السباق وملخص الستنتس. في Silver بيحسب قاعدة الـ 107% وتصحيح الوقود وتكميل السرعات الناقصة.</p></div>
+      <div class="member"><strong>يوسف</strong><p>وقفات البيت ورسائل الـ FIA. بيفصل الوقفة التكتيكية عن الاحتجاز تحت العلم الأحمر، وبيصنّف الأعلام.</p></div>
+      <div class="member"><strong>محمود</strong><p>الطقس وبيانات الحلبات. بيوحد التوقيت ويملا أكواد Pirelli من C1 إلى C6.</p></div>
+      <div class="member"><strong>معاذ</strong><p>السائقين والفرق والنتائج، وتقارير المراجعة في الطبقتين.</p></div>
+    </div>
+
+    <h2>ألوان الفرق</h2>
+    <p>اللون هو <span class="en">team_colour</span> بعد تحويله لحروف كبيرة. آخر لون محفوظ لكل فريق:</p>
+    <div class="grid" id="team-badges"></div>
+  
+</section><section class="page-section" id="data">
+    <h1>البيانات المصدر</h1>
+    <p class="lead">تسعة ملفات CSV من واجهة OpenF1، مواسم 2023 و2024 و2025. موسم 2022 مش موجود لأن المصدر التاريخي بيبدأ من 2023. الملفات الأصلية في مجلد <span class="en">raw_data/</span>.</p>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>العضو</th><th>الجدول</th><th>الصفوف</th><th>خلايا NULL</th><th>مجموعات تكرار</th></tr>
+        </thead>
+        <tbody data-audit="bronze"></tbody>
+      </table>
+    </div>
+    <p class="note">الجدول فوق هو ناتج <span class="en">bronze.vw_ingestion_audit_summary</span>. عمود الصفوف هو حجم الملف بعد التحميل. مجموعات التكرار معناها مفتاح اتكرر، مش بالضرورة خطأ في التحميل.</p>
+
+    <h2>كل ملف بيعمل إيه</h2>
+    <h3><span class="en">Race_Laps.csv</span></h3>
+    <p>الجدول الرئيسي. صف لكل سائق في كل لفة: زمن اللفة والقطاعات والسرعات، ونوع الإطار وعمره، ولقطة طقس، وحالة العلم، ومركز نهاية اللفة، وتقدير التآكل وتصحيح الوقود.</p>
+    <h3><span class="en">Stint_Summary.csv</span></h3>
+    <p>صف لكل ستنت: الإطار، عدد اللفات، متوسط اللفات النظيفة، وأفضل لفة، وميل التآكل الخام وبعد تصحيح الوقود.</p>
+    <h3><span class="en">Pit_Stops.csv</span></h3>
+    <p>كل وقفة بيت: زمن الحارة، وزمن الوقوف الثابت لما يكون متاحاً. زمن الوقوف ناقص في جزء كبير من 2023.</p>
+    <h3><span class="en">Race_Control.csv</span></h3>
+    <p>رسائل مدير السباق: أعلام، Safety Car، VSC، عقوبات، وحذف أزمنة بسبب حدود التراك.</p>
+    <h3><span class="en">Weather.csv</span></h3>
+    <p>طقس ملحوظ كل دقيقة لكل جلسات الويك إند، مش السباق بس. مفيش توقع طقس في المصدر.</p>
+    <h3><span class="en">Races.csv</span></h3>
+    <p>سباق واحد في كل صف: الحلبة والتاريخ والموسم. أعمدة أكواد الإطارات <span class="en">C_hard</span> و<span class="en">C_medium</span> و<span class="en">C_soft</span> فاضية في الملف، واتملت في Silver.</p>
+    <h3><span class="en">Drivers.csv</span> و<span class="en">Constructors.csv</span></h3>
+    <p>السائقون والفرق في كل موسم، مع لون الفريق بالنظام الست عشري ونقاط الترتيب. السائق ممكن يظهر أكتر من مرة في الموسم لو اللون اتكتب بحالتين أو غيّر الفريق.</p>
+    <h3><span class="en">Race_Results.csv</span></h3>
+    <p>النتيجة النهائية: المركز، الزمن، الفجوة، والانسحاب أو عدم الانطلاق أو الاستبعاد.</p>
+
+    <h2>حدود المصدر</h2>
+    <ul>
+      <li>التآكل تقدير محسوب من اللفات النظيفة، مش قياس من الإطار.</li>
+      <li>تصحيح الوقود ثابت: 0.03 ثانية عن كل لفة عدّت.</li>
+      <li>أكواد C1 إلى C6 مش في الـ API، واتضافت من ترشيحات Pirelli.</li>
+      <li>مفيش فجوات زمنية بين العربيات في الملفات المصدّرة.</li>
+    </ul>
+  
+</section><section class="page-section" id="architecture">
+    <h1>معمارية الميدالية</h1>
+    <p class="lead">البيانات بتعدي من الخام إلى المنظّف. المشروع واقف عند Silver. Gold هو اللي هيغذي الموديلات والتطبيق، ولسه مش متعمل.</p>
+
+    <div class="flow">
+      <div class="flow-box"><h3>المصدر</h3><p>9 ملفات CSV في <span class="en">raw_data/</span>. 70 سباق من 2023 إلى 2025.</p></div>
+      <div class="flow-box"><h3>Bronze</h3><p>نسخة طبق الأصل. كل عمود نص، مع وقت التحميل واسم الملف. <span data-stat="bronze_laps"></span> لفة.</p></div>
+      <div class="flow-box"><h3>Silver</h3><p>أنواع صحيحة، حذف تكرار، وعلامة اللفة الصالحة. <span data-stat="valid_laps"></span> لفة تدريب.</p></div>
+      <div class="flow-box later"><h3>Gold</h3><p>ملخصات التآكل وخسارة البيت واحتمال الـ Safety Car، وبعدين XGBoost وRandom Forest وK-Means.</p></div>
+    </div>
+
+    <h2>قاعدة البيانات</h2>
+    <p>الاسم <span class="en">f1_warehouse</span> على PostgreSQL، المنفذ 5434. سكيما <span class="en">bronze</span> للخام وسكيما <span class="en">silver</span> للمنظّف. التحميل بأمر <span class="en">\copy</span> عشان الملفات على جهاز المستخدم مش جوّا السيرفر.</p>
+
+    <h2>مفاتيح الربط</h2>
+    <p>المفتاح المشترك بين السباقات هو <span class="en">session_key</span>. اللفة تتحدد بـ <span class="en">session_key + driver_number + lap_number</span>. الستنت يتحدد بإضافة <span class="en">stint_number</span>. السائق في الموسم يتحدد بـ <span class="en">year + driver_number</span>.</p>
+
+    <h2>ترتيب التشغيل</h2>
+    <ol>
+      <li>سكربتات Bronze الأربعة: محمد، ثم يوسف، ثم محمود، ثم معاذ. معاذ بيعمل view المراجعة في الآخر عشان يقرأ الجداول التسعة.</li>
+      <li>سكربتات Silver بنفس الترتيب. محمد بيعمل دوال تحويل النص. معاذ بيقرأ <span class="en">dim_races</span> و<span class="en">fact_race_laps</span>، فلازم ييجي بعدهم.</li>
+      <li>تصدير CSV، وبعدين سكربت بيانات الموقع.</li>
+    </ol>
+
+    <h2>إيه اللي Gold هياخده من Silver</h2>
+    <ul>
+      <li>اللفات اللي <span class="en">is_valid_strategy_lap</span> فيها صح، لتدريب توقع الزمن والتآكل.</li>
+      <li>خسارة البيت لكل حلبة، وأعلام السباق، لتدريب قرار الدخول أو الاستمرار.</li>
+      <li>أكواد الإطارات وحرارة التراك، لتجميع الحلبات حسب شدة التآكل.</li>
+    </ul>
+  
+</section><section class="page-section" id="bronze">
+    <h1>طبقة Bronze</h1>
+    <p class="lead">التحميل الخام. كل عمود نص عشان ولا قيمة تتقطع أو تتغير نوعها. الحقول الفاضية في CSV بتبقى NULL. كل جدول فيه <span class="en">_ingested_at</span> و<span class="en">_source_file</span>.</p>
+
+    <div class="grid">
+      <div class="card"><div class="num" data-stat="bronze_laps"></div><div class="lbl">لفة</div></div>
+      <div class="card"><div class="num" data-stat="weather_bronze"></div><div class="lbl">قراءة طقس</div></div>
+      <div class="card"><div class="num" data-stat="pit_bronze"></div><div class="lbl">وقفة بيت</div></div>
+      <div class="card"><div class="num" data-stat="control_bronze"></div><div class="lbl">رسالة تحكم</div></div>
+    </div>
+
+    <h2>محمد: اللفات والستنتس</h2>
+    <p>الملف <span class="en">sql/01_bronze/01_mohamed_bronze_laps_stints.sql</span>.</p>
+    <p>بيعمل <span class="en">bronze.raw_race_laps</span> من 54 عمود و<span class="en">bronze.raw_stint_summary</span>. بعد التحميل بيعد الصفوف والسباقات في كل سنة، وبيعد القيم الفاضية في زمن اللفة وسرعات <span class="en">i1_speed</span> و<span class="en">i2_speed</span> و<span class="en">st_speed</span> و<span class="en">compound_code</span> و<span class="en">deg_vs_stint_best_s</span>. المفتاح <span class="en">(session_key, driver_number, lap_number)</span> مفيش فيه تكرار.</p>
+    <p>اللي اتلاحظ: <span class="en">compound_code</span> فاضي في أغلب اللفات، وسرعة <span class="en">i1</span> ناقصة في آلاف اللفات. دول اتسابوا زي ما هم لحد Silver.</p>
+
+    <h2>يوسف: البيت ورسائل السباق</h2>
+    <p>الملف <span class="en">sql/01_bronze/02_yousef_bronze_pits_control.sql</span>.</p>
+    <p><span class="en">raw_pit_stops</span>: زمن الحارة وزمن الوقفة موجودين، وزمن الوقوف الثابت <span class="en">stop_duration</span> ناقص في 1,488 صف. <span class="en">raw_race_control</span>: 6,286 رسالة، منها 8 مجموعات مكررة على <span class="en">(session_key, date, message)</span>. رقم السائق والعلم فاضيين في رسائل كتير لأنها بتخاطب التراك كله مش سائق واحد.</p>
+
+    <h2>محمود: الطقس والسباقات</h2>
+    <p>الملف <span class="en">sql/01_bronze/03_mahmud_bronze_weather_races.sql</span>.</p>
+    <p><span class="en">raw_weather</span> فيه السباق والتجارب والتصفيات والسبرنت. مفيش عمود قياس فاضي. فيه 28 طابع زمني متكرر. <span class="en">raw_races</span> فيه 70 سباق. الـ 210 خلية الفاضية كلها أكواد الإطارات الثلاثة. <span class="en">date_start</span> مكتوب بمسافة من غير منطقة زمنية، و<span class="en">date_end</span> بصيغة ISO وفيها <span class="en">+00:00</span>. الاتنين UTC.</p>
+
+    <h2>معاذ: الكيانات وتقرير المراجعة</h2>
+    <p>الملف <span class="en">sql/01_bronze/04_moaz_bronze_entities_and_audit.sql</span>.</p>
+    <p><span class="en">raw_drivers</span> فيه 106 صف و34 سائق متكرر في نفس الموسم، بزيادة 38 صف. السبب تغيير الفريق في نص الموسم أو اختلاف حالة حروف اللون، زي <span class="en">3671C6</span> و<span class="en">3671c6</span>. الفرق 30 صف من غير تكرار. النتائج فيها 297 فجوة مكتوبة <span class="en">+N LAP</span>، و154 صف من غير مركز، و473 من غير زمن.</p>
+    <p>في الآخر بيعمل <span class="en">bronze.vw_ingestion_audit_summary</span>، وصف لكل جدول: عدد الصفوف والأعمدة والخلايا الفاضية ومجموعات التكرار.</p>
+
+    <h2>جدول المراجعة</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>العضو</th><th>الجدول</th><th>الصفوف</th><th>خلايا NULL</th><th>مجموعات تكرار</th></tr></thead>
+        <tbody data-audit="bronze"></tbody>
+      </table>
+    </div>
+  
+</section><section class="page-section" id="silver">
+    <h1>طبقة Silver</h1>
+    <p class="lead">التنضيف والتحويل. النص بقى أرقام وتواريخ وقيم منطقية، والتكرار اتشال، وكل لفة اتعلّمت هل تنفع لتدريب الاستراتيجية ولا لأ.</p>
+
+    <div class="grid">
+      <div class="card"><div class="num" data-stat="valid_laps"></div><div class="lbl">لفة صالحة</div></div>
+      <div class="card"><div class="num" data-stat="rejected_laps"></div><div class="lbl">لفة مرفوضة</div></div>
+      <div class="card"><div class="num" data-stat="imputed_speed_laps"></div><div class="lbl">لفة اتكمّلت سرعتها</div></div>
+      <div class="card"><div class="num" data-stat="fuel_mismatches"></div><div class="lbl">اختلاف في تصحيح الوقود</div></div>
+    </div>
+
+    <h2>محمد: <span class="en">fact_race_laps</span></h2>
+    <p>الملف <span class="en">sql/02_silver/01_mohamed_silver_fact_laps.sql</span>. بيعمل دوال <span class="en">silver.txt_bool</span> و<span class="en">txt_int</span> و<span class="en">txt_float</span> و<span class="en">txt_ts</span> عشان باقي الفريق يستخدمها.</p>
+    <ul>
+      <li>وسيط زمن كل سائق في السباق بـ <span class="en">PERCENTILE_CONT(0.5)</span>. اللفة الأولى ولفات البيت ولفات SC وVSC والعلم الأحمر مش داخلة في الوسيط. PostgreSQL هنا بيرفض <span class="en">OVER</span> على الدالة دي، فالوسيط بيتحسب بالتجميع وبعدين يتربط على اللفات.</li>
+      <li><span class="en">is_valid_strategy_lap</span> بتبقى خطأ لو اللفة أولى، أو دخول أو خروج من البيت، أو محايدة، أو من غير زمن، أو أبطأ من 107% من الوسيط.</li>
+      <li>تصحيح الوقود: زمن اللفة زائد 0.03 ثانية في كل لفة عدّت. الاختلاف عن القيمة الأصلية: <span data-stat="fuel_mismatches"></span>.</li>
+      <li>السرعة الناقصة في <span class="en">i1</span> أو <span class="en">i2</span> أو <span class="en">st</span> بتتكمّل بمتوسط نفس الستنت، والصف بيتعلّم في <span class="en">is_speed_imputed</span>.</li>
+      <li><span class="en">deg_vs_stint_best_s</span> هو فرق اللفة عن أسرع لفة وقود-مصححة في الستنت، من غير لفات البيت واللفة الأولى واللفات المحايدة.</li>
+    </ul>
+    <p>عدد الصفوف ما اتغيرش: <span data-stat="silver_laps"></span>. الرفض علامة على الصف، مش حذف.</p>
+
+    <h2>يوسف: الوقفات والأعلام</h2>
+    <p>الملف <span class="en">sql/02_silver/02_yousef_silver_pits_and_flags.sql</span>.</p>
+    <ul>
+      <li>وقفة أطول من 60 ثانية بتتشال من <span class="en">fact_pit_stops</span> لأنها احتجاز تحت العلم الأحمر. اتشال <span data-stat="pit_holds_removed"></span> صف، وفضل <span data-stat="pit_silver"></span>.</li>
+      <li><span class="en">net_pit_loss_s</span> هو زمن الحارة. <span class="en">circuit_avg_pit_loss_s</span> متوسط الحلبة في الموسم.</li>
+      <li><span class="en">is_penalty_stop</span> لو زمن الوقوف 5 ثواني أو أكتر. العدد <span data-stat="penalty_stops"></span>. الصفوف اللي زمن وقوفها ناقص مش متعلّمة.</li>
+      <li>في <span class="en">fact_race_control</span> الرسالة بتتفصّل لأعلام. VSC بيتفحص قبل SC لأن الجملة فيها الكلمتين. <span class="en">CHEQUERED FLAG</span> مش علم أحمر. المخالفات اللي بتذكر الـ Safety Car مش بتنزل كنشر للسيارة.</li>
+    </ul>
+    <p>الناتج: SC <span data-stat="sc_events"></span>، VSC <span data-stat="vsc_events"></span>، علم أحمر <span data-stat="red_flag_events"></span>، تغيير DRS <span data-stat="drs_changes"></span>، حذف بسبب حدود التراك <span data-stat="track_limit_deletions"></span>، عقوبة <span data-stat="penalties"></span>.</p>
+
+    <h2>محمود: الحلبات والطقس</h2>
+    <p>الملف <span class="en">sql/02_silver/03_mahmud_silver_weather_and_circuits.sql</span>.</p>
+    <ul>
+      <li><span class="en">dim_races</span> بيوحد <span class="en">date_start</span> و<span class="en">date_end</span> على توقيت UTC.</li>
+      <li>جدول ترشيحات Pirelli بيملا <span class="en">c_hard</span> و<span class="en">c_medium</span> و<span class="en">c_soft</span> لكل سباق، بما فيها C6 في 2025. السباقات اللي اتملت: <span data-stat="compounds_mapped"></span> من <span data-stat="races"></span>. السكربت بيقف لو سباق فضل من غير كود.</li>
+      <li><span class="en">fact_weather</span> بيحتفظ بجلسات السباق بس. اتشال <span data-stat="weather_excluded"></span> صف تجارب وتصفيات، وفضل <span data-stat="weather_silver"></span>.</li>
+      <li><span class="en">track_temp_delta_prev_5min</span> فرق الحرارة عن العينة من خمس دقايق. <span class="en">is_rain_onset</span> أول دقيقة مطر، وعددها <span data-stat="rain_onsets"></span>.</li>
+    </ul>
+
+    <h3>خريطة الإطارات</h3>
+    <p>الشارات: <span class="badge b-s">S</span> سوفت <span class="badge b-m">M</span> ميديوم <span class="badge b-h">H</span> هارد <span class="badge b-i">I</span> إنترميديت <span class="badge b-w">W</span> ويت. الجدول أكواد الدراى C1 إلى C6.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>السنة</th><th>الجولة</th><th>السباق</th><th>الحلبة</th><th>هارد</th><th>ميديوم</th><th>سوفت</th></tr></thead>
+        <tbody id="pirelli-body"></tbody>
+      </table>
+    </div>
+
+    <h2>معاذ: الأبعاد والنتائج والتقرير</h2>
+    <p>الملف <span class="en">sql/02_silver/04_moaz_silver_dimensions_and_audit.sql</span>.</p>
+    <ul>
+      <li><span class="en">dim_drivers</span> صف واحد لكل سائق في الموسم، وهو الصف اللي فيه أكبر عدد سباقات. من <span data-stat="drivers_bronze"></span> إلى <span data-stat="drivers_silver"></span>، واتشال <span data-stat="drivers_removed"></span>. <span data-stat="hex_normalised"></span> لون كان مختلف في حالة الحروف واتخزن بحروف كبيرة.</li>
+      <li><span class="en">team_lineage</span> بيربط Alfa Romeo بـ Kick Sauber، وAlphaTauri وRB بـ Racing Bulls، من غير ما يغيّر اسم الفريق في الموسم نفسه.</li>
+      <li><span class="en">fact_race_results</span>: الفجوة الرقمية بتبقى <span class="en">gap_seconds</span>، و<span class="en">+N LAP</span> بتبقى <span class="en">laps_down</span>. فجوات رقمية <span data-stat="numeric_gaps"></span>، ومتأخرين بلفة أو أكتر <span data-stat="lapped"></span>.</li>
+      <li><span class="en">fact_stint_summary</span>: كود الإطار بيتاخد من <span class="en">dim_races</span> حسب HARD وMEDIUM وSOFT. كل الـ <span data-stat="stints"></span> ستنت بقى ليهم كود. كل ستنت فيه متوسط زمن اللفات الصالحة من جدول محمد.</li>
+      <li><span class="en">silver.vw_transformation_audit_log</span> بيجمع قبل وبعد لكل عضو.</li>
+    </ul>
+
+    <h2>سجل التحويل</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>العضو</th><th>الجدول</th><th>المقياس</th><th>القيمة</th></tr></thead>
+        <tbody data-audit="silver"></tbody>
+      </table>
+    </div>
+  
+</section><section class="page-section" id="results">
+    <h1>النتائج بالأرقام</h1>
+    <p class="lead">كل رسم متجمع من جداول Silver. أسباب الرفض بتتداخل، فمجموع الأعمدة أكبر من عدد اللفات المرفوضة.</p>
+
+    <h2>اللفات في كل موسم</h2>
+    <div class="chart-box"><canvas id="chart-laps"></canvas></div>
+
+    <h2>ليه اللفة اترفضت</h2>
+    <div class="chart-box"><canvas id="chart-reject"></canvas></div>
+
+    <h2>استخدام الإطارات</h2>
+    <div class="chart-box"><canvas id="chart-compound"></canvas></div>
+
+    <h2>متوسط ميل التآكل (ثانية لكل لفة)</h2>
+    <p>من <span class="en">deg_slope_fuel_corrected_s_per_lap</span> في الستنتس الجافة. الرقم الأكبر يعني الإطار بيبطّأ أسرع.</p>
+    <div class="chart-box"><canvas id="chart-deg"></canvas></div>
+
+    <h2>متوسط خسارة حارة البيت</h2>
+    <div class="chart-box"><canvas id="chart-pit"></canvas></div>
+
+    <h2>Safety Car وVSC والعلم الأحمر لكل حلبة</h2>
+    <div class="chart-box"><canvas id="chart-flags"></canvas></div>
+
+    <h2>حرارة البحرين 2023 من أول السباق لآخره</h2>
+    <div class="chart-box"><canvas id="chart-temp"></canvas></div>
+
+    <h2>السائقون قبل حذف التكرار وبعده</h2>
+    <div class="chart-box"><canvas id="chart-drivers"></canvas></div>
+  
+</section><section class="page-section" id="files">
+    <h1>خريطة الملفات</h1>
+    <p class="lead">كل ملف في المشروع لحد Silver، ومين صاحبه، وبيطلع إيه.</p>
+
+    <h2><span class="en">raw_data/</span></h2>
+    <p>الملفات التسعة الأصلية. مش بتتعدل. Bronze بيقرأ منها.</p>
+
+    <h2><span class="en">sql/01_bronze/</span></h2>
+    <table>
+      <thead><tr><th>الملف</th><th>المالك</th><th>الناتج</th></tr></thead>
+      <tbody>
+        <tr><td class="en">01_mohamed_bronze_laps_stints.sql</td><td>محمد</td><td>لفّات وستنتس خام</td></tr>
+        <tr><td class="en">02_yousef_bronze_pits_control.sql</td><td>يوسف</td><td>وقفات ورسائل تحكم خام</td></tr>
+        <tr><td class="en">03_mahmud_bronze_weather_races.sql</td><td>محمود</td><td>طقس وسباقات خام</td></tr>
+        <tr><td class="en">04_moaz_bronze_entities_and_audit.sql</td><td>معاذ</td><td>سائقين وفرق ونتائج، وview المراجعة</td></tr>
+      </tbody>
+    </table>
+
+    <h2><span class="en">sql/02_silver/</span></h2>
+    <table>
+      <thead><tr><th>الملف</th><th>المالك</th><th>الناتج</th></tr></thead>
+      <tbody>
+        <tr><td class="en">01_mohamed_silver_fact_laps.sql</td><td>محمد</td><td><span class="en">fact_race_laps</span> ودوال التحويل</td></tr>
+        <tr><td class="en">02_yousef_silver_pits_and_flags.sql</td><td>يوسف</td><td><span class="en">fact_pit_stops</span> و<span class="en">fact_race_control</span></td></tr>
+        <tr><td class="en">03_mahmud_silver_weather_and_circuits.sql</td><td>محمود</td><td><span class="en">dim_races</span> و<span class="en">fact_weather</span></td></tr>
+        <tr><td class="en">04_moaz_silver_dimensions_and_audit.sql</td><td>معاذ</td><td>أبعاد ونتائج وستنتس، وview التحويل</td></tr>
+      </tbody>
+    </table>
+
+    <h2><span class="en">sql/03_exports/</span> و<span class="en">exports/</span></h2>
+    <p><span class="en">export_bronze_silver.sql</span> بيكتب CSV لكل جدول، متقسم على الأعضاء، في <span class="en">exports/bronze</span> و<span class="en">exports/silver</span>. فيه كمان ملخص المراجعة وسجل التحويل.</p>
+
+    <h2><span class="en">sql/04_website/</span></h2>
+    <p><span class="en">build_site_data.sql</span> بيقرأ الـ views والجداول ويكتب <span class="en">website/data/site_data.js</span>. الصفحة دي بتقرأ الملف ده.</p>
+
+    <h2><span class="en">reports/</span></h2>
+    <p><span class="en">01_BRONZE_REPORT.md</span> و<span class="en">02_SILVER_REPORT.md</span> هما نفس الأرقام، مكتوبة كتقرير نصي. <span class="en">plan.md</span> خطة المشروع الأصلية وفيها Gold والتطبيق، وهم لسه مش منفّذين.</p>
+
+    <h2>التشغيل</h2>
+    <p class="en">psql -h 127.0.0.1 -p 5434 -U postgres -d f1_warehouse -f sql/01_bronze/01_mohamed_bronze_laps_stints.sql</p>
+    <p>وبعده باقي ملفات Bronze ثم Silver بنفس ترتيب الأرقام. كلمة المرور <span class="en">f1</span>. قاعدة البيانات لازم تكون شغالة قبل السكربتات.</p>
+  
+</section><section class="page-section" id="review">
+    <h1>هل ده Bronze وSilver بالمعنى المتعارف عليه؟</h1>
+    <p class="lead">الفكرة صح، والتنفيذ مناسب لمشروع دراسي. في الشغل اليومي في حاجات زيادة لسه مش موجودة.</p>
+
+    <h2>اللي ماشي على المتعارف عليه</h2>
+    <ul>
+      <li>Bronze بيحفظ القيم الخام، ومعاها وقت التحميل واسم الملف.</li>
+      <li>Silver فيه أنواع صحيحة ومفاتيح أساسية وحذف تكرار وقواعد مكتوبة.</li>
+      <li>كل طبقة فيها view مراجعة، والتقارير متولدة من الأرقام دي مش مكتوبة باليد.</li>
+      <li>السكربتات تقدر تتشغّل تاني وتطلّع نفس النتيجة.</li>
+      <li>التحويل في الطبقتين SQL بس.</li>
+    </ul>
+
+    <h2>اللي لسه ناقص</h2>
+    <table>
+      <thead><tr><th>الطبقة</th><th>الناقص</th><th>ليه يفرق</th></tr></thead>
+      <tbody>
+        <tr><td>Bronze</td><td>كل تشغيل بيمسح الجدول ويحمّله من الأول</td><td>النسخة الصناعية بتحتفظ بكل تحميل عشان تقدر ترجع له</td></tr>
+        <tr><td>Bronze</td><td>مفيش سجل تشغيلات</td><td>عشان تعرف إمتى التحميل نجح أو فشل</td></tr>
+        <tr><td>Bronze</td><td>صف بايظ واحد يوقف الملف كله</td><td>المتعارف عليه يحط الصف البايظ في جدول لوحده ويكمل الباقي</td></tr>
+        <tr><td>Silver</td><td>مفيش مفاتيح أجنبية بين الحقائق والأبعاد</td><td>الـ Star Schema الكاملة بتربط اللفة بالسائق والسباق</td></tr>
+        <tr><td>Silver</td><td>سائق غيّر فريقه في نص الموسم بيتسجل له فريق واحد</td><td>المتعارف عليه جدول تاريخ للفريق، مش صف واحد</td></tr>
+        <tr><td>Silver</td><td>ترشيحات Pirelli مكتوبة جوه السكربت</td><td>الأوضح جدول مرجعي لوحده</td></tr>
+        <tr><td>Silver</td><td>الطقس الدقيقة بدقيقة مش متربط ببداية ونهاية كل لفة</td><td>كل لفة فيها لقطة طقس جاهزة، لكن الربط بالتوقيت مش متعمل</td></tr>
+        <tr><td>Silver</td><td>السرعة المكمّلة حلت محل الأصلية</td><td>الأصل لسه في Bronze. الأحسن عمودين</td></tr>
+        <tr><td>Silver</td><td>علامة عقوبة البيت تقدير عند 5 ثواني</td><td>زمن الوقوف ناقص في أغلب 2023</td></tr>
+        <tr><td>عام</td><td>Gold والموديلات مش متعملين</td><td>Bronze وSilver تجهيز، مش التوصية نفسها</td></tr>
+      </tbody>
+    </table>
+
+    <h2>الحكم</h2>
+    <p>الطبقتان تنفعان أساساً لموديل الاستراتيجية. أهم إصلاحين قبل Gold: الاحتفاظ بتاريخ فريق السائق، وربط جداول الحقائق بالأبعاد.</p>
+  
+</section><section class="page-section" id="glossary">
+    <h1>المصطلحات</h1>
+    <table>
+      <thead><tr><th>المصطلح</th><th>المعنى في المشروع</th></tr></thead>
+      <tbody>
+        <tr><td class="en">Bronze</td><td>الطبقة الخام. البيانات زي الملف، من غير تنضيف.</td></tr>
+        <tr><td class="en">Silver</td><td>الطبقة المنظّفة. أنواع صحيحة، من غير تكرار، وجاهزة للتحليل.</td></tr>
+        <tr><td class="en">Gold</td><td>طبقة الملخصات والموديلات. مش جزء من الشغل الحالي.</td></tr>
+        <tr><td class="en">session_key</td><td>رقم جلسة السباق. المفتاح اللي بيربط اللفات والطقس والوقفات.</td></tr>
+        <tr><td>ستنت <span class="en">stint</span></td><td>مجموعة لفات متواصلة على نفس طقم الإطارات، من الخروج للدخول.</td></tr>
+        <tr><td>كومباوند <span class="en">compound</span></td><td>نوع الإطار: سوفت أو ميديوم أو هارد أو إنترميديت أو ويت. الكود C1 إلى C6 هو درجة المطاط الجاف.</td></tr>
+        <tr><td>تآكل <span class="en">degradation</span></td><td>قد إيه اللفة بتبطأ كل ما الإطار يكبر. عندنا ميل بالثانية لكل لفة.</td></tr>
+        <tr><td>تصحيح الوقود</td><td>إضافة 0.03 ثانية عن كل لفة عدّت، عشان العربية بتبقى أخف وده مش من الإطار.</td></tr>
+        <tr><td>قاعدة 107%</td><td>لفة أبطأ من 107% من وسيط السائق في السباق بتتشال من تدريب الاستراتيجية.</td></tr>
+        <tr><td>الوسيط <span class="en">median</span></td><td>الزمن اللي نص اللفات أسرع منه ونصها أبطأ. أثبت من المتوسط لو فيه لفات شاذة.</td></tr>
+        <tr><td class="en">SC</span></td><td>Safety Car. السيارة الأمان، والتجاوز بيتقفل والبيت بيبقى أرخص.</td></tr>
+        <tr><td class="en">VSC</span></td><td>Virtual Safety Car. تبطيء إجباري من غير سيارة على التراك.</td></tr>
+        <tr><td>علم أحمر</td><td>إيقاف السباق. الوقفة الطويلة في الحارة وقتها مش قرار استراتيجي.</td></tr>
+        <tr><td>أندركت <span class="en">undercut</span></td><td>الدخول قبل اللي قدامك عشان الإطار الجديد يطلّعك عليه.</td></tr>
+        <tr><td>أوفركت <span class="en">overcut</span></td><td>تكمّل بره واللي قدامك يدخل، على أمل إن إطاره الجديد ما يعوّضش.</td></tr>
+        <tr><td>خسارة البيت</td><td>الثواني اللي بتضيعها في حارة البيت مقارنة بالبقاء على التراك. هنا متقاسة بزمن الحارة.</td></tr>
+        <tr><td class="en">Star schema</span></td><td>جدول حقائق في النص، زي اللفات، وأبعاد حواليه زي السائق والسباق.</td></tr>
+        <tr><td class="en">DNF</span></td><td>ما كمّلش السباق. <span class="en">DNS</span> ما انطلقش، و<span class="en">DSQ</span> استبعاد.</td></tr>
+        <tr><td class="en">CRISP-DM</span></td><td>خطوات مشروع التنقيب: فهم البيانات، تجهيزها، الموديل، ثم التقييم. إحنا في التجهيز.</td></tr>
+      </tbody>
+    </table>
+  
+</section>
+  </main>
+</div>
+<script src="data/site_data.js"></script>
+<script src="assets/dictionary.js"></script>
+<script src="assets/chart.umd.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
