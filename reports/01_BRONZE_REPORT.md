@@ -50,13 +50,13 @@ NULL counts on the columns used later: `lap_duration` 258, `i1_speed` 12294, `i2
 
 | Team member | File | Rows |
 | --- | --- | ---: |
-| Mohamed | exports/bronze/mohamed/raw_race_laps.csv | 77373 |
-| Mohamed | exports/bronze/mohamed/raw_stint_summary.csv | 3934 |
-| Yousef | exports/bronze/yousef/raw_pit_stops.csv | 2339 |
-| Yousef | exports/bronze/yousef/raw_race_control.csv | 6286 |
-| Mahmud | exports/bronze/mahmud/raw_weather.csv | 34420 |
-| Mahmud | exports/bronze/mahmud/raw_races.csv | 70 |
-| Moaz | exports/bronze/moaz/raw_drivers.csv | 106 |
-| Moaz | exports/bronze/moaz/raw_constructors.csv | 30 |
-| Moaz | exports/bronze/moaz/raw_race_results.csv | 1397 |
+| Mohamed | exports/bronze/raw_race_laps.csv | 77373 |
+| Mohamed | exports/bronze/raw_stint_summary.csv | 3934 |
+| Yousef | exports/bronze/raw_pit_stops.csv | 2339 |
+| Yousef | exports/bronze/raw_race_control.csv | 6286 |
+| Mahmud | exports/bronze/raw_weather.csv | 34420 |
+| Mahmud | exports/bronze/raw_races.csv | 70 |
+| Moaz | exports/bronze/raw_drivers.csv | 106 |
+| Moaz | exports/bronze/raw_constructors.csv | 30 |
+| Moaz | exports/bronze/raw_race_results.csv | 1397 |
 | Moaz | exports/bronze/bronze_audit_summary.csv | 9 |
