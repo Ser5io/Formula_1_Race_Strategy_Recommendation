@@ -1,0 +1,88 @@
+-- =====================================================================
+-- Phase 2: Silver Layer - Weather & Races Full Transformation
+-- Engineer: Mahmud
+-- Tasks 2.7 & 2.8 (Pure SQL with Window Functions)
+-- =====================================================================
+
+CREATE SCHEMA IF NOT EXISTS silver;
+
+-- ---------------------------------------------------------------------------
+-- Task 2.7: silver.dim_races (UTC Timestamps & Deterministic Pirelli Mapping)
+-- ---------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS silver.dim_races CASCADE;
+CREATE TABLE silver.dim_races AS
+SELECT 
+    session_key::INTEGER,
+    session_type,
+    session_name,
+    date_start::TIMESTAMP AS date_start,
+    date_end::TIMESTAMP AS date_end,
+    meeting_key::INTEGER,
+    circuit_key::INTEGER,
+    circuit_short_name,
+    country_key::INTEGER,
+    country_code,
+    country_name,
+    location,
+    gmt_offset,
+    year::INTEGER,
+    is_cancelled::BOOLEAN,
+    meeting_name,
+    meeting_official_name,
+    circuit_type,
+    round::INTEGER,
+    -- Deterministic CASE mapping or COALESCE fallback for Pirelli compounds C1-C5
+    COALESCE(NULLIF(BTRIM(c_hard), ''), 'C3') AS c_hard,
+    COALESCE(NULLIF(BTRIM(c_medium), ''), 'C4') AS c_medium,
+    COALESCE(NULLIF(BTRIM(c_soft), ''), 'C5') AS c_soft
+FROM bronze.raw_races;
+
+
+-- ---------------------------------------------------------------------------
+-- Task 2.8: silver.fact_weather (Race Only, Window Functions for Temp Delta & Rain)
+-- ---------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS silver.fact_weather CASCADE;
+
+ -- =====================================================================
+-- Phase 2: Silver Layer - Weather Table Transformation
+-- Engineer: Mahmud
+-- Task 2.8
+-- =====================================================================
+
+DROP TABLE IF EXISTS silver.fact_weather CASCADE;
+
+CREATE TABLE silver.fact_weather AS
+WITH cleaned_weather AS (
+    SELECT 
+        year::INTEGER AS year,
+        round::INTEGER AS round,
+        meeting_key::INTEGER AS meeting_key,
+        meeting_name,
+        session_key::INTEGER AS session_key,
+        session_name,
+        circuit_short_name,
+        country_name,
+        date::TIMESTAMP AS weather_timestamp,
+        track_temperature::DOUBLE PRECISION AS track_temperature,
+        wind_speed::DOUBLE PRECISION AS wind_speed,
+        rainfall::INTEGER AS rainfall,
+        humidity::DOUBLE PRECISION AS humidity,
+        air_temperature::DOUBLE PRECISION AS air_temperature,
+        pressure::DOUBLE PRECISION AS pressure,
+        wind_direction::DOUBLE PRECISION AS wind_direction
+    FROM bronze.raw_weather
+    WHERE session_name ILIKE '%Race%'
+),
+weather_windowed AS (
+    SELECT 
+        *,
+        track_temperature - LAG(track_temperature, 1) OVER (PARTITION BY session_key ORDER BY weather_timestamp) AS track_temp_delta_prev_5min,
+        CASE 
+            WHEN rainfall > 0 AND LAG(rainfall, 1, 0) OVER (PARTITION BY session_key ORDER BY weather_timestamp) = 0 THEN 1 
+            ELSE 0 
+        END AS rain_onset_flag
+    FROM cleaned_weather
+)
+SELECT * FROM weather_windowed;

@@ -1,0 +1,81 @@
+-- =====================================================================
+-- Phase 1: Bronze Layer - Weather & Races Ingestion Script
+-- Engineer: Mahmud
+-- Task 1.6 & Task 1.7
+-- =====================================================================
+
+-- 1. إنشاء Schema الـ Bronze
+CREATE SCHEMA IF NOT EXISTS bronze;
+
+-- 2. حذف جدول السباقات الخام إن وجد لإعادة إنشائه بنظافة
+DROP TABLE IF EXISTS bronze.raw_races;
+
+-- 3. إنشاء جدول السباقات الخام (22 عموداً نصياً + أعمدة التتبع)
+CREATE TABLE bronze.raw_races (
+    session_key             VARCHAR,
+    session_type            VARCHAR,
+    session_name            VARCHAR,
+    date_start              VARCHAR,
+    date_end                VARCHAR,
+    meeting_key             VARCHAR,
+    circuit_key             VARCHAR,
+    circuit_short_name      VARCHAR,
+    country_key             VARCHAR,
+    country_code            VARCHAR,
+    country_name            VARCHAR,
+    location                VARCHAR,
+    gmt_offset              VARCHAR,
+    year                    VARCHAR,
+    is_cancelled            VARCHAR,
+    meeting_name            VARCHAR,
+    meeting_official_name   VARCHAR,
+    circuit_type            VARCHAR,
+    round                   VARCHAR,
+    C_hard                  VARCHAR,
+    C_medium                VARCHAR,
+    C_soft                  VARCHAR,
+    -- أعمدة التتبع الخاصة بمرحلة الـ Bronze
+    _ingested_at            TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    _source_file            VARCHAR DEFAULT 'Races.csv'
+);
+
+-- 1. حذف جدول الطقس الخام إن وجد لإعادة إنشائه بنظافة
+DROP TABLE IF EXISTS bronze.raw_weather;
+
+-- 2. إنشاء جدول الطقس الخام (16 عموداً نصياً + أعمدة التتبع)
+CREATE TABLE bronze.raw_weather (
+    year                    VARCHAR,
+    round                   VARCHAR,
+    meeting_key             VARCHAR,
+    meeting_name            VARCHAR,
+    session_key             VARCHAR,
+    session_name            VARCHAR,
+    circuit_short_name      VARCHAR,
+    country_name            VARCHAR,
+    date                    VARCHAR,
+    track_temperature       VARCHAR,
+    wind_speed              VARCHAR,
+    rainfall                VARCHAR,
+    humidity                VARCHAR,
+    air_temperature         VARCHAR,
+    pressure                VARCHAR,
+    wind_direction          VARCHAR,
+    -- أعمدة التتبع الخاصة بمرحلة الـ Bronze
+    _ingested_at            TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    _source_file            VARCHAR DEFAULT 'Weather.csv'
+);
+
+-- أ. التحقق من أعداد الصفوف المُحملة في الجداول
+SELECT 'bronze.raw_races' AS table_name, COUNT(*) AS row_count FROM bronze.raw_races
+UNION ALL
+SELECT 'bronze.raw_weather' AS table_name, COUNT(*) AS row_count FROM bronze.raw_weather;
+
+-- ب. فحص عينة من جدول السباقات للتحقق من الأعمدة والتنسيقات
+SELECT session_key, session_name, date_start, date_end, C_hard, C_medium, C_soft 
+FROM bronze.raw_races 
+LIMIT 5;
+
+-- ج. فحص عينة من جدول الطقس للتحقق من قياسات الحرارة والأمطار
+SELECT session_key, session_name, date, track_temperature, air_temperature, rainfall 
+FROM bronze.raw_weather 
+LIMIT 5;
