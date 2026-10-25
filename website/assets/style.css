@@ -232,6 +232,13 @@ code { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; }
 }
 .filter.active { border-color: var(--cyan); color: var(--cyan); }
 .dict-card .table-wrap { max-height: 360px; overflow: auto; }
+.sql-shot {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  margin: 8px 0 12px;
+  display: block;
+}
 
 @media (max-width: 860px) {
   .split { grid-template-columns: 1fr; }
