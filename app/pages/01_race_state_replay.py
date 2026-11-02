@@ -702,6 +702,7 @@ with tab1:
           <button id="btnPlay" class="btn-play">PLAY</button>
           <button id="btnPrevLap" class="btn-step">-1 LAP</button>
           <button id="btnNextLap" class="btn-step">+1 LAP</button>
+          <button id="btnReset" class="btn-step" title="Restart simulation from Lap 1 / 0:00">RESET</button>
         </div>
         
         <div class="scrubber-container">
@@ -712,11 +713,18 @@ with tab1:
           <input type="range" id="raceScrubber" class="scrubber-slider" min="0" max="{total_race_duration_s}" step="1" value="0">
         </div>
         
-        <div class="speed-selector">
-          <button class="btn-speed" data-speed="1">1x</button>
-          <button class="btn-speed" data-speed="2">2x</button>
-          <button class="btn-speed active" data-speed="5">5x</button>
-          <button class="btn-speed" data-speed="10">10x</button>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div class="speed-selector">
+            <button class="btn-speed" data-speed="1">1x</button>
+            <button class="btn-speed" data-speed="2">2x</button>
+            <button class="btn-speed active" data-speed="5">5x</button>
+            <button class="btn-speed" data-speed="10">10x</button>
+          </div>
+          
+          <label style="display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: #8E9BAE; cursor: pointer; user-select: none;">
+            <input type="checkbox" id="chkIsolateFocus" style="accent-color: #00F0FF; cursor: pointer;">
+            <span>HIDE NON-FOCUSED</span>
+          </label>
         </div>
       </div>
 
@@ -812,30 +820,93 @@ with tab1:
         const allDrivers = raceData.drivers;
         const flagsData = raceData.flags;
         const weatherData = raceData.weather;
-        const focusDrivers = raceData.focus_drivers || [];
-        // Simulation State Key (scoped to session_key)
+        // Simulation State Keys (scoped to session_key)
         const storageKeyTime = `f1_sim_time_${{raceData.session_key}}`;
         const storageKeyPlay = `f1_sim_play_${{raceData.session_key}}`;
+        const storageKeySpeed = `f1_sim_speed_${{raceData.session_key}}`;
+        const storageKeyFocus = `f1_sim_focus_${{raceData.session_key}}`;
+        const storageKeyIsolate = `f1_sim_isolate_${{raceData.session_key}}`;
 
-        // Restore simulation time and playing state across Streamlit reruns
-        let savedTime = 0.0;
-        let savedPlay = false;
-        try {{
-          const tVal = sessionStorage.getItem(storageKeyTime);
-          if (tVal !== null) {{
-            savedTime = parseFloat(tVal) || 0.0;
-          }}
-          const pVal = sessionStorage.getItem(storageKeyPlay);
-          if (pVal !== null) {{
-            savedPlay = (pVal === 'true');
-          }}
-        }} catch (e) {{
-          console.warn('Storage unavailable', e);
+        // Multi-tier storage persistence (Parent window sessionStorage + localStorage + iframe fallback)
+        function getStored(key) {{
+          try {{
+            if (window.parent && window.parent.sessionStorage) {{
+              const v = window.parent.sessionStorage.getItem(key);
+              if (v !== null) return v;
+            }}
+          }} catch(e) {{}}
+          try {{
+            if (window.parent && window.parent.localStorage) {{
+              const v = window.parent.localStorage.getItem(key);
+              if (v !== null) return v;
+            }}
+          }} catch(e) {{}}
+          try {{
+            const v = window.localStorage.getItem(key);
+            if (v !== null) return v;
+          }} catch(e) {{}}
+          try {{
+            const v = window.sessionStorage.getItem(key);
+            if (v !== null) return v;
+          }} catch(e) {{}}
+          return null;
         }}
 
+        function setStored(key, value) {{
+          try {{
+            if (window.parent && window.parent.sessionStorage) {{
+              window.parent.sessionStorage.setItem(key, String(value));
+            }}
+          }} catch(e) {{}}
+          try {{
+            if (window.parent && window.parent.localStorage) {{
+              window.parent.localStorage.setItem(key, String(value));
+            }}
+          }} catch(e) {{}}
+          try {{
+            window.localStorage.setItem(key, String(value));
+          }} catch(e) {{}}
+          try {{
+            window.sessionStorage.setItem(key, String(value));
+          }} catch(e) {{}}
+        }}
+
+        // Restore simulation time across reruns
+        const tVal = getStored(storageKeyTime);
+        let savedTime = 0.0;
+        if (tVal !== null) {{
+          savedTime = parseFloat(tVal) || 0.0;
+        }}
         let simTimeS = Math.min(Math.max(savedTime, 0.0), totalRaceDurationS);
-        let isPlaying = savedPlay;
-        let playbackSpeed = 5.0; // 5x
+
+        // Restore play/pause state
+        const pVal = getStored(storageKeyPlay);
+        let isPlaying = (pVal === 'true');
+
+        // Restore playback speed
+        const sVal = getStored(storageKeySpeed);
+        let playbackSpeed = sVal !== null ? (parseFloat(sVal) || 5.0) : 5.0;
+
+        // Focus Drivers priority: Python sidebar multiselect > stored session focus
+        let focusDrivers = (raceData.focus_drivers && raceData.focus_drivers.length > 0)
+          ? [...raceData.focus_drivers]
+          : [];
+        if (focusDrivers.length === 0) {{
+          const storedFocus = getStored(storageKeyFocus);
+          if (storedFocus) {{
+            try {{ focusDrivers = JSON.parse(storedFocus) || []; }} catch(e) {{}}
+          }}
+        }}
+
+        // Isolate Focus priority: Python sidebar checkbox > stored session isolate
+        let isolateFocus = Boolean(raceData.isolate_focus);
+        if (!isolateFocus) {{
+          const storedIsolate = getStored(storageKeyIsolate);
+          if (storedIsolate === 'true') {{
+            isolateFocus = true;
+          }}
+        }}
+
         let lastTimestamp = performance.now();
 
         // DOM Elements
@@ -846,7 +917,13 @@ with tab1:
         }}
         const btnPrevLap = document.getElementById('btnPrevLap');
         const btnNextLap = document.getElementById('btnNextLap');
+        const btnReset = document.getElementById('btnReset');
+        const chkIsolateFocus = document.getElementById('chkIsolateFocus');
+        if (chkIsolateFocus) {{
+          chkIsolateFocus.checked = isolateFocus;
+        }}
         const scrubber = document.getElementById('raceScrubber');
+        scrubber.value = simTimeS;
         const lapIndicator = document.getElementById('lapIndicator');
         const statusBanner = document.getElementById('statusBanner');
         const flagBadge = document.getElementById('flagBadge');
@@ -865,10 +942,16 @@ with tab1:
 
         // Speed Controls
         document.querySelectorAll('.btn-speed').forEach(btn => {{
+          if (parseFloat(btn.getAttribute('data-speed')) === playbackSpeed) {{
+            btn.classList.add('active');
+          }} else {{
+            btn.classList.remove('active');
+          }}
           btn.addEventListener('click', () => {{
             document.querySelectorAll('.btn-speed').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             playbackSpeed = parseFloat(btn.getAttribute('data-speed'));
+            setStored(storageKeySpeed, String(playbackSpeed));
           }});
         }});
 
@@ -877,7 +960,8 @@ with tab1:
           isPlaying = !isPlaying;
           btnPlay.innerText = isPlaying ? 'PAUSE' : 'PLAY';
           btnPlay.style.background = isPlaying ? '#FFD700' : 'linear-gradient(135deg, #00F0FF 0%, #0066FF 100%)';
-          try {{ sessionStorage.setItem(storageKeyPlay, String(isPlaying)); }} catch(e) {{}}
+          setStored(storageKeyPlay, String(isPlaying));
+          setStored(storageKeyTime, String(simTimeS));
           if (isPlaying) {{
             lastTimestamp = performance.now();
           }}
@@ -887,22 +971,55 @@ with tab1:
         btnPrevLap.addEventListener('click', () => {{
           simTimeS = Math.max(0, simTimeS - 88.0);
           scrubber.value = simTimeS;
-          try {{ sessionStorage.setItem(storageKeyTime, String(simTimeS)); }} catch(e) {{}}
+          setStored(storageKeyTime, String(simTimeS));
           updateDisplay();
         }});
 
         btnNextLap.addEventListener('click', () => {{
           simTimeS = Math.min(totalRaceDurationS, simTimeS + 88.0);
           scrubber.value = simTimeS;
-          try {{ sessionStorage.setItem(storageKeyTime, String(simTimeS)); }} catch(e) {{}}
+          setStored(storageKeyTime, String(simTimeS));
           updateDisplay();
         }});
+
+        // Reset Simulation Button
+        if (btnReset) {{
+          btnReset.addEventListener('click', () => {{
+            simTimeS = 0.0;
+            isPlaying = false;
+            btnPlay.innerText = 'PLAY';
+            btnPlay.style.background = 'linear-gradient(135deg, #00F0FF 0%, #0066FF 100%)';
+            scrubber.value = 0;
+            setStored(storageKeyPlay, 'false');
+            setStored(storageKeyTime, '0.0');
+            updateDisplay();
+          }});
+        }}
+
+        // In-simulation Isolate Focus Checkbox
+        if (chkIsolateFocus) {{
+          chkIsolateFocus.addEventListener('change', (e) => {{
+            isolateFocus = e.target.checked;
+            setStored(storageKeyIsolate, String(isolateFocus));
+            updateDisplay();
+          }});
+        }}
 
         // Scrubber Drag
         scrubber.addEventListener('input', (e) => {{
           simTimeS = parseFloat(e.target.value);
-          try {{ sessionStorage.setItem(storageKeyTime, String(simTimeS)); }} catch(e) {{}}
+          setStored(storageKeyTime, String(simTimeS));
           updateDisplay();
+        }});
+
+        // Unload / Pagehide handlers to guarantee state is written before unmount
+        window.addEventListener('beforeunload', () => {{
+          setStored(storageKeyTime, String(simTimeS));
+          setStored(storageKeyPlay, String(isPlaying));
+        }});
+        window.addEventListener('pagehide', () => {{
+          setStored(storageKeyTime, String(simTimeS));
+          setStored(storageKeyPlay, String(isPlaying));
         }});
 
         // Polar to Cartesian Helper (0 deg at 12 o'clock)
@@ -915,7 +1032,7 @@ with tab1:
         }}
 
         // Periodic state persistence throttle
-        let lastPersistTime = 0;
+        let lastPersistMs = 0;
 
         // Animation Loop (60 FPS)
         function animate(timestamp) {{
@@ -924,19 +1041,20 @@ with tab1:
 
           if (isPlaying) {{
             simTimeS += dt * playbackSpeed;
-            if (simTimeS > totalRaceDurationS) {{
+            if (simTimeS >= totalRaceDurationS) {{
               simTimeS = totalRaceDurationS;
               isPlaying = false;
               btnPlay.innerText = 'PLAY';
               btnPlay.style.background = 'linear-gradient(135deg, #00F0FF 0%, #0066FF 100%)';
-              try {{ sessionStorage.setItem(storageKeyPlay, 'false'); }} catch(e) {{}}
+              setStored(storageKeyPlay, 'false');
+              setStored(storageKeyTime, String(simTimeS));
             }}
             scrubber.value = simTimeS;
 
-            // Persist time once per second while running
-            if (timestamp - lastPersistTime > 1000) {{
-              lastPersistTime = timestamp;
-              try {{ sessionStorage.setItem(storageKeyTime, String(simTimeS)); }} catch(e) {{}}
+            // Frequent 100ms state sync so any external rerun picks up the exact sub-second
+            if (timestamp - lastPersistMs > 100) {{
+              lastPersistMs = timestamp;
+              setStored(storageKeyTime, String(simTimeS));
             }}
           }}
 
@@ -1163,7 +1281,7 @@ with tab1:
             }}
 
             html += `
-              <tr class="${{focusClass}}">
+              <tr class="${{focusClass}}" data-acronym="${{d.acronym}}" style="cursor: pointer;" title="Click to toggle Focus Spotlight">
                 <td style="font-weight: 700; color: #FFFFFF;">${{pos}}</td>
                 <td>
                   <div class="driver-pill">
@@ -1187,7 +1305,7 @@ with tab1:
             const focusClass = isFocus ? 'focused' : '';
 
             html += `
-              <tr class="retired ${{focusClass}}">
+              <tr class="retired ${{focusClass}}" data-acronym="${{d.acronym}}" style="cursor: pointer;" title="Click to toggle Focus Spotlight">
                 <td style="font-weight: 700; color: #536279;">${{retPos}}</td>
                 <td>
                   <div class="driver-pill">
@@ -1206,6 +1324,22 @@ with tab1:
 
           timingBody.innerHTML = html;
         }}
+
+        // Interactive Timing Table Click to Toggle Focus Driver
+        timingBody.addEventListener('click', (e) => {{
+          const row = e.target.closest('tr');
+          if (!row) return;
+          const acr = row.getAttribute('data-acronym');
+          if (!acr) return;
+          const idx = focusDrivers.indexOf(acr);
+          if (idx >= 0) {{
+            focusDrivers.splice(idx, 1);
+          }} else {{
+            focusDrivers.push(acr);
+          }}
+          setStored(storageKeyFocus, JSON.stringify(focusDrivers));
+          updateDisplay();
+        }});
 
         // Render Canvas Virtual Track Circle
         function renderCanvas(drivers, flagInfo, isRedFlag) {{
