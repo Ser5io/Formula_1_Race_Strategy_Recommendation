@@ -1,0 +1,322 @@
+/* ==============================================================================
+   FILE: pitwall_black_blue.css
+   THEME: Matte Black (#0B0C10, #12151E) & Electric Pit-Wall Blue (#00F0FF, #0066FF)
+   DESIGN STANDARD: Zero Emojis, Sharp Contrast, Sleek Glassmorphism, F1 Branding
+   ============================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --bg-primary: #0B0C10;
+  --bg-surface: #12151E;
+  --bg-surface-elevated: #181C28;
+  --bg-card: rgba(18, 21, 30, 0.85);
+  
+  --electric-blue: #00F0FF;
+  --pitwall-blue: #0066FF;
+  --deep-blue: #0033AA;
+  
+  --flag-green: #00E676;
+  --flag-yellow: #FFD700;
+  --flag-red: #FF1744;
+  --flag-vsc: #FF9100;
+  
+  --compound-soft: #FF3333;
+  --compound-medium: #FFD700;
+  --compound-hard: #FFFFFF;
+  --compound-intermediate: #00E676;
+  --compound-wet: #0066FF;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #8E9BAE;
+  --text-muted: #536279;
+  
+  --border-subtle: rgba(0, 240, 255, 0.15);
+  --border-active: #00F0FF;
+  --border-glass: rgba(255, 255, 255, 0.08);
+  
+  --glow-electric: 0 0 15px rgba(0, 240, 255, 0.4);
+  --glow-deep: 0 0 25px rgba(0, 102, 255, 0.3);
+}
+
+/* Global resets & typography (exclude icon ligatures) */
+html, body, p, h1, h2, h3, h4, h5, h6, label, span:not([class*="material-"]):not([data-testid*="Icon"]) {
+  font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary) !important;
+}
+
+/* Material Icons / Symbols safeguard: ensure icons render glyphs instead of ligature text */
+[class*="material-symbols"], [class*="material-icons"], .material-symbols-rounded, .material-symbols-outlined, [data-testid*="stIcon"] {
+  font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Icons', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+code, pre, .mono, [class*="mono"] {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Header & Navigation Bar */
+.pitwall-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #12151E 0%, #0B0C10 100%);
+  border-bottom: 2px solid var(--pitwall-blue);
+  box-shadow: var(--glow-deep);
+  padding: 12px 24px;
+  margin-bottom: 12px;
+}
+
+.pitwall-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pitwall-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.pitwall-title span {
+  color: var(--electric-blue);
+  text-shadow: var(--glow-electric);
+}
+
+/* Streamlit Tabs Styling */
+div[data-testid="stTabs"] button[role="tab"] {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #8E9BAE !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: #12151E !important;
+  border-radius: 4px 4px 0 0 !important;
+  padding: 8px 18px !important;
+  margin-right: 4px !important;
+}
+
+div[data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
+  color: #00F0FF !important;
+  border-top: 2px solid #00F0FF !important;
+  border-left: 1px solid rgba(0, 240, 255, 0.3) !important;
+  border-right: 1px solid rgba(0, 240, 255, 0.3) !important;
+  border-bottom: 1px solid transparent !important;
+  background-color: #181C28 !important;
+  box-shadow: 0 -2px 10px rgba(0, 240, 255, 0.2) !important;
+}
+
+/* Session Flag Banner */
+.flag-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.flag-badge.green {
+  background: rgba(0, 230, 118, 0.15);
+  color: var(--flag-green);
+  border: 1px solid var(--flag-green);
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.3);
+}
+
+.flag-badge.yellow {
+  background: rgba(255, 215, 0, 0.15);
+  color: var(--flag-yellow);
+  border: 1px solid var(--flag-yellow);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.flag-badge.sc {
+  background: rgba(255, 215, 0, 0.2);
+  color: #000000;
+  background-color: var(--flag-yellow);
+  border: 1px solid var(--flag-yellow);
+  font-weight: 900;
+  animation: pulse-glow 1.5s infinite alternate;
+}
+
+.flag-badge.vsc {
+  background: rgba(255, 145, 0, 0.2);
+  color: var(--flag-vsc);
+  border: 1px solid var(--flag-vsc);
+  box-shadow: 0 0 10px rgba(255, 145, 0, 0.3);
+}
+
+.flag-badge.red {
+  background: rgba(255, 23, 68, 0.2);
+  color: var(--flag-red);
+  border: 1px solid var(--flag-red);
+  box-shadow: 0 0 12px rgba(255, 23, 68, 0.4);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+  100% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); }
+}
+
+/* Timing Tower Table */
+.timing-tower {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+}
+
+.timing-tower th {
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.timing-tower tr {
+  background-color: var(--bg-surface);
+  transition: all 0.15s ease-in-out;
+}
+
+.timing-tower tr:hover {
+  background-color: var(--bg-surface-elevated);
+  border-left: 3px solid var(--electric-blue);
+}
+
+.timing-tower td {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-glass);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.driver-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.driver-tag {
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.acronym-badge {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Compound Badges */
+.compound-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 900;
+  font-size: 0.75rem;
+}
+
+.compound-badge.S { background-color: var(--compound-soft); color: #FFFFFF; }
+.compound-badge.M { background-color: var(--compound-medium); color: #000000; }
+.compound-badge.H { background-color: var(--compound-hard); color: #000000; }
+.compound-badge.I { background-color: var(--compound-intermediate); color: #000000; }
+.compound-badge.W { background-color: var(--compound-wet); color: #FFFFFF; }
+
+/* Status Badges */
+.status-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.status-badge.pit {
+  background: rgba(0, 240, 255, 0.15);
+  color: var(--electric-blue);
+  border: 1px solid var(--electric-blue);
+}
+
+.status-badge.dnf {
+  background: rgba(255, 23, 68, 0.15);
+  color: var(--flag-red);
+  border: 1px solid var(--flag-red);
+}
+
+.status-badge.parked {
+  background: rgba(255, 0, 51, 0.2);
+  color: #FF0033;
+  border: 1px solid #FF0033;
+}
+
+/* Environmental & Race Control Cards */
+.pitwall-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.pitwall-card-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+/* Ticker Box */
+.rc-ticker-box {
+  background: #080A0E;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 10px;
+  height: 140px;
+  overflow-y: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.rc-ticker-item {
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
