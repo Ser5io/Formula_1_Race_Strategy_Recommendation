@@ -97,99 +97,163 @@
 
 <section class="page-section" id="code">
   <h2>شرح الكود</h2>
-  <p>8 سكربتات SQL. افتح أي واحد وهتلاقي مقتطف حقيقي، والمفروض يعمله، وإزاي اتعمل، واستعلام تقدر تجربه.</p>
+  <p>عشرة ملفات SQL، بالترتيب اللي بيتشغلوا بيه. كل ملف متشرح من أوله لآخره، وفوق الشرح صورة للكود وهو مفتوح. الصورة من أول الملف، والكلام اللي تحتها بيكمل لحد استعلام المراجعة.</p>
 
   <details>
     <summary>01 — محمد — تحميل اللفات والستنتات <span class="en">01_mohamed_bronze_laps_stints.sql</span></summary>
-    <p>المهام: تحميل <span class="en">Race_Laps</span> و<span class="en">Stint_Summary</span>.</p>
-    <p><strong>المفروض يعمل:</strong> يحط كل صف في جدول نصّي من غير ما يحوّل الأنواع.</p>
-    <p><strong>اتعمل إزاي:</strong> الأعمدة كلها <span class="en">TEXT</span>، والتحميل بأمر <span class="en">\copy</span> من الملف.</p>
-    <pre><code>lap_duration TEXT,
-fuel_corrected_lap_time TEXT,
-_ingested_at TIMESTAMPTZ DEFAULT NOW(),
-_source_file TEXT</code></pre>
+    <img class="sql-shot" src="assets/shots/01_mohamed_bronze_laps_stints.png" alt="أول ملف برونز محمد وهو مفتوح">
+    <p>المهام 1.1 و1.2 و1.3. الملف ده أول حاجة بتشتغل، لأنه بينشئ المخططين <span class="en">bronze</span> و<span class="en">silver</span>.</p>
+    <p><strong>المفروض يعمل:</strong> يحفظ كل لفة وكل ستنت زي ملف CSV، من غير ما يحوّل رقم لنص غلط أو يفشل لو خلية فاضية.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li><span class="en">ON_ERROR_STOP</span> يوقف السكربت عند أول خطأ، عشان ما يكمّلش على جدول ناقص.</li>
+      <li>قبل ما يمسح الجداول، بيمسح عروض المراجعة في البرونز والسيلفر. من غيرها إعادة التشغيل بتفشل لأن العرض لسه ماسك الجدول.</li>
+      <li>المهمة 1.1 بتبني <span class="en">raw_race_laps</span> و<span class="en">raw_stint_summary</span>. كل عمود مصدر نوعه <span class="en">TEXT</span>. في الآخر عمودين مش في الملف: وقت التحميل واسم الملف.</li>
+      <li>المهمة 1.2 بتحمّل بـ <span class="en">\copy</span> من جهازنا، مش <span class="en">COPY</span> بتاع السيرفر، عشان قاعدة البيانات ما تحتاجش صلاحية على الملفات. الخلية الفاضية بتبقى <span class="en">NULL</span>. أمر <span class="en">COPY</span> السيرفر موجود تحت كتعليق بس.</li>
+      <li>المهمة 1.3 بتعرض العدد لكل سنة، والخلايا الفاضية في الزمن والسرعة وكود الإطار، وتكرار المفتاح <span class="en">session_key + driver_number + lap_number</span>. المتوقع للتكرار صفر صفوف.</li>
+    </ul>
     <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_race_laps;</span> المتوقع 77,373.</p>
   </details>
 
   <details>
     <summary>02 — يوسف — البيت ورسائل السباق <span class="en">02_yousef_bronze_pits_control.sql</span></summary>
-    <p>المهام: تحميل <span class="en">Pit_Stops</span> و<span class="en">Race_Control</span> كنص.</p>
-    <p><strong>المفروض يعمل:</strong> يحفظ الوقفات والرسائل زي الملف، حتى لو الرسالة مكررة.</p>
-    <p><strong>اتعمل إزاي:</strong> نفس أسلوب البرونز. التكرار بيتشال بعدين في السيلفر.</p>
-    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_pit_stops;</span> المتوقع 2,339.</p>
+    <img class="sql-shot" src="assets/shots/02_yousef_bronze_pits_control.png" alt="ملف برونز يوسف وهو مفتوح">
+    <p>المهام 1.4 و1.5. بيشتغل بعد سكربت محمد عشان المخططات تبقى موجودة، وبيمسح نفس العروض قبل ما يعيد بناء جدوله.</p>
+    <p><strong>المفروض يعمل:</strong> يحفظ كل وقفة وكل رسالة مدير سباق كنص، حتى لو الرسالة مكررة أو الوقفة طويلة.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li><span class="en">raw_pit_stops</span> فيه زمن الوقفة، زمن الحارة، وزمن الوقوف الثابت. التلاتة نص.</li>
+      <li><span class="en">raw_race_control</span> فيه نص الرسالة، التصنيف، العلم، والنطاق. مفيش مفتاح فريد هنا.</li>
+      <li>التحميل بـ <span class="en">\copy</span> من <span class="en">Pit_Stops.csv</span> و<span class="en">Race_Control.csv</span>.</li>
+      <li>الفحص الأخير بيعد الصفوف، ونسبة الخلايا الفاضية، وتوزيع <span class="en">category</span> و<span class="en">flag</span> و<span class="en">scope</span>. التكرار بيتساب للسيلفر.</li>
+    </ul>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_pit_stops;</span> المتوقع 2,339. و<span class="en">raw_race_control</span> المتوقع 6,286.</p>
   </details>
 
   <details>
     <summary>03 — محمود — الطقس والسباقات <span class="en">03_mahmud_bronze_weather_races.sql</span></summary>
-    <p>المهام: تحميل <span class="en">Weather</span> و<span class="en">Races</span>.</p>
-    <p><strong>المفروض يعمل:</strong> يحفظ كل دقايق الويك إند، وأكواد الإطارات فاضية زي المصدر.</p>
-    <p><strong>اتعمل إزاي:</strong> أعمدة <span class="en">c_hard</span> و<span class="en">c_medium</span> و<span class="en">c_soft</span> نص، وعدد الفاضي 70 سباق.</p>
-    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_weather;</span> المتوقع 34,420.</p>
+    <img class="sql-shot" src="assets/shots/03_mahmud_bronze_weather_races.png" alt="ملف برونز محمود وهو مفتوح">
+    <p>المهام 1.6 و1.7. الطقس هنا لكل جلسات الويك إند، مش السباق بس.</p>
+    <p><strong>المفروض يعمل:</strong> يحفظ القراءات وأكواد الإطارات زي المصدر، حتى لو الأكواد فاضية.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li><span class="en">raw_weather</span> فيه حرارة التراك والهواء، المطر، الرطوبة، الضغط، والريح. كلهم نص.</li>
+      <li><span class="en">raw_races</span> فيه الحلبة والتاريخ، وأعمدة <span class="en">c_hard</span> و<span class="en">c_medium</span> و<span class="en">c_soft</span>. التحميل بالترتيب مش بالاسم، فاسم العمود في الجدول لازم يطابق ترتيب الملف.</li>
+      <li>فحص الوقت بيوريك إن بداية السباق صيغتها تاريخ ومسافة، ونهايته فيها حرف T ومنطقة زمنية. الاتنين لسه نص.</li>
+      <li>فحص الأكواد بيعد السباقات اللي التلات أعمدة فيها فاضية. النتيجة 70 من 70، والملء بيحصل في السيلفر.</li>
+    </ul>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM bronze.raw_weather;</span> المتوقع 34,420. و<span class="en">raw_races</span> المتوقع 70.</p>
   </details>
 
   <details>
     <summary>04 — معاذ — السائقين والفرق والنتائج والمراجعة <span class="en">04_moaz_bronze_entities_and_audit.sql</span></summary>
-    <p>المهام: تحميل 3 جداول، وبناء <span class="en">bronze.vw_ingestion_audit_summary</span>.</p>
-    <p><strong>المفروض يعمل:</strong> يعد الصفوف والفراغات ومجموعات التكرار لكل جدول.</p>
-    <p><strong>اتعمل إزاي:</strong> العرض بيجمع 9 جداول بأمر <span class="en">UNION ALL</span>، وبيعد الخلايا الفاضية بتحويل الصف لـ JSON.</p>
+    <img class="sql-shot" src="assets/shots/04_moaz_bronze_entities_and_audit.png" alt="ملف برونز معاذ وهو مفتوح">
+    <p>المهام 1.8 و1.9 و1.10. آخر سكربت برونز، لأنه بيبني تقرير الجداول التسعة بعد ما كلها تتحمّل.</p>
+    <p><strong>المفروض يعمل:</strong> يحفظ السائقين والفرق والنتائج، ويعد الصفوف والفراغ والتكرار من غير ما يمسح حاجة.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li><span class="en">raw_drivers</span> و<span class="en">raw_constructors</span> و<span class="en">raw_race_results</span> كل أعمدتهم نص، ومعاهم وقت التحميل واسم الملف.</li>
+      <li>فجوة نهاية السباق بتتسجل كنص، لأن فيها أرقام وزي <span class="en">+1 LAP</span>.</li>
+      <li>عرض <span class="en">bronze.vw_ingestion_audit_summary</span> بيجمع 9 جداول بـ <span class="en">UNION ALL</span>. لكل جدول: العضو، عدد الصفوف، عدد أعمدة المصدر، الخلايا الفاضية عن طريق تحويل الصف لـ JSON، ومجموعات التكرار والصفوف الزيادة.</li>
+      <li><span class="en">vw_bronze_audit_log</span> اسم تاني لنفس العرض.</li>
+    </ul>
     <p>استعلام المراجعة: <span class="en">SELECT * FROM bronze.vw_ingestion_audit_summary;</span> المتوقع 9 صفوف.</p>
   </details>
 
   <details>
     <summary>05 — محمد — لفات السيلفر <span class="en">01_mohamed_silver_fact_laps.sql</span></summary>
-    <p>المهام: تحويل الأنواع، تصحيح الوقود، وسيط السائق، وقاعدة 107%.</p>
-    <p><strong>المفروض يعمل:</strong> يعلّم اللفة الصالحة من غير ما يمسح الصف.</p>
-    <p><strong>اتعمل إزاي:</strong> الوسيط حساب مجمّع، لأن Postgres هنا ما بيدعمش <span class="en">PERCENTILE_CONT</span> كنافذة. التصحيح: الزمن زائد 0.03 في (رقم اللفة ناقص 1).</p>
-    <pre><code>medians AS (
-    SELECT session_key, driver_number,
-        PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY lap_duration)
-            AS driver_median_lap_s
-    FROM imputed
-    WHERE lap_duration IS NOT NULL
-      AND NOT COALESCE(is_first_lap, FALSE)
-      AND NOT COALESCE(safety_car_in_lap, FALSE)
-      AND NOT COALESCE(vsc_in_lap, FALSE)
-      AND NOT COALESCE(red_flag_in_lap, FALSE)
-    GROUP BY session_key, driver_number
-)
--- fuel: lap_duration + (0.03 * (lap_number - 1))</code></pre>
-    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FILTER (WHERE is_valid_strategy_lap) FROM silver.fact_race_laps;</span> المتوقع 63,115.</p>
+    <img class="sql-shot" src="assets/shots/01_mohamed_silver_fact_laps.png" alt="ملف سيلفر محمد وهو مفتوح">
+    <p>المهام 2.1 إلى 2.4. بيقرأ <span class="en">bronze.raw_race_laps</span> بس، وبيبني الدوال اللي باقي السكربتات بتستخدمها.</p>
+    <p><strong>المفروض يعمل:</strong> يحوّل النص لأرقام وتواريخ، ويعلّم اللفة الصالحة من غير ما يمسح الصف.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li>أربع دوال: <span class="en">txt_bool</span> و<span class="en">txt_int</span> و<span class="en">txt_float</span> و<span class="en">txt_ts</span>. الفاضي يبقى <span class="en">NULL</span>، والرقم اللي شكله <span class="en">1.0</span> يتحول لعدد صحيح عن طريق <span class="en">numeric</span>.</li>
+      <li>المهمة 2.1 بتبني <span class="en">fact_race_laps</span> بمفتاح <span class="en">session_key + driver_number + lap_number</span>.</li>
+      <li>الاستعلام الداخلي ماشي على طبقات: <span class="en">typed</span> للتحويل، <span class="en">imputed</span> لملء السرعة الناقصة بمتوسط نفس الستنت وتصحيح الوقود، <span class="en">medians</span> لوسيط السائق، <span class="en">paced</span> لفرق اللفة عن أسرع لفة في الستنت.</li>
+      <li>تصحيح الوقود: الزمن زائد 0.03 في (رقم اللفة ناقص 1). الوسيط مجمّع بـ <span class="en">PERCENTILE_CONT</span> مش نافذة، لأن النسخة دي من Postgres بترفض <span class="en">OVER</span> على الدالة دي. اللفة الأولى ولفات البيت ولفات SC وVSC والعلم الأحمر خارجة من الوسيط. العلم الأصفر لسه داخل الحساب إلا لو اللفة أبطأ من 107%.</li>
+      <li><span class="en">is_valid_strategy_lap</span> بتبقى خطأ للفة الأولى، أو لفة بيت، أو لفة محايدة، أو زمن ناقص، أو أبطأ من 107% من الوسيط.</li>
+      <li>آخر الملف بيقارن العدد قبل وبعد، وبيفصّل أسباب الرفض، وبيتأكد إن التصحيح مطابق لقيمة البرونز لما تكون موجودة.</li>
+    </ul>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FILTER (WHERE is_valid_strategy_lap) FROM silver.fact_race_laps;</span> المتوقع 63,115. وفرق التصحيح المتوقع 0.</p>
   </details>
 
   <details>
     <summary>06 — يوسف — الوقفات والأعلام <span class="en">02_yousef_silver_pits_and_flags.sql</span></summary>
-    <p>المهام: شيل وقفات أطول من 60 ثانية، وصنّف الرسائل.</p>
-    <p><strong>المفروض يعمل:</strong> يميّز VSC عن SC، لأن كلمة SAFETY CAR موجودة جوه رسالة الـ VSC.</p>
-    <p><strong>اتعمل إزاي:</strong> شرط الـ VSC بيتفحص الأول، وشرط العلم الأحمر هو العلم الأحمر نفسه أو الرسالة تساوي RED FLAG بالظبط، عشان جملة CHEQUERED FLAG ما تتعدّش علم أحمر.</p>
-    <pre><code>WHEN UPPER(message) LIKE '%VIRTUAL SAFETY CAR DEPLOYED%' THEN 'VSC_DEPLOYED'
-WHEN UPPER(message) LIKE '%SAFETY CAR DEPLOYED%' THEN 'SC_DEPLOYED'
-WHEN is_red_flag_event THEN 'RED_FLAG'</code></pre>
-    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.fact_pit_stops;</span> المتوقع 2,229.</p>
+    <img class="sql-shot" src="assets/shots/02_yousef_silver_pits_and_flags.png" alt="ملف سيلفر يوسف وهو مفتوح">
+    <p>المهام 2.5 و2.6. بيعتمد على دوال <span class="en">silver.txt_*</span>، فمحمد لازم يكون خلّص قبله.</p>
+    <p><strong>المفروض يعمل:</strong> يسيب الوقفات التكتيكية بس، ويصنّف رسالة مدير السباق لحدث واحد مفهوم.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li>الوقفة اللي <span class="en">pit_duration</span> بتاعها أكبر من 60 ثانية بتتشال من <span class="en">fact_pit_stops</span>. دي عربية محجوزة في الحارة تحت العلم الأحمر، مش قرار دخول.</li>
+      <li><span class="en">net_pit_loss_s</span> هو زمن الحارة. <span class="en">circuit_avg_pit_loss_s</span> متوسط زمن الحارة لنفس الحلبة في نفس السنة، على الوقفات التكتيكية بس.</li>
+      <li><span class="en">is_penalty_stop</span> لما زمن الوقوف الثابت 5 ثواني أو أكتر. في أغلب 2023 الزمن ده ناقص، فالعلامة بتفضل فاضية.</li>
+      <li>في الرسائل، التكرار على نفس الجلسة والوقت ونص الرسالة بيتشال بـ <span class="en">ROW_NUMBER</span> والصف الأول بس.</li>
+      <li>VSC بيتفحص قبل SC، لأن رسالة الـ Virtual Safety Car فيها كلمة SAFETY CAR. العلم الأحمر هو العمود <span class="en">flag = RED</span> أو الرسالة تساوي <span class="en">RED FLAG</span> بالظبط، عشان <span class="en">CHEQUERED FLAG</span> ما تتعدّش. ملاحظات المخالفة والعقوبة اللي بتذكر سيارة الأمان مش نزول للسيارة.</li>
+      <li><span class="en">event_code</span> بيطلّع قيم زي <span class="en">VSC_DEPLOYED</span> و<span class="en">SC_DEPLOYED</span> و<span class="en">RED_FLAG</span> و<span class="en">DRS_ENABLED</span> و<span class="en">TRACK_LIMIT_DELETED</span> و<span class="en">PENALTY_ISSUED</span>.</li>
+    </ul>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.fact_pit_stops;</span> المتوقع 2,229. و<span class="en">fact_race_control</span> المتوقع 6,278.</p>
   </details>
 
   <details>
     <summary>07 — محمود — السباقات والطقس <span class="en">03_mahmud_silver_weather_and_circuits.sql</span></summary>
-    <p>المهام: خريطة Pirelli، وتوحيد التوقيت، وطقس السباق بس.</p>
-    <p><strong>المفروض يعمل:</strong> يملّى أكواد C1 إلى C6، ويرمي خطأ لو سباق فضل فاضي.</p>
-    <p><strong>اتعمل إزاي:</strong> قائمة <span class="en">VALUES</span> مفتاحها السنة واسم الحلبة. لو المصدر فيه كود، الكود ده بياخد الأولوية. الطقس بيتفلتر على <span class="en">session_name = Race</span>.</p>
-    <pre><code>WITH nomination (year, circuit_short_name, c_hard, c_medium, c_soft) AS (
-    VALUES
-        (2023, 'Sakhir', 'C1', 'C2', 'C3'),
-        (2023, 'Jeddah', 'C2', 'C3', 'C4')
-)</code></pre>
-    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.dim_races WHERE c_hard IS NOT NULL;</span> المتوقع 70.</p>
+    <img class="sql-shot" src="assets/shots/03_mahmud_silver_weather_and_circuits.png" alt="ملف سيلفر محمود وهو مفتوح">
+    <p>المهام 2.7 و2.8. السباق بيبقى صف واحد بمفتاح <span class="en">session_key</span>، والطقس بيتقلص على جلسة السباق.</p>
+    <p><strong>المفروض يعمل:</strong> يملّى أكواد بيريلي، يوحّد التوقيت على UTC، ويرفض يكمل لو سباق فضل من غير كود.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li><span class="en">date_start</span> صيغته تاريخ ومسافة، و<span class="en">date_end</span> فيها T و<span class="en">+00:00</span>. الاتنين بيتعاملوا كتوقيت UTC، والنهاية بتتحول من <span class="en">timestamptz</span> لساعة UTC. فرق جرينتش زي <span class="en">03:00:00</span> بيتحول لـ <span class="en">interval</span>.</li>
+      <li>قائمة <span class="en">VALUES</span> اسمها <span class="en">nomination</span>، مفتاحها السنة واسم الحلبة المختصر، وفيها الهارد والميديوم والسوفت لكل سباق من 2023 لـ 2025، بما فيها C6. لو المصدر فيه كود، <span class="en">COALESCE</span> بيسيبه هو.</li>
+      <li>بلوك <span class="en">DO</span> بيعمل <span class="en">RAISE</span> لو أي سباق لسه <span class="en">c_hard</span> أو <span class="en">c_medium</span> أو <span class="en">c_soft</span> فاضي.</li>
+      <li>الطقس: جلسة اسمها Race بس. التكرار على <span class="en">session_key + date</span> بيسيب ملاحظة واحدة. <span class="en">track_temp_delta_prev_5min</span> هو الفرق عن قراءة من 5 صفوف، لأن العينة كل دقيقة. <span class="en">is_rain_onset</span> أول دقيقة مطر بعد جو جاف.</li>
+    </ul>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.dim_races WHERE c_hard IS NOT NULL;</span> المتوقع 70. و<span class="en">fact_weather</span> المتوقع 11,069.</p>
   </details>
 
   <details>
     <summary>08 — معاذ — الأبعاد والنتائج والمراجعة <span class="en">04_moaz_silver_dimensions_and_audit.sql</span></summary>
-    <p>المهام: سائق واحد في الموسم، تحويل <span class="en">+N LAP</span>، وكود الإطار على الستنت، وتقرير السيلفر.</p>
-    <p><strong>المفروض يعمل:</strong> يسيب الصف اللي فيه سباقات أكتر، ويوحّد لون الفريق لحروف كبيرة.</p>
-    <p><strong>اتعمل إزاي:</strong> <span class="en">ROW_NUMBER</span> بيترتّب بعدد السباقات ثم آخر جولة، والصف رقم 1 هو اللي يفضل.</p>
-    <pre><code>ROW_NUMBER() OVER (
-    PARTITION BY year, driver_number
-    ORDER BY races_entered DESC NULLS LAST, last_round DESC NULLS LAST
-) AS keep_rank</code></pre>
-    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.dim_drivers;</span> المتوقع 68.</p>
+    <img class="sql-shot" src="assets/shots/04_moaz_silver_dimensions_and_audit.png" alt="ملف سيلفر معاذ وهو مفتوح">
+    <p>المهام 2.9 و2.10 و2.11. آخر سكربت سيلفر، لأنه بيقرا <span class="en">fact_race_laps</span> و<span class="en">dim_races</span>.</p>
+    <p><strong>المفروض يعمل:</strong> سائق واحد في الموسم، فجوة مفهومة، ستنت بكود إطار، وتقرير واحد لكل التحويلات.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li>السائقين: <span class="en">ROW_NUMBER</span> جوه كل سنة ورقم عربية، مترتب بعدد السباقات ثم آخر جولة. الصف رقم 1 هو اللي يفضل. <span class="en">source_row_count</span> بيعد الصفوف الخام اللي اتجمعت. لون الفريق بيتخزن بحروف كبيرة.</li>
+      <li><span class="en">team_lineage</span> بيربط Alfa Romeo بـ Kick Sauber، وAlphaTauri وRB بـ Racing Bulls، من غير ما يغيّر اسم الفريق في الموسم نفسه. الفرق ليها نفس الفكرة في <span class="en">dim_constructors</span>.</li>
+      <li>النتيجة: الفجوة الرقمية بتبقى <span class="en">gap_seconds</span> و<span class="en">laps_down = 0</span>. النص <span class="en">+N LAP</span> بيبقى <span class="en">laps_down = N</span> والثواني فاضية.</li>
+      <li>الستنت: <span class="en">compound_code</span> بيتاخد من <span class="en">dim_races</span> حسب HARD وMEDIUM وSOFT. إنترميديت وويت بيتحطوا كما هم. متوسط اللفات الصالحة بيتجاب من <span class="en">fact_race_laps</span>.</li>
+      <li>المهمة 2.11 بتبني <span class="en">silver.vw_transformation_audit_log</span>، وصف لكل مقياس: عدد الصفوف، اللفات الصالحة، الوقفات المتشالة، المطر، والسائقين المتكررين. <span class="en">vw_silver_audit_report</span> اسم تاني لنفس العرض.</li>
+    </ul>
+    <p>استعلام المراجعة: <span class="en">SELECT COUNT(*) FROM silver.dim_drivers;</span> المتوقع 68. و<span class="en">SELECT COUNT(*) FROM silver.vw_transformation_audit_log;</span> المتوقع 46 صف مقياس.</p>
+  </details>
+
+  <details>
+    <summary>09 — التصدير <span class="en">export_bronze_silver.sql</span></summary>
+    <img class="sql-shot" src="assets/shots/export_bronze_silver.png" alt="ملف التصدير وهو مفتوح">
+    <p>مش مهمة تنظيف. بيطلّع الجداول اللي اتبنت في ملفات CSV، متقسمة على العضو.</p>
+    <p><strong>المفروض يعمل:</strong> يكتب كل جدول برونز وكل جدول سيلفر، ومعاهم تقريري المراجعة، من غير ما يغيّر الصفوف.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li>كل سطر <span class="en">\copy (SELECT ...) TO</span> ملف. الترتيب بيخلّي الملف يتقرا: السنة ثم الجلسة ثم السائق ثم اللفة.</li>
+      <li>ستنت البرونز بيترتّب بـ <span class="en">stint_number::NUMERIC</span> مش <span class="en">INT</span>، لأن الملف الأصلي مخزّن الرقم زي <span class="en">1.0</span>.</li>
+      <li>رقم لفة رسالة السباق في البرونز بيتساب نص في الترتيب، عشان فيه قيم مش رقم.</li>
+      <li>المسار: <span class="en">exports/bronze/mohamed</span> و<span class="en">yousef</span> و<span class="en">mahmud</span> و<span class="en">moaz</span>، ونفس التقسيمة في <span class="en">exports/silver</span>. تقرير البرونز وتقرير السيلفر في جذر كل مجلد.</li>
+    </ul>
+    <p>استعلام المراجعة: عدد أسطر كل CSV ناقص سطر العناوين يساوي عدد صفوف الجدول. مثال اللفات 77,373.</p>
+  </details>
+
+  <details>
+    <summary>10 — بيانات الموقع <span class="en">build_site_data.sql</span></summary>
+    <img class="sql-shot" src="assets/shots/build_site_data.png" alt="ملف بيانات الموقع وهو مفتوح">
+    <p>الملف ده ما بيعدّلش المستودع. بيقرأ البرونز والسيلفر ويكتب <span class="en">website/data/site_data.js</span>.</p>
+    <p><strong>المفروض يعمل:</strong> يجمع الأرقام والرسوم والأمثلة وأنواع الأعمدة في كائن واحد الصفحة تقرأه.</p>
+    <p><strong>اتعمل إزاي:</strong></p>
+    <ul>
+      <li><span class="en">\pset</span> بيطلّع الناتج من غير عناوين ومن غير محاذاة، و<span class="en">\o</span> بيحوّل المخرج لملف الجافاسكربت.</li>
+      <li>استعلام واحد: <span class="en">window.F1_DATA = </span> وبعديه <span class="en">jsonb_pretty</span> لكائن فيه الملخص، تقريري المراجعة، اللفات حسب السنة، أسباب الرفض، استخدام الإطارات، خريطة بيريلي، خسارة البيت، الأعلام، طقس البحرين، السائقين، وألوان الفرق.</li>
+      <li><span class="en">columns</span> جاي من <span class="en">information_schema.columns</span> لكل جداول البرونز والسيلفر.</li>
+      <li><span class="en">examples</span> صفوف حقيقية بالمفتاح: لفة فيرستابن في البحرين، اللفة المرفوضة، وقفة أطول من 60 ثانية، لون 2024، نتيجة <span class="en">+1 LAP</span>، وأكواد ساخر.</li>
+      <li>عدد السائقين في السنة متجمع في استعلام داخلي الأول، لأن تحويل السنة جوه <span class="en">GROUP BY</span> كان بيرفض العمود.</li>
+    </ul>
+    <p>استعلام المراجعة: بعد التشغيل، الملف يبدأ بـ <span class="en">window.F1_DATA</span> وفيه <span class="en">valid_laps</span> بقيمة 63115.</p>
   </details>
 </section>
 
