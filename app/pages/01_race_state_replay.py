@@ -1,12 +1,14 @@
 """
 Module: 01_race_state_replay.py
 Team Member: Moaz (UI Architecture & Dynamic Playback Integration)
-             Mohamed (Kinematics & Lap Progress Math)
+             Mohamed (Continuous Global Race Time & Kinematics Math)
              Yousef (Pit Lane Inner-Ring & Flag State Machine)
              Mahmud (Weather & Track Telemetry Sync)
 Phase: Phase 3 - Race State Simulation & Virtual Track Circle
 Objective: High-performance interactive Formula 1 simulation with:
-           - Live real-time playback (Play/Pause, Speed 1x-10x, Lap Scrubber).
+           - Continuous global race time clock T_elapsed: drivers never reset at the line;
+             instead, faster cars pull away, overtake, and lap slower cars continuously.
+           - Live real-time playback (Play/Pause, Speed 1x-10x, Continuous Scrubber).
            - 60 FPS client-side Canvas/SVG simulation showing drivers smoothly moving around the Virtual Track Circle.
            - Zero emojis (strict text badges [S], [M], [H], [I], [W], [PIT], [GREEN], [SC], [VSC], [RED]).
            - Matte Black (#0B0C10) & Electric Pit-Wall Blue (#00F0FF) theme.
@@ -97,7 +99,7 @@ st.markdown(f"""
     <div class="pitwall-title">RACE STATE SIMULATION <span>// VIRTUAL TRACK CIRCLE</span></div>
   </div>
   <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #8E9BAE;">
-    WAREHOUSE: <span style="color: #00F0FF;">SILVER MEDALLION</span> | REPLAY ENGINE: <span style="color: #0066FF;">ACTIVE (60 FPS)</span>
+    WAREHOUSE: <span style="color: #00F0FF;">SILVER MEDALLION</span> | REPLAY ENGINE: <span style="color: #0066FF;">ACTIVE (60 FPS CONTINUOUS)</span>
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -150,7 +152,7 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("### SIMULATION CONTROLS")
-    st.info("The central Virtual Track Circle runs in real-time with an interactive Play/Pause button, speed controls (1x to 10x), and live driver tracking.")
+    st.info("Continuous Global Clock Simulation: Cars move based on cumulative elapsed seconds from lights out to chequered flag. Gaps widen realistically and overtakes persist naturally across laps.")
 
 
 # Load Session Data & Initialize Engines
@@ -168,39 +170,57 @@ weather_sync = WeatherTelemetrySyncEngine(session_weather, race_meta)
 max_laps = int(session_laps['lap_number'].max())
 circuit_name = str(race_meta.iloc[0]['circuit_short_name']).upper()
 
-# Pre-process lap-by-lap telemetry for ultra-fast, smooth client-side animation
-lap_data_payload = {}
-for lap_num, group in session_laps.groupby('lap_number'):
-    d_list = []
-    # Sort by position
-    sorted_group = group.sort_values(by='position_end_of_lap')
-    for _, row in sorted_group.iterrows():
-        t_name = str(row.get('team_name', 'Unknown'))
-        t_col = team_colors_map.get(t_name, '#3671C6')
-        
+# Sort laps chronologically by driver
+sorted_laps = session_laps.sort_values(by=['driver_number', 'lap_number']).copy()
+sorted_laps['lap_duration'] = pd.to_numeric(sorted_laps['lap_duration'], errors='coerce').fillna(90.0)
+sorted_laps['s1'] = pd.to_numeric(sorted_laps['duration_sector_1'], errors='coerce').fillna(sorted_laps['lap_duration'] / 3.0)
+sorted_laps['s2'] = pd.to_numeric(sorted_laps['duration_sector_2'], errors='coerce').fillna(sorted_laps['lap_duration'] / 3.0)
+sorted_laps['s3'] = pd.to_numeric(sorted_laps['duration_sector_3'], errors='coerce').fillna(sorted_laps['lap_duration'] / 3.0)
+
+# Build Continuous Time Series per Driver
+drivers_time_series = []
+total_race_duration_s = 0.0
+
+for drv_num, grp in sorted_laps.groupby('driver_number'):
+    grp = grp.reset_index(drop=True)
+    cum_end = grp['lap_duration'].cumsum()
+    cum_start = cum_end - grp['lap_duration']
+    
+    laps_meta = []
+    for i, row in grp.iterrows():
         comp_str = str(row.get('compound', 'MEDIUM')).upper()
         comp_badge = comp_str[0] if comp_str in ['SOFT', 'MEDIUM', 'HARD', 'INTERMEDIATE', 'WET'] else 'M'
         
-        d_list.append({
-            'driver_number': int(row.get('driver_number', 0)),
-            'acronym': str(row.get('name_acronym', 'DRV')),
-            'team': t_name,
-            'team_color': t_col,
-            'pos': int(row.get('position_end_of_lap', 20)) if pd.notna(row.get('position_end_of_lap')) else 20,
-            'duration': float(row.get('lap_duration', 90.0)) if pd.notna(row.get('lap_duration')) else 90.0,
-            's1': float(row.get('duration_sector_1', 30.0)) if pd.notna(row.get('duration_sector_1')) else 30.0,
-            's2': float(row.get('duration_sector_2', 30.0)) if pd.notna(row.get('duration_sector_2')) else 30.0,
-            's3': float(row.get('duration_sector_3', 30.0)) if pd.notna(row.get('duration_sector_3')) else 30.0,
+        laps_meta.append({
+            'lap': int(row['lap_number']),
+            'start_t': float(cum_start[i]),
+            'end_t': float(cum_end[i]),
+            'dur': float(row['lap_duration']),
+            's1': float(row['s1']),
+            's2': float(row['s2']),
+            's3': float(row['s3']),
             'compound': comp_str,
             'compound_badge': comp_badge,
-            'tyre_age': int(row.get('tyre_age_laps', 1)) if pd.notna(row.get('tyre_age_laps')) else 1,
+            'tyre_age': int(row['tyre_age_laps']) if pd.notna(row.get('tyre_age_laps')) else 1,
             'is_pit_in': str(row.get('is_pit_in_lap', '')).lower() in ['true', 't', '1'],
             'is_pit_out': str(row.get('is_pit_out_lap', '')).lower() in ['true', 't', '1'],
-            'speed': round(float(row.get('i1_speed', 280)) if pd.notna(row.get('i1_speed')) else 280.0, 1),
-            'status': '[PIT]' if str(row.get('is_pit_in_lap', '')).lower() in ['true', 't', '1'] else '[ON_TRACK]'
+            'speed': round(float(row['i1_speed']) if pd.notna(row.get('i1_speed')) else 280.0, 1)
         })
-    lap_data_payload[int(lap_num)] = d_list
-
+    
+    first_row = grp.iloc[0]
+    t_name = str(first_row.get('team_name', 'Unknown'))
+    drv_total_t = float(cum_end.iloc[-1])
+    if drv_total_t > total_race_duration_s:
+        total_race_duration_s = drv_total_t
+        
+    drivers_time_series.append({
+        'driver_number': int(drv_num),
+        'acronym': str(first_row.get('name_acronym', 'DRV')),
+        'team': t_name,
+        'team_color': team_colors_map.get(t_name, '#3671C6'),
+        'total_time': drv_total_t,
+        'laps': laps_meta
+    })
 
 # Pre-process lap flags and weather states
 flag_states_payload = {}
@@ -233,7 +253,8 @@ for l in range(1, max_laps + 1):
 race_json = json.dumps({
     'max_laps': max_laps,
     'circuit': circuit_name,
-    'laps': lap_data_payload,
+    'total_race_duration_s': total_race_duration_s,
+    'drivers': drivers_time_series,
     'flags': flag_states_payload,
     'weather': weather_states_payload
 })
@@ -518,10 +539,10 @@ simulation_html = f"""
     
     <div class="scrubber-container">
       <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #8E9BAE;">
-        <span>TIMELINE SCRUBBER</span>
+        <span>GLOBAL TIMELINE SCRUBBER</span>
         <span id="lapIndicator">LAP 1 / {max_laps}</span>
       </div>
-      <input type="range" id="raceScrubber" class="scrubber-slider" min="1" max="{max_laps}" step="0.01" value="1">
+      <input type="range" id="raceScrubber" class="scrubber-slider" min="0" max="{total_race_duration_s}" step="1" value="0">
     </div>
     
     <div class="speed-selector">
@@ -540,7 +561,7 @@ simulation_html = f"""
     </div>
     <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: #8E9BAE;">
       CIRCUIT: <span style="color: #00F0FF; font-weight: 700;">{circuit_name}</span> &nbsp;|&nbsp;
-      ELAPSED: <span id="elapsedClock" style="color: #FFFFFF;">0m 00s</span>
+      RACE TIME: <span id="elapsedClock" style="color: #FFFFFF;">0m 00s</span>
     </div>
   </div>
 
@@ -615,17 +636,18 @@ simulation_html = f"""
   </div>
 
   <script>
-    // Injected Warehouse Data
+    // Injected Continuous Warehouse Data
     const raceData = {race_json};
     const maxLaps = raceData.max_laps;
-    const lapsData = raceData.laps;
+    const totalRaceDurationS = raceData.total_race_duration_s;
+    const allDrivers = raceData.drivers;
     const flagsData = raceData.flags;
     const weatherData = raceData.weather;
 
     // Simulation State
     let isPlaying = false;
-    let currentLapFraction = 1.0;
-    let playbackSpeed = 5.0; // 5x speed
+    let simTimeS = 0.0;
+    let playbackSpeed = 5.0; // 5x real-world seconds
     let lastTimestamp = performance.now();
 
     // DOM Elements
@@ -668,7 +690,7 @@ simulation_html = f"""
 
     // Scrubber Drag
     scrubber.addEventListener('input', (e) => {{
-      currentLapFraction = parseFloat(e.target.value);
+      simTimeS = parseFloat(e.target.value);
       updateDisplay();
     }});
 
@@ -683,20 +705,18 @@ simulation_html = f"""
 
     // Animation Loop (60 FPS)
     function animate(timestamp) {{
-      const dt = (timestamp - lastTimestamp) / 1000.0; // seconds
+      const dt = (timestamp - lastTimestamp) / 1000.0; // elapsed real seconds
       lastTimestamp = timestamp;
 
       if (isPlaying) {{
-        // Advance lap progress: at 1x speed, 1 lap takes ~90s. With multiplier:
-        const lapAdvance = (dt / 90.0) * playbackSpeed;
-        currentLapFraction += lapAdvance;
-        if (currentLapFraction > maxLaps) {{
-          currentLapFraction = maxLaps;
+        simTimeS += dt * playbackSpeed;
+        if (simTimeS > totalRaceDurationS) {{
+          simTimeS = totalRaceDurationS;
           isPlaying = false;
           btnPlay.innerText = 'PLAY';
           btnPlay.style.background = 'linear-gradient(135deg, #00F0FF 0%, #0066FF 100%)';
         }}
-        scrubber.value = currentLapFraction;
+        scrubber.value = simTimeS;
       }}
 
       updateDisplay();
@@ -705,26 +725,108 @@ simulation_html = f"""
 
     // Update Telemetry, Canvas & Timing Tower
     function updateDisplay() {{
-      const activeLap = Math.min(Math.max(Math.floor(currentLapFraction), 1), maxLaps);
-      const lapProgress = currentLapFraction - activeLap; // [0, 1)
-
-      lapIndicator.innerText = `LAP ${{activeLap}} / ${{maxLaps}}`;
-      
-      // Approximate Elapsed Clock
-      const elapsedS = (currentLapFraction - 1) * 88.0;
-      const mins = Math.floor(elapsedS / 60);
-      const secs = Math.floor(elapsedS % 60);
+      const mins = Math.floor(simTimeS / 60);
+      const secs = Math.floor(simTimeS % 60);
       elapsedClock.innerText = `${{mins}}m ${{secs.toString().padStart(2, '0')}}s`;
 
+      // Continuous Driver Kinematics Evaluation at simTimeS
+      let maxLeaderLap = 1;
+      const driverStates = allDrivers.map(d => {{
+        const laps = d.laps;
+        if (!laps || laps.length === 0) return null;
+
+        // If before race start
+        if (simTimeS <= laps[0].start_t) {{
+          const firstL = laps[0];
+          return {{
+            ...d,
+            lap: 1,
+            deg: 0,
+            radius: rMain,
+            is_in_pit: false,
+            compound: firstL.compound,
+            compound_badge: firstL.compound_badge,
+            tyre_age: firstL.tyre_age,
+            speed: 0.0,
+            distance_score: 0.0
+          }};
+        }}
+
+        // If after driver finish/retirement
+        const lastL = laps[laps.length - 1];
+        if (simTimeS >= lastL.end_t) {{
+          return {{
+            ...d,
+            lap: lastL.lap,
+            deg: 0,
+            radius: rMain,
+            is_in_pit: false,
+            compound: lastL.compound,
+            compound_badge: lastL.compound_badge,
+            tyre_age: lastL.tyre_age,
+            speed: 0.0,
+            distance_score: lastL.lap
+          }};
+        }}
+
+        // Find current active lap
+        let curL = laps.find(l => simTimeS >= l.start_t && simTimeS < l.end_t);
+        if (!curL) curL = lastL;
+
+        if (curL.lap > maxLeaderLap) maxLeaderLap = curL.lap;
+
+        const curT = simTimeS - curL.start_t;
+        const totalDur = curL.dur || 90.0;
+        const s1 = curL.s1, s2 = curL.s2, s3 = curL.s3;
+
+        let deg = 0;
+        let isPit = false;
+
+        if (curT < s1) {{
+          deg = (curT / Math.max(s1, 0.1)) * 120.0;
+          isPit = curL.is_pit_out && (curT / s1 < 0.5);
+        }} else if (curT < (s1 + s2)) {{
+          deg = 120.0 + ((curT - s1) / Math.max(s2, 0.1)) * 120.0;
+          isPit = false;
+        }} else {{
+          deg = 240.0 + ((curT - (s1 + s2)) / Math.max(s3, 0.1)) * 120.0;
+          isPit = curL.is_pit_in && ((curT - (s1 + s2)) / s3 > 0.4);
+        }}
+
+        let r = rMain;
+        if (isPit || (curL.is_pit_in && deg >= 330) || (curL.is_pit_out && deg <= 30)) {{
+          r = rPit;
+        }}
+
+        return {{
+          ...d,
+          lap: curL.lap,
+          deg: deg % 360,
+          radius: r,
+          is_in_pit: isPit,
+          compound: curL.compound,
+          compound_badge: curL.compound_badge,
+          tyre_age: curL.tyre_age,
+          speed: curL.speed,
+          distance_score: (curL.lap - 1) + (deg / 360.0)
+        }};
+      }}).filter(Boolean);
+
+      // Sort by race distance score descending (Leader first)
+      driverStates.sort((a, b) => b.distance_score - a.distance_score);
+
+      const leaderLap = driverStates.length > 0 ? driverStates[0].lap : maxLeaderLap;
+      lapIndicator.innerText = `LAP ${{leaderLap}} / ${{maxLaps}}`;
+
       // Update Flag State
-      const flagInfo = flagsData[activeLap] || {{ flag: 'GREEN', badge: '[GREEN]', track_color: '#0066FF', message: 'TRACK CLEAR' }};
+      const flagInfo = flagsData[leaderLap] || {{ flag: 'GREEN', badge: '[GREEN]', track_color: '#0066FF', message: 'TRACK CLEAR' }};
       flagBadge.className = `flag-badge ${{flagInfo.flag.toLowerCase()}}`;
       flagBadge.innerText = flagInfo.badge;
       flagMessage.innerText = flagInfo.message;
       statusBanner.style.borderLeftColor = flagInfo.track_color;
 
       // Update Weather Telemetry
-      const wInfo = weatherData[activeLap] || {{}};
+      const wInfo = weatherData[leaderLap] || {{}};
       document.getElementById('valTrackTemp').innerText = `${{wInfo.track_temp || 35.0}}°C`;
       document.getElementById('valAirTemp').innerText = `${{wInfo.air_temp || 25.0}}°C`;
       document.getElementById('valWind').innerText = `${{wInfo.wind_speed || 2.0}} m/s`;
@@ -747,57 +849,11 @@ simulation_html = f"""
         tickerBox.innerHTML = '<div style="color: #536279; font-style: italic;">No active race control incidents.</div>';
       }}
 
-      // Retrieve Drivers for Active Lap
-      const drivers = lapsData[activeLap] || [];
-
-      // Calculate Driver Positions & Angular Progress
-      const computedDrivers = drivers.map(d => {{
-        // Sector bounds
-        const totalDur = d.duration || 90.0;
-        const s1 = d.s1, s2 = d.s2, s3 = d.s3;
-        const curT = lapProgress * totalDur;
-
-        let deg = 0;
-        let sector = 1;
-        let isPit = false;
-
-        if (curT < s1) {{
-          sector = 1;
-          deg = (curT / Math.max(s1, 0.1)) * 120.0;
-          isPit = d.is_pit_out && (curT / s1 < 0.5);
-        }} else if (curT < (s1 + s2)) {{
-          sector = 2;
-          deg = 120.0 + ((curT - s1) / Math.max(s2, 0.1)) * 120.0;
-          isPit = false;
-        }} else {{
-          sector = 3;
-          deg = 240.0 + ((curT - (s1 + s2)) / Math.max(s3, 0.1)) * 120.0;
-          isPit = d.is_pit_in && ((curT - (s1 + s2)) / s3 > 0.4);
-        }}
-
-        // In-pit radial offset
-        let r = rMain;
-        if (isPit || (d.is_pit_in && deg >= 330) || (d.is_pit_out && deg <= 30)) {{
-          r = rPit;
-        }}
-
-        return {{
-          ...d,
-          deg: deg % 360,
-          radius: r,
-          is_in_pit: isPit,
-          distance_score: (activeLap - 1) + (deg / 360.0)
-        }};
-      }});
-
-      // Sort by race distance score descending (Leader first)
-      computedDrivers.sort((a, b) => b.distance_score - a.distance_score);
-
       // Render Timing Tower
-      renderTimingTower(computedDrivers);
+      renderTimingTower(driverStates);
 
       // Render Virtual Track Circle Canvas
-      renderCanvas(computedDrivers, flagInfo);
+      renderCanvas(driverStates, flagInfo, leaderLap);
     }}
 
     // Render Live Timing Tower HTML Table
@@ -852,7 +908,7 @@ simulation_html = f"""
     }}
 
     // Render Canvas Dual-Ring Virtual Track Circle
-    function renderCanvas(drivers, flagInfo) {{
+    function renderCanvas(drivers, flagInfo, leaderLap) {{
       ctx.clearRect(0, 0, 600, 600);
 
       // Background Subtle Rings
@@ -888,12 +944,9 @@ simulation_html = f"""
 
       // Inner Pit-Lane Arc (330 deg through 0 to 30 deg)
       ctx.beginPath();
-      const p1 = pol2cart(rPit, 330);
-      const p2 = pol2cart(rPit, 30);
       ctx.strokeStyle = '#00F0FF';
       ctx.lineWidth = 2.5;
       ctx.setLineDash([6, 4]);
-      // Arc from 330 (-120 rad) to 30 (-60 rad)
       ctx.arc(cx, cy, rPit, (330 - 90) * Math.PI / 180, (30 - 90) * Math.PI / 180);
       ctx.stroke();
       ctx.setLineDash([]);
@@ -956,7 +1009,7 @@ simulation_html = f"""
 
       ctx.fillStyle = '#00F0FF';
       ctx.font = 'bold 12px "JetBrains Mono"';
-      ctx.fillText(`LAP ${{Math.floor(currentLapFraction)}} / ${{maxLaps}}`, cx, cy + 22);
+      ctx.fillText(`LAP ${{leaderLap}} / ${{maxLaps}}`, cx, cy + 22);
 
       // Render Dynamic Driver Nodes
       const compColors = {{
@@ -1004,7 +1057,7 @@ simulation_html = f"""
       }});
     }}
 
-    // Start Simulation Animation
+    // Start Continuous Simulation Animation
     requestAnimationFrame(animate);
   </script>
 </body>

@@ -174,19 +174,19 @@ Constraint: Use ONLY `.sql` scripts. Load all columns as raw text/varchar to pre
 
 ### Task List:
 * **Mohamed (Core Lap Telemetry & Stint Staging):**
-  - [ ] Task 1.1: Write SQL DDL to create schema `bronze` and tables `bronze.raw_race_laps` and `bronze.raw_stint_summary`.
-  - [ ] Task 1.2: Write SQL bulk load (`COPY` / `BULK INSERT`) statements to ingest `Race_Laps.csv` and `Stint_Summary.csv`.
-  - [ ] Task 1.3: Write SQL diagnostic queries counting total rows, distinct `session_key` values per year (2023, 2024, 2025), and NULL frequencies in `lap_duration`, `i1_speed`, `i2_speed`, `st_speed`, `compound_code`, and `deg_vs_stint_best_s`.
+  - [x] Task 1.1: Write SQL DDL to create schema `bronze` and tables `bronze.raw_race_laps` and `bronze.raw_stint_summary`.
+  - [x] Task 1.2: Write SQL bulk load (`COPY` / `BULK INSERT`) statements to ingest `Race_Laps.csv` and `Stint_Summary.csv`.
+  - [x] Task 1.3: Write SQL diagnostic queries counting total rows, distinct `session_key` values per year (2023, 2024, 2025), and NULL frequencies in `lap_duration`, `i1_speed`, `i2_speed`, `st_speed`, `compound_code`, and `deg_vs_stint_best_s`.
 * **Yousef (Pit Stops & FIA Race Control Staging):**
-  - [ ] Task 1.4: Write SQL DDL and bulk load scripts for `bronze.raw_pit_stops` (`Pit_Stops.csv`) and `bronze.raw_race_control` (`Race_Control.csv`).
-  - [ ] Task 1.5: Write SQL diagnostic queries profiling missing `stop_duration` vs `lane_duration` in `raw_pit_stops` and distribution of `category`, `flag`, and `scope` values in `raw_race_control`.
+  - [x] Task 1.4: Write SQL DDL and bulk load scripts for `bronze.raw_pit_stops` (`Pit_Stops.csv`) and `bronze.raw_race_control` (`Race_Control.csv`).
+  - [x] Task 1.5: Write SQL diagnostic queries profiling missing `stop_duration` vs `lane_duration` in `raw_pit_stops` and distribution of `category`, `flag`, and `scope` values in `raw_race_control`.
 * **Mahmud (Weather Telemetry & Circuit Metadata Staging):**
-  - [ ] Task 1.6: Write SQL DDL and bulk load scripts for `bronze.raw_weather` (`Weather.csv`) and `bronze.raw_races` (`Races.csv`).
-  - [ ] Task 1.7: Write SQL queries identifying non-Race sessions in `raw_weather` (such as `Practice 1`), mixed timestamp formats in `raw_races` (`date_start` vs `date_end`), and missing Pirelli allocations (`C_hard`, `C_medium`, `C_soft`).
+  - [x] Task 1.6: Write SQL DDL and bulk load scripts for `bronze.raw_weather` (`Weather.csv`) and `bronze.raw_races` (`Races.csv`).
+  - [x] Task 1.7: Write SQL queries identifying non-Race sessions in `raw_weather` (such as `Practice 1`), mixed timestamp formats in `raw_races` (`date_start` vs `date_end`), and missing Pirelli allocations (`C_hard`, `C_medium`, `C_soft`).
 * **Moaz (Competitor Entities, Results & Bronze Master Report):**
-  - [ ] Task 1.8: Write SQL DDL and bulk load scripts for `bronze.raw_drivers` (`Drivers.csv`), `bronze.raw_constructors` (`Constructors.csv`), and `bronze.raw_race_results` (`Race_Results.csv`).
-  - [ ] Task 1.9: Write SQL queries detecting duplicate `(year, driver_number)` rows in `raw_drivers` caused by mid-season team changes or case differences in `team_colour` (e.g., `3671C6` vs `3671c6`), and non-numeric `gap_to_leader` strings (e.g., `+1 LAP`) in `raw_race_results`.
-  - [ ] Task 1.10: Create `bronze.vw_ingestion_audit_summary` and generate `reports/01_BRONZE_REPORT.md` documenting every raw table's row count, column count, null count, duplicate count, and detected formatting anomalies.
+  - [x] Task 1.8: Write SQL DDL and bulk load scripts for `bronze.raw_drivers` (`Drivers.csv`), `bronze.raw_constructors` (`Constructors.csv`), and `bronze.raw_race_results` (`Race_Results.csv`).
+  - [x] Task 1.9: Write SQL queries detecting duplicate `(year, driver_number)` rows in `raw_drivers` caused by mid-season team changes or case differences in `team_colour` (e.g., `3671C6` vs `3671c6`), and non-numeric `gap_to_leader` strings (e.g., `+1 LAP`) in `raw_race_results`.
+  - [x] Task 1.10: Create `bronze.vw_ingestion_audit_summary` and generate `reports/01_BRONZE_REPORT.md` documenting every raw table's row count, column count, null count, duplicate count, and detected formatting anomalies.
 
 ---
 
@@ -195,20 +195,20 @@ Constraint: Use ONLY `.sql` scripts. Transform `bronze` tables into a strongly-t
 
 ### Task List:
 * **Mohamed (Lap Telemetry Cleaning, Fuel Correction & 107% Outlier SQL Engine):**
-  - [ ] Task 2.1: Create `silver.fact_race_laps` with strict SQL data types (`INTEGER`, `DOUBLE PRECISION`, `BOOLEAN`, `TIMESTAMP`).
-  - [ ] Task 2.2: Implement SQL Window Functions (`PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY lap_duration) OVER (PARTITION BY session_key, driver_number)`) to compute each driver's median lap time per race.
-  - [ ] Task 2.3: Create a validated boolean column `is_valid_strategy_lap` in SQL that sets `FALSE` for: opening laps (`is_first_lap = TRUE`), pit in/out laps (`is_pit_in_lap = TRUE` or `is_pit_out_lap = TRUE`), neutralized laps (`safety_car_in_lap = TRUE`, `vsc_in_lap = TRUE`, `red_flag_in_lap = TRUE`), and slow outlier laps (`lap_duration > 1.07 * driver_median_lap_s`).
-  - [ ] Task 2.4: Impute missing speed traps (`i1_speed`, `i2_speed`, `st_speed`) using stint-level SQL window averages (`AVG(...) OVER (PARTITION BY session_key, driver_number, stint_number)`) and record imputations in `is_speed_imputed`.
+  - [x] Task 2.1: Create `silver.fact_race_laps` with strict SQL data types (`INTEGER`, `DOUBLE PRECISION`, `BOOLEAN`, `TIMESTAMP`).
+  - [x] Task 2.2: Implement SQL Window Functions (`PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY lap_duration) OVER (PARTITION BY session_key, driver_number)`) to compute each driver's median lap time per race.
+  - [x] Task 2.3: Create a validated boolean column `is_valid_strategy_lap` in SQL that sets `FALSE` for: opening laps (`is_first_lap = TRUE`), pit in/out laps (`is_pit_in_lap = TRUE` or `is_pit_out_lap = TRUE`), neutralized laps (`safety_car_in_lap = TRUE`, `vsc_in_lap = TRUE`, `red_flag_in_lap = TRUE`), and slow outlier laps (`lap_duration > 1.07 * driver_median_lap_s`).
+  - [x] Task 2.4: Impute missing speed traps (`i1_speed`, `i2_speed`, `st_speed`) using stint-level SQL window averages (`AVG(...) OVER (PARTITION BY session_key, driver_number, stint_number)`) and record imputations in `is_speed_imputed`.
 * **Yousef (Pit Stop Normalization & Race Control Flag Extraction):**
-  - [ ] Task 2.5: Create `silver.fact_pit_stops`, casting durations to `DOUBLE PRECISION`, filtering out red-flag stationary pit lane waits (`pit_duration > 60.0`), and calculating `circuit_avg_pit_loss_s` using SQL window functions.
-  - [ ] Task 2.6: Create `silver.fact_race_control` and use SQL `CASE WHEN` pattern matching on `message`, `category`, and `flag` to extract structured boolean indicators (`is_sc_event`, `is_vsc_event`, `is_red_flag_event`, `is_drs_change`, `is_track_limits_deletion`, `is_steward_penalty`).
+  - [x] Task 2.5: Create `silver.fact_pit_stops`, casting durations to `DOUBLE PRECISION`, filtering out red-flag stationary pit lane waits (`pit_duration > 60.0`), and calculating `circuit_avg_pit_loss_s` using SQL window functions.
+  - [x] Task 2.6: Create `silver.fact_race_control` and use SQL `CASE WHEN` pattern matching on `message`, `category`, and `flag` to extract structured boolean indicators (`is_sc_event`, `is_vsc_event`, `is_red_flag_event`, `is_drs_change`, `is_track_limits_deletion`, `is_steward_penalty`).
 * **Mahmud (Weather Time-Series Alignment & Pirelli C1-C6 Circuit Mapping):**
-  - [ ] Task 2.7: Create `silver.dim_races`, standardizing `date_start` and `date_end` to UTC timestamps and populating empty `C_hard`, `C_medium`, and `C_soft` columns with official Pirelli `C1`–`C5` circuit compound codes via a deterministic SQL `CASE` mapping table.
-  - [ ] Task 2.8: Create `silver.fact_weather`, filtering to Race sessions and using SQL window functions to compute rolling temperature change rates (`track_temp_delta_prev_5min`) and rain onset flags.
+  - [x] Task 2.7: Create `silver.dim_races`, standardizing `date_start` and `date_end` to UTC timestamps and populating empty `C_hard`, `C_medium`, and `C_soft` columns with official Pirelli `C1`–`C5` circuit compound codes via a deterministic SQL `CASE` mapping table.
+  - [x] Task 2.8: Create `silver.fact_weather`, filtering to Race sessions and using SQL window functions to compute rolling temperature change rates (`track_temp_delta_prev_5min`) and rain onset flags.
 * **Moaz (Entity Deduplication, Stint Validation & Silver Master Report):**
-  - [ ] Task 2.9: Create `silver.dim_constructors` and `silver.dim_drivers`, normalizing `UPPER(TRIM(team_colour))`, resolving team rebrands (`Alfa Romeo` / `Kick Sauber`, `AlphaTauri` / `RB` / `Racing Bulls`), and deduplicating multi-row seasonal driver entries using `ROW_NUMBER() OVER (PARTITION BY year, driver_number ORDER BY races_entered DESC)`.
-  - [ ] Task 2.10: Create `silver.fact_race_results` (splitting `gap_to_leader` into numeric `gap_seconds` and integer `laps_down`) and `silver.fact_stint_summary` (mapping `compound_code` from `silver.dim_races`).
-  - [ ] Task 2.11: Create `silver.vw_transformation_audit_log` in SQL and generate `reports/02_SILVER_REPORT.md` detailing exact row counts before/after cleaning, number of laps removed by each filter (Lap 1, Pit In/Out, SC/VSC/Red, >107% outlier), number of speed trap imputations, and deduplicated entity counts.
+  - [x] Task 2.9: Create `silver.dim_constructors` and `silver.dim_drivers`, normalizing `UPPER(TRIM(team_colour))`, resolving team rebrands (`Alfa Romeo` / `Kick Sauber`, `AlphaTauri` / `RB` / `Racing Bulls`), and deduplicating multi-row seasonal driver entries using `ROW_NUMBER() OVER (PARTITION BY year, driver_number ORDER BY races_entered DESC)`.
+  - [x] Task 2.10: Create `silver.fact_race_results` (splitting `gap_to_leader` into numeric `gap_seconds` and integer `laps_down`) and `silver.fact_stint_summary` (mapping `compound_code` from `silver.dim_races`).
+  - [x] Task 2.11: Create `silver.vw_transformation_audit_log` in SQL and generate `reports/02_SILVER_REPORT.md` detailing exact row counts before/after cleaning, number of laps removed by each filter (Lap 1, Pit In/Out, SC/VSC/Red, >107% outlier), number of speed trap imputations, and deduplicated entity counts.
 
 ---
 
@@ -217,14 +217,14 @@ Constraint: Build an interactive chronological race state visualizer on top of `
 
 ### Task List:
 * **Mohamed (Chronological State SQL Engine & Position/Gap Tracker):**
-  - [ ] Task 3.1: Create SQL view `silver.vw_race_state_timeline` that reconstructs the exact state of every race from `lap_number = 1` (lights out) to the final lap (chequered flag), including driver position, cumulative elapsed time, interval to car ahead, gap to leader, current compound, tyre age, `fuel_corrected_lap_time`, and `deg_vs_stint_best_s`.
+  - [x] Task 3.1: Create SQL view `silver.vw_race_state_timeline` that reconstructs the exact state of every race from `lap_number = 1` (lights out) to the final lap (chequered flag), including driver position, cumulative elapsed time, interval to car ahead, gap to leader, current compound, tyre age, `fuel_corrected_lap_time`, and `deg_vs_stint_best_s`.
 * **Yousef (Pit Window & FIA Race Control Timeline Synchronizer):**
-  - [ ] Task 3.2: Build the event synchronization query and timeline component that overlays exact pit-in/pit-out events, pit lane time lost, compound changes, and live FIA Race Control messages (`GREEN`, `YELLOW`, `SC`, `VSC`, `RED`, `DRS`) at each lap step.
+  - [x] Task 3.2: Build the event synchronization query and timeline component that overlays exact pit-in/pit-out events, pit lane time lost, compound changes, and live FIA Race Control messages (`GREEN`, `YELLOW`, `SC`, `VSC`, `RED`, `DRS`) at each lap step.
 * **Mahmud (Environmental & Track Evolution Timeline):**
-  - [ ] Task 3.3: Build the synchronized weather progression module that plots `weather_track_temperature`, `weather_air_temperature`, `weather_wind_speed`, and `weather_rainfall` from lap 1 to the end of the race, highlighting thermal degradation crossovers.
+  - [x] Task 3.3: Build the synchronized weather progression module that plots `weather_track_temperature`, `weather_air_temperature`, `weather_wind_speed`, and `weather_rainfall` from lap 1 to the end of the race, highlighting thermal degradation crossovers.
 * **Moaz (Black & Blue Replay Interface & Phase 3 Report):**
-  - [ ] Task 3.4: Build `app/pages/01_race_state_replay.py` in Matte Black (`#0B0C10`) and Electric Blue (`#00F0FF` / `#0066FF`) with the official F1 logo and Constructor logos/colors (`team_colour`), featuring a Lap Scrubber (Lap 1 to End), Position Trace Chart, Stint Strategy Gantt Chart, and Live Telemetry Timing Tower.
-  - [ ] Task 3.5: Generate `reports/03_RACE_STATE_REPORT.md` documenting the state transition logic, lap-by-lap synchronization queries, and summary statistics of race state changes (lead changes, SC deployments, weather transitions, and stint counts).
+  - [x] Task 3.4: Build `app/pages/01_race_state_replay.py` in Matte Black (`#0B0C10`) and Electric Blue (`#00F0FF` / `#0066FF`) with the official F1 logo and Constructor logos/colors (`team_colour`), featuring a 60 FPS real-time animated Virtual Track Circle, Live Play/Pause scrubber, Speed multipliers (1x-10x), and Live Telemetry Timing Tower.
+  - [x] Task 3.5: Generate `reports/03_RACE_STATE_REPORT.md` documenting the state transition logic, lap-by-lap synchronization queries, and summary statistics of race state changes (lead changes, SC deployments, weather transitions, and stint counts).
 
 ---
 
